@@ -1,5 +1,5 @@
-site_name: btw2201
-site_url: https://sitename.example
+site_name: btw2201 - Databases
+site_url: https://github.com/tjaeggi/btw2201_databases
 theme:
   name: material
   font:
