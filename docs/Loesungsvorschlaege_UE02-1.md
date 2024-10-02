@@ -10,7 +10,7 @@
 === "SQL"
 
     ```sql
-    ?
+    SELECT count(*) FROM songs WHERE artist = 'U2';
     ```
 
 
@@ -29,7 +29,7 @@
 === "SQL"
 
     ```sql
-    ?
+    SELECT SUM(price) as Kosten_for_all_Kiss_Songs FROM songs WHERE artist = 'Kiss';
     ```
 
 !!! question "Frage 3"
@@ -44,7 +44,7 @@
 === "SQL"
 
     ```sql
-    ?
+    SELECT SUM(duration)/1000/60 FROM songs WHERE artist = 'Red Hot Chili Peppers';
     ```
 
 !!! question "Frage 4"
@@ -59,7 +59,7 @@
 === "SQL"
 
     ```sql
-    ?
+    SELECT COUNT(DISTINCT artist) FROM songs;
     ```
 
 !!! question "Frage 5"
@@ -74,7 +74,7 @@
 === "SQL"
 
     ```sql
-    ?
+    SELECT song, (price/duration*1000) as Price_per_sec FROM songs ORDER BY Price_per_sec desc LIMIT 1;
     ```
 
 !!! question "Frage 6"
@@ -89,7 +89,7 @@
 === "SQL"
 
     ```sql
-    ?
+    SELECT COUNT(DISTINCT album) FROM songs WHERE artist = 'Audioslave';
     ```
 
 !!! question "Frage 7"
@@ -104,6 +104,6 @@
 === "SQL"
 
     ```sql
-    ?
+    SELECT COUNT(DISTINCT artist) FROM songs WHERE genre='Metal';
     ```
 
