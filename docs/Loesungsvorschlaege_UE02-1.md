@@ -29,7 +29,7 @@
 === "SQL"
 
     ```sql
-    SELECT SUM(price) as Kosten_for_all_Kiss_Songs FROM songs WHERE artist = 'Kiss';
+    SELECT SUM(price) as Costs_for_all_Kiss_Songs FROM songs WHERE artist = 'Kiss';
     ```
 
 !!! question "Frage 3"
