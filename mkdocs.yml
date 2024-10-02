@@ -67,9 +67,9 @@ extra_css:
 nav:
   - 'Inhalt': 'index.md'
   - 'LE01 - CSVs mit Python': 
-      - 'Aufgabe UE01-1': 'ue01-1.md' 
-      - 'Lösungsvorschläge UE01-1': 'Loesungsvorschlaege_ue01-1.md'
+      - 'UE01-1-Aufgaben': 'ue01-1.md' 
+      - 'UE01-1-Lösungsvorschläge': 'Loesungsvorschlaege_ue01-1.md'
   - 'LE02 - SELECT Abfragen': 
-      - 'Aufgabe UE02-1': 'UE02-1.md' 
-      - 'Lösungsvorschläge UE02-1': 'Loesungsvorschlaege_UE02-1.md'
-      - 'Aufgabe/Lösungen  UE02-2': 'UE02-2.md' 
+      - 'UE02-1-Aufgaben': 'UE02-1.md' 
+      - 'UE02-1-Lösungsvorschläge': 'Loesungsvorschlaege_UE02-1.md'
+      - 'UE02-2-Aufgaben und Lösungen': 'UE02-2.md' 
