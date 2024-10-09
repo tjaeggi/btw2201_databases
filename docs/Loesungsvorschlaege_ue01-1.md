@@ -36,7 +36,7 @@ delimiter = ';'
 largest_column_count = 0
 
 # Loop the data lines and determine the maximum number of columns per row. Name the column with a number from 0 to largest_column_count
-with open(csv_file, 'r') as temp_f:
+with open(csv_file, 'r', encoding="cp1252") as temp_f:
     
     # get No of columns in each line
     col_count = [ len(row.split(delimiter)) for row in temp_f.readlines() ]
