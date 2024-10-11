@@ -31,6 +31,8 @@ theme:
     - content.action.edit
     - content.action.view
 
+plugins:
+  - glightbox
 
 extra:
   social:
@@ -41,6 +43,7 @@ copyright: Copyright &copy; 2024 Thomas Jäggi
 
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -66,10 +69,15 @@ extra_css:
 
 nav:
   - 'Inhalt': 'index.md'
-  - 'LE01 - CSVs mit Python': 
+  - 'LE01-CSVs mit Python': 
       - 'UE01-1-Aufgaben': 'ue01-1.md' 
       - 'UE01-1-Lösungsvorschläge': 'Loesungsvorschlaege_ue01-1.md'
-  - 'LE02 - SELECT Abfragen': 
+  - 'LE02-SELECT Abfragen': 
       - 'UE02-1-Aufgaben': 'UE02-1.md' 
       - 'UE02-1-Lösungsvorschläge': 'Loesungsvorschlaege_UE02-1.md'
-      - 'UE02-2-Aufgaben und Lösungen': 'UE02-2.md' 
+      - 'UE02-2-Aufgaben und Lösungen': 'UE02-2.md'
+  - 'LE03-Weiterführende SELECTs':
+      - 'UE03-1-AB-Ranking Table und View': 'UE03-01-AB.md'
+      - 'UE03-2-Datum und Zeit': 'UE03-2.md'
+      - 'UE03-3-CSV in SQLite': 'UE03-3.md'
+      - 'UE03-4-SQL-Abfragen Strasserverz.': 'UE03-4.md'
