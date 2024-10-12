@@ -3,8 +3,8 @@ site_url: https://tjaeggi.github.io/btw2201_databases/
 theme:
   name: material
   font:
-    #text: Roboto
-    text: Ubuntu
+    text: Roboto
+    #text: Red Hat
     code: Red Hat Mono
   logo:  assets/Micropython-logo.svg.png
   favicon: assets/Micropython-logo.svg.png
@@ -69,7 +69,7 @@ extra_css:
 
 
 nav:
-  - 'Inhalt': 'index.md'
+  - 'ABOUT THIS WEBSITE': 'index.md'
   - 'LE01-CSVs mit Python': 
       - 'UE01-1-Aufgaben': 'ue01-1.md' 
       - 'UE01-1-Lösungsvorschläge': 'Loesungsvorschlaege_ue01-1.md'
