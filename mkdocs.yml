@@ -1,9 +1,10 @@
-site_name: btw2201 - Databases
-site_url: https://github.com/tjaeggi/btw2201_databases
+site_name: WING - btw2201-Databases
+site_url: https://tjaeggi.github.io/btw2201_databases/
 theme:
   name: material
   font:
-    text: Roboto
+    #text: Roboto
+    text: Ubuntu
     code: Red Hat Mono
   logo:  assets/Micropython-logo.svg.png
   favicon: assets/Micropython-logo.svg.png
