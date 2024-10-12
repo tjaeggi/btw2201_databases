@@ -2,4 +2,13 @@
 
 !!! note ""
 
-    Auf dieser Webseite finden Sie **Lösungsvorschläge** zu den Übungen und **weitergehende Unterlagen** zu den Themen im Unterricht. 
+    Auf dieser Webseite finden Sie **Lösungsvorschläge** zu den Übungen und **weitergehende Informationen** zu den Themen im Unterricht. 
+
+    **Bei Fragen/Anregungen oder Korrekturen können sie sich jederzeit und gerne via Teams, Moodle oder E-Mail melden.**
+    
+    ---
+    Thomas Jäggi
+
+    Berner Fachhochschule, WING
+
+    thomas.jaeggi@bfh.ch
