@@ -6,7 +6,7 @@ Erstes einfaches Beispiel:
 Die Usereingabe des Genres, listet alle dazugehörenden Songs aus. Als Genre sind gültig: Latin, Metal, Rock, Jazz, Bossa Nova, Blues, etc.
 
 
-```py title="HelloDB.py "linenums="1"
+```py title="binding1.py "linenums="1"
 import os 
 import sqlite3 
 
