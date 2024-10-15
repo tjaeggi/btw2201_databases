@@ -38,7 +38,13 @@ conn.close()
 
 !!! danger "zum Erinnern!"
 
-    Single Element Tupel immer mit Komma! Tupel werden vom cursor.execute() erwartet. Ohne Komma ist der Datentyp ein String.
+    Vom Befehl `cursor.execute()` werden TUPEL erwartet! Ansonsten funktioniert das Binding nicht. Wenn man also nur einen Wert als Binding hat, muss man ein `Single Element Tupel` kreieren !
+
+    Single Element Tupel schreibt man immer mit Komma! 
+    
+    Ohne Komma erhält man einen String.
+    
+    **BEACHTEN:**
 
     ```py
     >>> type(('eins',))
