@@ -31,6 +31,7 @@ theme:
     - content.code.copy
     - content.action.edit
     - content.action.view
+    - content.code.annotate
 
 plugins:
   - glightbox
@@ -44,6 +45,7 @@ copyright: Copyright &copy; 2024 Thomas Jäggi
 
 markdown_extensions:
   - attr_list
+  - tables
   - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -82,3 +84,13 @@ nav:
       - 'UE03-2-Datum und Zeit': 'UE03-2.md'
       - 'UE03-3-CSV in SQLite': 'UE03-3.md'
       - 'UE03-4-SQL-Abfragen Strasserverz.': 'UE03-4.md'
+  - 'LE04-SQL und Python':
+      - 'Einführung Python mit SQLite': 'LE04-EinfPythonSQLite.md'
+      - 'Einführung Bindings': 'LE04-EinfBindings.md'
+      - 'Einführung CRUD': 'LE04-EinfCRUD.md'
+      - 'UE04-01': 'UE04-01.md'
+      - 'UE04-02': 'UE04-02.md'
+      - 'UE04-03': 'UE04-03.md'
+      - 'UE04-04': 'UE04-04.md'
+
+
