@@ -92,7 +92,7 @@ Die automatische Datentypumwandlung von Daten aus SQLite in Python-Datentypen ri
 
 !!! question "Frage"
 
-    Wie können wir in den Rückübersetzungsprozess eingreifen, um Daten beim Auslesen aus der Datenbank unseren Vorstellungen entsprechend anzupassen?
+    Wie können wir in den Rückübersetzungsprozess eingreifen, um Daten beim Auslesen aus der Datenbank unseren Vorstellungen entsprechend anzupassen? Diese Frage werden wir mit den Factory-Funktionen beantworten.
 
 
 ## Factory-Funktionen mit Python und SQLite
