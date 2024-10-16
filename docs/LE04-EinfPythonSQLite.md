@@ -23,7 +23,7 @@ import os # (8)
 import sqlite3 # (1)
 
 # Datenbank öffnen und verbinden
-conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04','chinook.db')) # (2)
+conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04/','chinook.db')) # (2)
 
 # Cursor kreieren. Dieser wird im Zusammenhang mit einem Query verwendet
 cur = conn.cursor() # (3)
@@ -124,7 +124,7 @@ import os
 import sqlite3
 
 # Datenbank öffnen und verbinden
-conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04','chinook.db'))
+conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04/','chinook.db'))
 
 def my_text_factory_BIGLETTERS(value):
     return value.decode("utf-8", "ignore").upper()
@@ -189,7 +189,7 @@ bereitstellt, von denen uns aber nur das erste, nämlich der Spaltenname, intere
 ```py title=""
 >>> import os
 >>> import sqlite3
->>> conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04','chinook.db'))
+>>> conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04/','chinook.db'))
 >>> cur = conn.cursor()
 >>> cur.execute('SELECT * FROM songs WHERE album = \'Facelift\';')
 <sqlite3.Cursor object at 0x000002443B320AC0>
@@ -206,7 +206,7 @@ import os
 import sqlite3
 
 # Datenbank öffnen und verbinden
-conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04','chinook.db'))
+conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04/','chinook.db'))
 
 def row_with_column_name(cursor, zeile):
     r = {}
