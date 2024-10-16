@@ -278,7 +278,7 @@ import sqlite3
 import pandas as pd
 
 # Datenbank öffnen und verbinden
-connection = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04','chinook.db'))
+connection = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04/','chinook.db'))
 sqlquery = "SELECT * FROM employees;"
 df = pd.read_sql(sqlquery,con=connection) # (1)
 print(df)

@@ -11,7 +11,7 @@ import os
 import sqlite3 
 
 # Datenbank öffnen und verbinden
-conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04','chinook.db')) 
+conn = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE04/','chinook.db')) 
 
 # Cursor kreieren. Dieser wird im Zusammenhang mit einem Query verwendet
 cur = conn.cursor() 
