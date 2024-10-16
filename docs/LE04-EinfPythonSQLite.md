@@ -266,7 +266,7 @@ conn.close()
 
 ## Import Data aus SQLite in Pandas-Dataframe
 
-Als Beispiel, wie man Daten aus einer SQLite-Datenbank in ein Pandas-Dataframe `df` importiert.
+Hier ein Beispiel, wie man Daten aus einer SQLite-Datenbank in ein Pandas-Dataframe `df` importiert.
 Beachten Sie hier auch die Anwendung, wie man SQL-Statements als Variable einsetzen kann.
 Auch ein Cursor ist dank der Pandas-Funktion `read_sql()` nicht notwendig.
 
