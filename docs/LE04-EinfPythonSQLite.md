@@ -148,7 +148,7 @@ conn.close()
 
 ```
 
-Damit Sie den Unterschied in der Ausgabe schön sehen und das ursprüngliche Ausgabeverhalten wieder herzustellen können, setzen Sie in Zeile 11
+Damit Sie den Unterschied in der Ausgabe schön sehen und das ursprüngliche Ausgabeverhalten wieder herstellen können, setzen Sie in Zeile 11
 
 ```py title=""
 conn.text_factory = str
