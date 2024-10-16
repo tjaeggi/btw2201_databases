@@ -99,7 +99,7 @@ Die automatische Datentypumwandlung von Daten aus SQLite in Python-Datentypen ri
 Es kann sein, dass die Daten in der Datenbank nicht in der Form vorliegen, wie gewünscht. Deshalb kann man diese Rohdaten in der Datenbank in einer "Factory" mit Python aufbereiten. Wir schauen uns dazu zwei Factories an.
 
 ### Connection.text_factory
-Hier nehmen wir als Beispiel, dass wir die Daten alle in Grossbuchstaben erhalten wollen. Es sollen also alle Werte, welche in der Datenbank als TEXT abgespeichert sind
+Hier nehmen wir als Beispiel, dass wir die Daten alle in Grossbuchstaben erhalten wollen. Es sollen also alle Werte, welche in der Datenbank als TEXT abgespeichert sind in Grossbuchstaben umgewandelt werden.
 
 Jede von `sqlite3.connect` erzeugte Connection-Instanz hat ein Attribut `text_factory`,
 das eine Referenz auf eine Funktion enthält, die immer dann aufgerufen wird, wenn
