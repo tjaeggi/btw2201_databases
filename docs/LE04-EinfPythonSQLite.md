@@ -282,7 +282,7 @@ connection = sqlite3.connect(os.path.join('C:/Users/tom/WORKLOCAL/PythonProj/UE0
 sqlquery = "SELECT * FROM employees;"
 df = pd.read_sql(sqlquery,con=connection) # (1)
 print(df)
-# Schliesse Cursor und Verbindung
+# Schliesse Cursor und Verbindung 
 connection.close()
 ```
 
