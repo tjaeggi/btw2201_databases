@@ -3,9 +3,12 @@ site_url: https://tjaeggi.github.io/btw2201_databases/
 theme:
   name: material
   font:
-    text: Roboto
-    #text: Red Hat
-    code: Red Hat Mono
+    #text: Roboto
+    #text: Open Sans
+    text: Noto Sans
+    #code: Red Hat Mono
+    code: Noto Mono
+    #code: Ubuntu Mono
   logo:  assets/Micropython-logo.svg.png
   favicon: assets/Micropython-logo.svg.png
   #icon:
@@ -28,6 +31,11 @@ theme:
       accent: deep orange
   features:
     - navigation.footer
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.sections
+    - navigation.indexes
+    - navigation.top
     - content.code.copy
     - content.action.edit
     - content.action.view
@@ -69,28 +77,34 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+exclude_docs: |
+  spick/installationsjournal.md
+  spick/spick_markdown.md
 
 nav:
-  - 'ABOUT THIS WEBSITE': 'index.md'
+  - 'ABOUT THIS WEBSITE': index.md
   - 'LE01-CSVs mit Python': 
-      - 'UE01-1-Aufgaben': 'ue01-1.md' 
-      - 'UE01-1-Lösungsvorschläge': 'Loesungsvorschlaege_ue01-1.md'
+      - 'UE01-1-Aufgaben': le01/ue01-1.md
+      - 'UE01-1-Lösungsvorschläge': le01/Loesungsvorschlaege_ue01-1.md
   - 'LE02-SELECT Abfragen': 
-      - 'UE02-1-Aufgaben': 'UE02-1.md' 
-      - 'UE02-1-Lösungsvorschläge': 'Loesungsvorschlaege_UE02-1.md'
-      - 'UE02-2-Aufgaben und Lösungen': 'UE02-2.md'
+      - 'UE02-1-Aufgaben': le02/UE02-1.md
+      - 'UE02-1-Lösungsvorschläge': le02/Loesungsvorschlaege_UE02-1.md
+      - 'UE02-2-Aufgaben und Lösungen': le02/UE02-2.md
   - 'LE03-Weiterführende SELECTs':
-      - 'UE03-1-AB-Ranking Table und View': 'UE03-01-AB.md'
-      - 'UE03-2-Datum und Zeit': 'UE03-2.md'
-      - 'UE03-3-CSV in SQLite': 'UE03-3.md'
-      - 'UE03-4-SQL-Abfragen Strasserverz.': 'UE03-4.md'
+      - 'UE03-1-AB-Ranking Table und View': le03/UE03-01-AB.md
+      - 'UE03-2-Datum und Zeit': le03/UE03-2.md
+      - 'UE03-3-CSV in SQLite': le03/UE03-3.md
+      - 'UE03-4-SQL-Abfragen Strasserverz.': le03/UE03-4.md
   - 'LE04-SQL und Python':
-      - 'Einführung Python mit SQLite': 'LE04-EinfPythonSQLite.md'
-      - 'Einführung Bindings': 'LE04-EinfBindings.md'
-      - 'Einführung CRUD': 'LE04-EinfCRUD.md'
-      - 'UE04-01': 'UE04-01.md'
-      - 'UE04-02': 'UE04-02.md'
-      - 'UE04-03': 'UE04-03.md'
-      - 'UE04-04': 'UE04-04.md'
-
+      - 'Einführung Python mit SQLite': le04/le04-einfpythonsqlite.md
+      - 'Einführung Bindings': le04/le04-einfbindings.md
+      - 'Einführung CRUD': le04/le04-einfcrud.md
+      - 'UE04-01': le04/ue04-01.md
+      - 'UE04-02': le04/ue04-02.md
+      - 'UE04-03': le04/ue04-03.md
+      - 'UE04-04': le04/ue04-04.md
+  - 'LE05': 
+      - le05/index.md
+      - 'UE05-01': le05/ue05-01.md
+      - 'UE05-02': le05/ue05-02.md
 

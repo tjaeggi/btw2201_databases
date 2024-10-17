@@ -2,7 +2,10 @@
 
 ## Embed pdfs
 
+```
 ![Mein PDF dazu](<pdf/Manual_IoTEducationBoard.pdf>){ type=application/pdf style="min-height:50vh;width:100%" }
+```
+
 
 ## Embed Video
 
@@ -18,15 +21,20 @@ Siehe: https://pypi.org/project/mkdocs-video/
 Chrome start das Video automatisch.
 Firefox nicht.
 
+Synthax:
+
+```
 ![type:video](./video/M159-KerberosScreencast.mp4)
+```
 
 
 ### Version 3
 
 Lorem ipsum dolor sit amet
 
+```
 ![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
-
+```
 
 
 
@@ -218,11 +226,14 @@ Code:
 
 ```
 
+```
+
 <figure markdown="span">
   ![Image title](img/screenshot.png){ width="500" }
   <figcaption>Screenshot</figcaption>
 </figure>
 
+```
 Code:
 
 ```
@@ -237,14 +248,14 @@ Code:
 
 
 <figure markdown="span">
-  ![Image title](img/gibb_logo.png){ width="50" }
+  ![Image title](../img/gibb_logo.png){ width="50" }
   <figcaption>gibb_logo</figcaption>
 </figure>
 
 Code:
 ```
 <figure markdown="span">
-  ![Image title](img/gibb_logo.png){ width="50" }
+  ![Image title](../img/gibb_logo.png){ width="50" }
   <figcaption>gibb_logo</figcaption>
 </figure>
 
