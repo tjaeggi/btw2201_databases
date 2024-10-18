@@ -1,5 +1,13 @@
 # Beilagen zum Modul btw2201 - Databases
 
+
+
+<figure markdown="span">
+  ![Image title](./img/databaseEngineeringmystical.png){ width="500" }
+  <figcaption>Let's understand the mystery of databases!</figcaption>
+</figure>
+
+
 !!! note ""
 
     Auf dieser Webseite finden Sie **Lösungsvorschläge** zu den Übungen und **weitergehende Informationen** zu den Themen in der Vorlesung. 
