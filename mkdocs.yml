@@ -107,5 +107,5 @@ nav:
   - 'LE05': 
       - le05/README.md
       - 'UE05-01': le05/ue05-01.md
-      - 'UE05-02': le05/ue05-02.md
+      - 'UE05-02-Datentransfer von SQLite-DB nach MySQL': le05/ue05-02.md
 
