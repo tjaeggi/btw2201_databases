@@ -104,8 +104,8 @@ nav:
       - 'UE04-02': le04/ue04-02.md
       - 'UE04-03': le04/ue04-03.md
       - 'UE04-04': le04/ue04-04.md
-  - 'LE05': 
+  - 'LE05-Docker-MySQL-Normalisierung I': 
       - le05/README.md
-      - 'UE05-01': le05/ue05-01.md
+      - 'UE05-01-MySQL und erste Datenbank': le05/ue05-01.md
       - 'UE05-02-Datentransfer von SQLite-DB nach MySQL': le05/ue05-02.md
 
