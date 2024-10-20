@@ -43,6 +43,7 @@ theme:
 
 plugins:
   - glightbox
+  - search
 
 extra:
   social:
