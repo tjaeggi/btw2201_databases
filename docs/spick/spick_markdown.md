@@ -904,7 +904,7 @@ for (rec_art), group in df.groupby([0]):
 ### Code Block mit Titel
 
 
-``` py title="bubble_sort.py"
+``` py 
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):

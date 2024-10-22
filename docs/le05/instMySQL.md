@@ -98,7 +98,7 @@ networks:
 
 ## Docker-Container starten
 
-Im Verzeichnis, wo das docker-compose.yml liegt starten Sie die Container mit
+Im Verzeichnis, wo das docker-compose.yml liegt, starten Sie die Container mit
 
 `docker compose up -d`
 
@@ -185,6 +185,19 @@ phpMyAdmin eignet sich gut, um MySQL-Datenbanken zu administrieren. Es können d
 
 ### Variante 2: MySQL Workbench
 
+MySQL-Workbench-
+[Download](https://dev.mysql.com/downloads/workbench/){:target="_blank"}
+
+
+
+
+<figure markdown="span">
+  ![Image title](../img/wb.png){ width="500" }
+  <figcaption></figcaption>
+</figure>
+
+
+
 Erstellen Sie eine Verbindung auf die lokale MySQL-Installation mit
 
 <figure markdown="span">
@@ -206,7 +219,6 @@ Starten Sie die Verbindung und machen Sie sich mit der Oberfläche vertraut.
 Weitere Erklärungen erfolgen in der Vorlesung.
 
 [Dokumentation MySQL Workbench](https://dev.mysql.com/doc/workbench/en/){:target="_blank"}
-
 
 
 <figure markdown="span">
