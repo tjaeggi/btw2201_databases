@@ -110,4 +110,6 @@ nav:
       - 'UE05-01-MySQL und erste Datenbank': le05/ue05-01.md
       - 'UE05-02-Datentransfer von SQLite-DB nach MySQL': le05/ue05-02.md
       - 'UE05-03-Relationenmodell': le05/ue05-03.md
-
+  - 'LE06-Mormalformen': 
+      - le06/README.md
+      - 'UE06-01-Funktional - Transitive Abhängigkeit': le06/ue06-01.md
