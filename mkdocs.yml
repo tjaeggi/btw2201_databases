@@ -50,7 +50,7 @@ extra:
     - icon: simple/linkedin
       link: https://www.linkedin.com/in/thomas-j%C3%A4ggi-026350141/
 
-copyright: Copyright &copy; 2024 Thomas Jäggi
+copyright: Copyright &copy; 2024 Thomas Jäggi, Berne University of Applied Sciences
 
 markdown_extensions:
   - attr_list

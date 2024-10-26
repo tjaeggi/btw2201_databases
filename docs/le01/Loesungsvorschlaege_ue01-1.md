@@ -5,11 +5,13 @@ Das Skript ermittelt die Anzahl Records im csv und schreibt für jede Record-Art
 
 
 
-??? question "Fragen zu beantworten"
+!!! question "Fragen zu beantworten"
 
     2. Wie viele Records sind im CSV enthalten?
     3. Erstellen Sie aus dem einzelnen csv je ein csv pro Record-Art. (=9 CSVs)
 
+
+Lösungsvorschlag:
 
 
 ```python linenums="1" hl_lines="39 40"
@@ -102,7 +104,7 @@ for (rec_art), group in df.groupby([0]):
 
 ## Lösungsvorschlag Punkt 4
 
-??? question "Fragen zu beantworten"
+!!! question "Fragen zu beantworten"
 
     4. Beantworten Sie mit dem erstellten CSV, welches REC_ART=1 (=NEW_PLZ1) enthält, folgende Fragen:
          1. Wie viele verschiedene Postleitzahlen gibt es in der Schweiz und im Fürstentum Lichtenstein?
@@ -110,7 +112,7 @@ for (rec_art), group in df.groupby([0]):
          3. Wie viele Gemeinden haben dieselbe PLZ wie ihre Wohngemeinde?
 
 
-
+Lösungsvorschlag:
 
 ```python linenums="1"
 """
@@ -190,12 +192,14 @@ print('Gemeinden 4556:\n',df3[['4', '7', '9']])
 
 ## Lösungsvorschlag Punkt 5
 
-??? question "Fragen zu beantworten"
+!!! question "Fragen zu beantworten"
 
     5. Unter Einbezug des CSV-Files mit Record_Art=4 (NEW_STR) können Sie auch folgende Fragen beantworten:
          1. In welchen Gemeinden mit Kanton existiert dieselbe Strasse ihrer Wohnadresse?
          2. In welchen Gemeinden gibt es ebenfalls eine "Quellgasse"?
 
+
+Lösungsvorschlag:
 
 ```python linenums="1"
 """
