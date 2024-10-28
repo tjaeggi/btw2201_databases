@@ -113,6 +113,5 @@ nav:
   - 'LE06-Normalformen': 
       - le06/README.md
       - 'UE06-01-Funktionale und Transitive Abhängigkeit - 3NF - SQL': le06/ue06-01.md
-      - 'UE06-02-Schuldatenbank in MySQL': le06/ue06-02.md
-      - 'UE06-03': le06/ue06-03.md
-      - 'UE06-04': le06/ue06-04.md
+      - 'UE06-02-Kardinalität-ERM-NF': le06/ue06-02.md
+      - 'UE06-03-Schuldatenbank in MySQL': le06/ue06-03.md
