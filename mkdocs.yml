@@ -117,3 +117,5 @@ nav:
       - 'UE06-03-Schuldatenbank in MySQL': le06/ue06-03.md
   - 'LE07-REPETITION': 
       - le07/README.md
+  - 'Kompetenznachweis': 
+      - lekn/README.md
