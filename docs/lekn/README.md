@@ -4,6 +4,8 @@ Gewichtung 35%
 
 Dauer der Prüfung: 45 Min.
 
+Hilfsmittel: keine
+
 Datum: 13.11.2024
 
 Zeit: 14:30
