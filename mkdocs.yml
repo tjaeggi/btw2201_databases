@@ -9,8 +9,8 @@ theme:
     #code: Red Hat Mono
     code: Noto Mono
     #code: Ubuntu Mono
-  logo:  assets/DatabaseSymbol.png
-  favicon: assets/DatabaseSymbol.png
+  logo:  assets/Micropython-logo.svg.png
+  favicon: assets/Micropython-logo.svg.png
   #icon:
   #  logo: fontawesome/solid/face-smile-beam
   palette:
