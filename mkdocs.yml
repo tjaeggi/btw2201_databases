@@ -9,8 +9,8 @@ theme:
     #code: Red Hat Mono
     code: Noto Mono
     #code: Ubuntu Mono
-  logo:  assets/Micropython-logo.svg.png
-  favicon: assets/Micropython-logo.svg.png
+  logo:  assets/LearningServicesLogo.png
+  favicon: assets/LearningServicesLogo.png
   #icon:
   #  logo: fontawesome/solid/face-smile-beam
   palette:
@@ -128,5 +128,5 @@ nav:
   - 'LE07-REPETITION': 
       - le07/README.md
       - 'UE07-01-Übungen': le07/ue07-01.md
-  - 'Kompetenznachweis': 
+  - 'LE08-Kompetenznachweis': 
       - lekn/README.md

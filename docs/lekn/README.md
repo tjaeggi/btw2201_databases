@@ -1,4 +1,4 @@
-# Kompetenznachweis (Theorie) zu Themen aus LE01 - LE07
+# LE08-Kompetenznachweis (Theorie) zu Themen aus LE01 - LE07
 
 Gewichtung 35%
 
