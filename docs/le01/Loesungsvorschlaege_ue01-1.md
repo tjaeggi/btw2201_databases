@@ -1,4 +1,8 @@
-## Lösungsvorschlag Punkte 2 und 3
+---
+pdf: true
+---
+
+# Lösungsvorschlag Punkte 2 und 3
 
 Das Skript ermittelt die Anzahl Records im csv und schreibt für jede Record-Art ein CSV-File:
 
