@@ -29,4 +29,5 @@ jobs:
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-enumerate-headings-plugin
       - run: pip install mkdocs-exporter
+      - run: playwright install
       - run: mkdocs gh-deploy --force
