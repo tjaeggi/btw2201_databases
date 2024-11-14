@@ -1,4 +1,4 @@
-## LE04 – Einführungs SQL und Python mit SQLite-Datenbank
+# LE04 – Einführungs SQL und Python mit SQLite-Datenbank
 
 Mit Python kann auch auf eine Datenbank zugegriffen werden. Die Kommunikation mit der Datenbank erfolgt über eine vereinheitlichte Schnittstelle.
 Als Abfragesprache verwenden wir auch hier SQL, welche wir in unserem Python-Code einbetten.
