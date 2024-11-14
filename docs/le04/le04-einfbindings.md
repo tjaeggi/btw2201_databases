@@ -1,3 +1,7 @@
+---
+pdf: true
+---
+
 ## LE04 – Einführung Bindings
 
 Mit Binding versteht man die Übergabe von Variablenwerten in SQL-Statements. Damit können User-Eingaben in SQL-Statements übernommen werden.

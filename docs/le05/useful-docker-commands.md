@@ -1,3 +1,6 @@
+---
+pdf: true
+---
 # Useful Docker commands
 
 These commands can be used in the terminal. Docker-Desktop provides features for the same in the GUI.
