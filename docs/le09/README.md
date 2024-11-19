@@ -33,8 +33,14 @@ Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab
 
 
 ### Literatur:
+
+JOIN-Beispiele erklärt:
 [Download JOINs.pdf](../static/JOINs.pdf){:download="JOINs.pdf"}
 
-### Übungsdatenbank zur Literatur:
+Subqueries - Unterabfragen erklärt;
+[Download Unterabfragen-SubQueries.pdf](../static/Unterabfragen-SubQueries.pdf){:download="Unterabfragen-SubQueries.pdf"}
+
+
+### passende Übungsdatenbank zu den Literaturhinweisen:
 
 [Download books.sql](../static/books.sql){:download="books.sql"}
