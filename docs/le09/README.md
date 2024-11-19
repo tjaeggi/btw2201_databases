@@ -28,3 +28,13 @@ Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab
   ![Image title](../static/ERM-schuldb2.png){ width="800" }
   <figcaption>ERM der schuldb2-Datenbank</figcaption>
 </figure>
+
+## Zusätzliches Material
+
+
+### Literatur:
+[Download JOINs.pdf](../static/JOINs.pdf){:download="JOINs.pdf"}
+
+### Übungsdatenbank zur Literatur:
+
+[Download books.sql](../static/books.sql){:download="books.sql"}
