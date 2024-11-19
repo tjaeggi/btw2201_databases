@@ -10,7 +10,6 @@ Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab
 
 [Download bibliothek.sql](../static/bibliothek.sql){:download="bibliothek.sql"}
 
-[Download ERM-books-DB](../static/ERM-books-db.png){:download="ERM-books-db.png"}
 
 <figure markdown="span">
   ![Image title](../img/ERMbibliothek.png){ width="800" }
