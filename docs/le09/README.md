@@ -29,18 +29,18 @@ Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab
   <figcaption>ERM der schuldb2-Datenbank</figcaption>
 </figure>
 
-## Zusätzliches Material
 
+## Literatur
 
-### Literatur:
-
-JOIN-Beispiele erklärt:
+### JOIN-Beispiele
 [Download JOINs.pdf](../static/JOINs.pdf){:download="JOINs.pdf"}
 
-Subqueries - Unterabfragen erklärt;
+### Subqueries - Unterabfragen
 [Download Unterabfragen-SubQueries.pdf](../static/Unterabfragen-SubQueries.pdf){:download="Unterabfragen-SubQueries.pdf"}
 
+### Transaktionen
+[Download Transaktionen.pdf](../static/Transaktionen.pdf){:download="Transaktionen.pdf"}
 
-### passende Übungsdatenbank zu den Literaturhinweisen:
+## Übungsdatenbank zu den Literaturhinweisen
 
 [Download books.sql](../static/books.sql){:download="books.sql"}
