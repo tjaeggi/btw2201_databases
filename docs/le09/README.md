@@ -6,15 +6,15 @@
 
 Auf die beiliegende Demodatenbank wird in den PPT's auf Moodle referenziert. Für die Übungen werden wir eine andere Datenbank verwenden.
 
-Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab und führen Sie books.sql aus. Anschliessend `Refresh All` ausführen, damit die DB sichtbar wird.
+Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab und führen Sie bibliothek.sql aus. Anschliessend `Refresh All` ausführen, damit die DB sichtbar wird.
 
-[Download books.sql](../static/books.sql){:download="books.sql"}
+[Download bibliothek.sql](../static/bibliothek.sql){:download="bibliothek.sql"}
 
 [Download ERM-books-DB](../static/ERM-books-db.png){:download="ERM-books-db.png"}
 
 <figure markdown="span">
-  ![Image title](../static/ERM-books-db.png){ width="800" }
-  <figcaption>ERM der books-Datenbank</figcaption>
+  ![Image title](../img/ERMbibliothek.png){ width="800" }
+  <figcaption>ERM der Bibliothek-Datenbank</figcaption>
 </figure>
 
 
