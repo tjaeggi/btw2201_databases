@@ -1,7 +1,5 @@
 # LE08-Table-JOINs and Transactions
 
-
-
 ## Demodatenbank books (PPT)
 
 Auf die beiliegende Demodatenbank wird in den PPT's auf Moodle referenziert. Für die Übungen werden wir eine andere Datenbank verwenden.
@@ -10,15 +8,12 @@ Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab
 
 [Download bibliothek.sql](../static/bibliothek.sql){:download="bibliothek.sql"}
 
-
 <figure markdown="span">
   ![Image title](../img/ERMbibliothek.png){ width="800" }
   <figcaption>ERM der Bibliothek-Datenbank</figcaption>
 </figure>
 
-
-## Demodatenbank schuldb2 für Übungsaufgaben UE09-xx
-
+## Demodatenbank schuldb2 für Übungsaufgaben UE08-xx
 
 [Download schuldb2.sql](../static/schuldb2.sql){:download="schuldb2.sql"}
 
@@ -33,6 +28,7 @@ Zum Erstellen der DB öffnen Sie in der  {==MySQL Workbench==} ein neues SQL-Tab
 ## Literatur
 
 ### JOIN-Beispiele
+
 [Download JOINs.pdf](../static/JOINs.pdf){:download="JOINs.pdf"}
 
 ### Subqueries - Unterabfragen
