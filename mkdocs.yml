@@ -165,11 +165,11 @@ nav:
   - 'LE07-REPETITION': 
       - le07/README.md
       - 'UE07-01-Übungen': le07/ue07-01.md
-  - 'LE08-Kompetenznachweis': 
+  - 'Kompetenznachweis': 
       - lekn/README.md
-  - 'LE09-Table-JOINs-Transactions': 
-      - le09/README.md
-      - 'UE09-01-INNER JOIN': le09/ue09-01.md
-      - 'UE09-02-LEFT-/RIGHT-JOIN': le09/ue09-02.md
-      - 'UE09-03-Unterabfragen': le09/ue09-03.md
-      - 'UE09-04-INSERT-SELECT': le09/ue09-04.md
+  - 'LE08-Table-JOINs': 
+      - le08/README.md
+      - 'UE08-01-INNER JOIN': le08/ue08-01.md
+      - 'UE08-02-LEFT-/RIGHT-JOIN': le08/ue08-02.md
+      - 'UE08-03-Unterabfragen': le08/ue08-03.md
+      - 'UE08-04-INSERT-SELECT': le08/ue08-04.md
