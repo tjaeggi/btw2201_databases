@@ -173,7 +173,7 @@ nav:
       - 'UE08-02-LEFT-/RIGHT-JOIN': le08/ue08-02.md
       - 'UE08-03-Unterabfragen': le08/ue08-03.md
       - 'UE08-04-INSERT-SELECT': le08/ue08-04.md
-  - 'LE09-Tranaktion-INDEX': 
+  - 'LE09-INDEX-Transaktion': 
       - le08/README.md
-      - 'UE09-01-Transaktion': le09/ue09-01.md
-      - 'UE09-02- INDEX': le09/ue09-02.md
+      - 'UE09-01-INDEX': le09/ue09-01.md
+      - 'UE09-02-Transaktionen': le09/ue09-02.md
