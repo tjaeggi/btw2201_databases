@@ -177,6 +177,8 @@ nav:
       - le09/README.md
       - 'UE09-01-INDEX': le09/ue09-01.md
       - 'UE09-02-Transaktionen': le09/ue09-02.md
+      - 'UE09-03-etwas Python': le09/ue09-03.md
+      - 'UE09-04-Transaktion mit Python und MySQL': le09/ue09-04.md
   - 'LE10-ORM': 
       - le10/README.md
       - 'UE10-01': le10/ue10-01.md
