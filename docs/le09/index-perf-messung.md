@@ -20,7 +20,7 @@
 [Download 02-IDX_Messung_bank_bankneu.sql](../static/02-IDX_Messung_bank_bankneu.sql){:download="02-IDX_Messung_bank_bankneu.sql"}
 
 
-!!! question "Aufgabe"
+!!! example "Aufgabe"
 
     Welchen Performance-Faktor erreichen Sie bei 10'000'000 Records? Dazu im 2. SQL das LIMIT setzen. Ansonsten werden 380 Mio Records generiert. Meine Hardware hat es geschluckt. Ihre? Wenn Sie Zweifel haben, beginnen Sie zuerst mit 10 Mio. Das sollte bei allen funktionieren.
 
