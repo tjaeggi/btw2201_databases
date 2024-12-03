@@ -183,4 +183,4 @@ nav:
       - 'MySQL-Python: Verbindungsvarianten': le09/ue09-05.md
   - 'LE10-ORM': 
       - le10/README.md
-      - 'UE10-01': le10/ue10-01.md
+      - 'PeeWee-Beispiel': le10/PeeWee_Example.md
