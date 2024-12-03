@@ -186,4 +186,5 @@ nav:
       - 'PeeWee-Einführungsbeispiel': le10/PeeWee_Example.md
       - 'UE10-01 Aufgabe mit PeeWee Teil1': le10/ue10-01.md
       - 'UE10-02 Aufgabe mit PeeWee Teil2': le10/ue10-02.md
+      - 'UE10-03 eigenes ORM erstellen': le10/ue10-03.md
 
