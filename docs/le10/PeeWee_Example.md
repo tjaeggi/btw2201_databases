@@ -23,6 +23,10 @@ Beantworte folgende Fragen:
 * In welchem Zusammenhang steht die Funktion `PrimaryKeyField()` in PeeWee, welche hier nicht verwendet wird. Der PrimaryKey wird aber trotzdem erstellt...
 
 
+Die offizielle Dokumentation zum `peewee`-Framework findet ihr [hier](https://docs.peewee-orm.com/en/latest/){:target="_blank"}.          
+
+
+
 ``` py linenums="1"
 from peewee import *
 import pymysql

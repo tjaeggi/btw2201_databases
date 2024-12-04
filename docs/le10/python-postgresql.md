@@ -3,11 +3,10 @@
 
 Das vorliegende Beispiel soll als Referenz für folgende Aufgaben dienen:
 
-* erstellt eine Verbindung mit dem PostgreSQL-RDBMS
-* erstellt eine Datenbank btw2201_test
-* erstellt eine Tabelle
-* fügt Records in die Tabelle ein
-* selektiert records aus der Tabelle
+* Verbindung mit dem PostgreSQL-RDBMS erstellen
+* Tabellen erstellen
+* Records in Tabellen einfügen
+* Records aus Tabellen lesen
 
 
 ## Installiere die Library `psycopg2`
@@ -23,7 +22,7 @@ pip install psycopg2-binary
 Kreiere mit pgadmin eine Datenbank mit dem Namen `btw2201_test`
 
 
-## Python Script für die Erstellung einer Tabelle, Rows und einem Query
+## Python Script für die Erstellung einer Tabelle, Rows und einem Query für eine bestehende Database
 
 ``` py linenums="1"
 import psycopg2
