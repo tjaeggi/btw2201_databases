@@ -181,7 +181,7 @@ nav:
       - 'UE09-03-Transaktion mit Python': le09/ue09-03.md
       - 'UE09-04-Chinook-Python-ERM': le09/ue09-04.md
       - 'MySQL-Python: Verbindungsvarianten': le09/ue09-05.md
-  - 'LE10-ORM': 
+  - 'LE10-ORM und Einstieg in PostgreSQL': 
       - le10/README.md
       - 'PeeWee-Einführungsbeispiel': le10/PeeWee_Example.md
       - 'UE10-01 Aufgabe mit PeeWee Teil1': le10/ue10-01.md
@@ -189,3 +189,4 @@ nav:
       - 'UE10-03 eigenes ORM erstellen': le10/ue10-03.md
       - 'PostgreSQL installieren': le10/postgresql-install.md
       - 'Python mit PostgreSQL verbinden': le10/python-postgresql.md
+      - 'UE10-04 Mit PostgreSQL arbeiten': le10/ue10-04.md
