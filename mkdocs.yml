@@ -190,3 +190,5 @@ nav:
       - 'PostgreSQL installieren': le10/postgresql-install.md
       - 'Python mit PostgreSQL verbinden': le10/python-postgresql.md
       - 'UE10-04 Mit PostgreSQL arbeiten': le10/ue10-04.md
+  - 'LE11-Timeseries Datenbanken': 
+      - le11/README.md
