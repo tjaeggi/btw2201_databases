@@ -193,3 +193,4 @@ nav:
   - 'LE11-Timeseries Datenbanken': 
       - le11/README.md
       - 'Einführung TSDB und InfluxDB': le11/tsdb-einfuehrung.md
+      - 'InfluxDB installieren': le11/inst-influxdb-docker.md
