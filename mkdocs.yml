@@ -194,3 +194,5 @@ nav:
       - le11/README.md
       - 'Einführung TSDB und InfluxDB': le11/tsdb-einfuehrung.md
       - 'InfluxDB installieren': le11/inst-influxdb-docker.md
+      - 'UE11-01': le11/ue11-01.md
+      - 'UE11-02': le11/ue11-02.md
