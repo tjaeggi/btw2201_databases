@@ -196,3 +196,4 @@ nav:
       - 'InfluxDB installieren': le11/inst-influxdb-docker.md
       - 'UE11-01': le11/ue11-01.md
       - 'UE11-02': le11/ue11-02.md
+      - 'UE11-03 Option': le11/ue11-03.md

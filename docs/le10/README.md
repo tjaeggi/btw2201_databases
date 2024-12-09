@@ -7,3 +7,7 @@
 
 
 
+
+
+
+[Pros and Cons of ORM](https://www.timescale.com/blog/orms-in-production-postgresql-friend-or-foe/){:target="_blank"}
