@@ -192,3 +192,4 @@ nav:
       - 'UE10-04 Mit PostgreSQL arbeiten': le10/ue10-04.md
   - 'LE11-Timeseries Datenbanken': 
       - le11/README.md
+      - 'Einführung TSDB': le11/tsdb-einfuehrung.md
