@@ -5,7 +5,7 @@ Eine Zeitreihendatenbank (Time Series Database, TSDB) ist speziell für das Spei
 allgemeine Eigenschaften von Zeitreihendatenbanken:
 
 * Indizierung über Zeitstempel: Zeitstempel sind der Hauptindex für die Daten.
-* Skalierbarkeit: Sie können große Datenmengen verarbeiten, oft mehrere 100.000 Messwerte pro Sekunde.
+* Skalierbarkeit: Sie können grosse Datenmengen verarbeiten, oft mehrere 100.000 Messwerte pro Sekunde.
 * Keine starke Konsistenzgarantien: Stattdessen bieten sie Skalierbarkeit und schnelle Abfragen.
 * Automatische Datenreduktion: Ältere Daten können automatisch gelöscht oder komprimiert werden.
 * Zeitbasierte Abfragen: Abfragen basierend auf Zeitstempeln sind einfach und schnell
@@ -14,8 +14,8 @@ allgemeine Eigenschaften von Zeitreihendatenbanken:
 
 InfluxDB ist eine beliebte Open-Source-Zeitreihendatenbank, die für die Verwaltung und Analyse von Zeitreihendaten entwickelt wurde. Hier sind einige ihrer spezifischen Eigenschaften:
 
-* **Skalierbarkeit**: InfluxDB kann große Datenmengen effizient verarbeiten
-* **Datenkompression**: Große Datenmengen können komprimiert werden, um Speicherplatz zu sparen.
+* **Skalierbarkeit**: InfluxDB kann grosse Datenmengen effizient verarbeiten
+* **Datenkompression**: Grosse Datenmengen können komprimiert werden, um Speicherplatz zu sparen.
 * **Datenrichtlinien**: Es ermöglicht die Festlegung von Richtlinien, um genau zu bestimmen, wo bestimmte Daten gespeichert werden
 * **Echtzeit-Datenverarbeitung**: InfluxDB kann Echtzeit- und parallel eintreffende Daten effizient speichern und analysieren.
 * Flexibilität: Sie kann sowohl lokal als auch in der Cloud betrieben werden und unterstützt verschiedene Programmiersprachen.
