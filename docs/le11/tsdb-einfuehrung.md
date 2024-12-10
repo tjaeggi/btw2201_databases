@@ -153,6 +153,13 @@ from(bucket: "sensor_data")
 *Flux ist eine mächtige und flexible Abfragesprache, die speziell für die Arbeit mit Zeitreihendaten optimiert ist. Ihre Eigenschaften ermöglichen komplexe und umfassende Datenanalysen, die über einfache SQL-Abfragen hinausgehen.*
 
 
+## Hinweis zu Query-Sprachen in InfluxDB
+
+!!! note "Query Sprachen in InfluxDB"
+    Bei den Versionen 0.x und 1.x von **InfluxDB** wurde die Sprache *InfluxQL* verwendet. Wir arbeiten hier mit der Version 2.7. In Version 2.x wurde *InfluxQL* durch *Flux* abgelöst. Hinweise dazu finden sich [hier](https://docs.influxdata.com/influxdb/v2/get-started/query/?t=influx+CLI){:target="_blank"} unter *Query data with InfluxQL*.
+
+
+
 ## Links
 
 [Get started with InfluxDB and Key Concepts](https://docs.influxdata.com/influxdb/v2/get-started/){:target="_blank"}

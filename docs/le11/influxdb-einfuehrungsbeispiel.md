@@ -143,5 +143,3 @@ Flux ist eine Data scripting language designed for querying, analyzing, and acti
 
 
 
-
-
