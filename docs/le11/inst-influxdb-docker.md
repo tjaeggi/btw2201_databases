@@ -3,13 +3,13 @@
 
 Führen Sie folgende Schritte aus:
 
-## Start Docker-Desktop auf Ihrem Notebook
+## Start Docker-Desktop auf Notebook
 
 Stellen Sie sicher, dass Sie eingeloggt sind. 
 
 <figure markdown="span">
   ![Image title](../img/03-12-2024_20-54-59.png){ width="600" }
-  <figcaption>Docker-Desktop gestartet und angemeldet</figcaption>
+  <figcaption>Docker-Desktop aktualisiert und angemeldet</figcaption>
 </figure>
 
 Führen Sie ein update des Docker-Desktops aus, falls das notwendig ist. 
@@ -23,7 +23,7 @@ mkdir influxdb
 cd influxdb
 ```
 
-## Erstellung des docker-compose-Files
+## Erstellung des `docker-compose.yml`-Files
 
 
 ```yaml title="docker-compose.yml"
@@ -146,3 +146,27 @@ Führen Sie das Python Programmierbeispiel durch. Verwende jedoch immer Dein gen
     * **Organisation**: `org="BFH"`
     * **Bucket**: `bucket="MYBUCKET"`
     * Initialisierungsstring client: `client = InfluxDBClient(url=url, token=token, org=org)`
+
+Angelehnt an das Beispiel in *Get Started* würde ein Skript zum Schreiben der Testdaten so ausschauen
+
+``` py
+import influxdb_client, os, time
+from influxdb_client import InfluxDBClient, Point, WritePrecision
+from influxdb_client.client.write_api import SYNCHRONOUS
+
+client = InfluxDBClient(url="http://localhost:8086", token="IHR TOKEN", org="BFH")
+
+bucket="MYBUCKET"
+
+write_api = client.write_api(write_options=SYNCHRONOUS)
+
+for value in range(5):
+  point = (
+    Point("measurement1")
+    .tag("tagname1", "tagvalue1")
+    .field("field1", value)
+  )
+  write_api.write(bucket=bucket, org="BFH", record=point)
+  time.sleep(1) # separate points by 1 second
+
+```
