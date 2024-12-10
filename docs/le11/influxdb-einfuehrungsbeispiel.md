@@ -1,3 +1,7 @@
+---
+pdf: true
+---
+
 # Einführungsbeispiel mit InfluxDB und Python
 
 Hier ist ein vollständiges Python-Skript, das zeigt, wie man Sensordaten in ein InfluxDB-Bucket lädt und anschliessend einige Basisabfragen durchführt.

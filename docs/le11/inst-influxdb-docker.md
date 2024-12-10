@@ -1,3 +1,7 @@
+---
+pdf: true
+---
+
 # Installation von InfluxDB mit docker 
 
 

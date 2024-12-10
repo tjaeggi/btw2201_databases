@@ -1,3 +1,7 @@
+---
+pdf: true
+---
+
 # Eigenschaften TSDB und InfluxDB
 
 Eine Zeitreihendatenbank (Time Series Database, TSDB) ist speziell für das Speichern und Analysieren von Zeitreihendaten optimiert
