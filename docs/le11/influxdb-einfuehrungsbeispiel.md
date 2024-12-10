@@ -119,7 +119,10 @@ client.close()
 
 
 
-**Informationen zu Flux - Data scripting language designed for querying, analyzing, and acting on data.**:
+## Dokumentation Flux 
+
+Flux ist eine Data scripting language designed for querying, analyzing, and acting on data
+
 
 [Flux overview](https://docs.influxdata.com/flux/v0/get-started/){:target="_blank"}
 
