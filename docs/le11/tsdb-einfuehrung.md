@@ -2,7 +2,7 @@
 pdf: true
 ---
 
-# Eigenschaften TSDB und InfluxDB
+# Eigenschaften Timeseries-Datenbanken (TSDB) und InfluxDB
 
 Eine Zeitreihendatenbank (Time Series Database, TSDB) ist speziell für das Speichern und Analysieren von Zeitreihendaten optimiert
 
@@ -26,8 +26,8 @@ Hier sind einige ihrer spezifischen **Eigenschaften**:
 * **Echtzeit-Datenverarbeitung**: InfluxDB kann Echtzeit- und parallel eintreffende Daten effizient speichern und analysieren.
 * Flexibilität: Sie kann sowohl lokal als auch in der Cloud betrieben werden und unterstützt verschiedene Programmiersprachen.
 * **Zeitreihen-Daten**: InfluxDB speichert Datenpunkte, die mit Zeitstempeln versehen sind, wie z.B. Temperaturmessungen, Leistungsmetriken oder Finanzdaten
-* **Abfragesprache Flux**: InfluxDB verwendet eine eigene Abfragesprache namens *InfluxQL* für die Datenabfrage und Analyse. Ab InfluxDB 2.0 wird auch die neue Abfragesprache *Flux* unterstützt, die für ETL-Prozesse optimiert ist.
-* **Datenmodell**: Die Daten werden in drei Hauptkomponenten gespeichert: Measurements, Fields und Tags. Measurements sind ähnlich wie Tabellen, Fields sind die Werte und Tags sind zusätzliche Metadaten, die die Daten kategorisieren2
+* **Abfragesprache Flux**: InfluxDB verwendet eine eigene Abfragesprache namens *InfluxQL* für die Datenabfrage und Analyse. Ab InfluxDB 2.0 wird die neue Abfragesprache *Flux* unterstützt, die für ETL-Prozesse optimiert ist.
+* **Datenmodell**: Die Daten werden in drei Hauptkomponenten gespeichert: *Measurements*, *Fields* und *Tags*. *Measurements* sind ähnlich wie Tabellen, *Fields* sind die Werte und *Tags* sind zusätzliche Metadaten, die die Daten kategorisieren2
 * InfluxDB ist besonders nützlich für Anwendungen wie **IoT** und **Überwachung und Analyse von Sensordaten**
 
 ### InfluxDB - der *Bucket*
@@ -40,7 +40,7 @@ In InfluxDB ist ein *Bucket* eine grundlegende Datenspeichereinheit, die sowohl 
 * **Zugriffskontrolle**
     * Buckets ermöglichen es, granulare Zugriffskontrollen durchzusetzen. Das bedeutet, dass Benutzer unterschiedliche Berechtigungen für verschiedene Buckets haben können.
 * **Datenanreicherung und Abfragen**
-    * Daten können in Buckets geschrieben, abgerufen und analysiert werden, wobei InfluxDB's Abfragesprachen wie InfluxQL oder Flux verwendet werden.
+    * Daten können in Buckets geschrieben, abgerufen und analysiert werden, wobei InfluxDB's Abfragesprachen wie InfluxQL oder *Flux* verwendet werden.
 
 **Beispiel:**
 
