@@ -5,7 +5,7 @@
 
 <figure markdown="span">
   ![Image title](../img/Zeitreihendaten.png){ width="600" }
-  <figcaption>Timeseries Databases</figcaption>
+  <figcaption>Timeserie s Databases</figcaption>
 </figure>
 
 
