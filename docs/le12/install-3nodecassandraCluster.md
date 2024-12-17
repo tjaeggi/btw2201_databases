@@ -164,7 +164,7 @@ nach `docker compose up -d` kann es einen Moment dauern bis alle Cluster-Nodes u
 
 <figure markdown="span">
   ![Image title](../img/17-12-2024_18-59-57.png){ width="300" }
-  <figcaption>Das Starten der 3 Cluster-nodes dauert max. 1 Minute </figcaption>
+  <figcaption>Das Starten der 3 Cluster-nodes dauert..</figcaption>
 </figure>
 
 
@@ -177,7 +177,7 @@ Kontrolle im docker-Desktop, ob alle Container laufen. Punkte sind grün!
 oder mit `docker ps -a`
 
 <figure markdown="span">
-  ![Image title](../img/17-12-2024_19-22-58.png){ width="800" }
+  ![Image title](../img/17-12-2024_19-22-58.png){ width="1200" }
   <figcaption>Check mit CLI</figcaption>
 </figure>
 
