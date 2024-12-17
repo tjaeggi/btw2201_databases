@@ -1,0 +1,203 @@
+site_name: WING - btw2201-Databases
+site_url: https://tjaeggi.github.io/btw2201_databases/
+theme:
+  name: material
+  font:
+    #text: Roboto
+    # text: Open Sans
+    text: Noto Sans
+    #code: Red Hat Mono
+    code: Noto Mono
+    #code: Ubuntu Mono
+  logo:  assets/LearningServicesLogo.png
+  favicon: assets/LearningServicesLogo.png
+  #icon:
+  #  logo: fontawesome/solid/face-smile-beam
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: light blue
+      accent: deep orange
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: light blue
+      accent: deep orange
+  features:
+    - navigation.footer
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+
+plugins:
+  - glightbox
+  - search
+  - enumerate-headings:
+      enabled: false
+      toc_depth: 6
+      strict: true
+
+  - exporter:
+      logging:
+        level: debug
+      formats:
+        pdf:
+          explicit: true
+          concurrency: 16
+          stylesheets:
+            - resources/stylesheets/pdf.scss
+          #covers:
+          #  front: resources/templates/covers/front.html.j2
+          #  back: resources/templates/covers/back.html.j2
+          browser:
+            debug: false
+          aggregator:
+            #enabled: !ENV [MKDOCS_EXPORTER_PDF_AGGREGATOR, true ]
+            enabled: false
+            output: documentation.pdf
+            covers: front
+      buttons:
+        - title: View as PDF
+          icon: material-file-move-outline
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes:
+            target: _blank
+            href: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.href
+        - title: Download as PDF
+          icon: material-file-download-outline
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+ 
+extra:
+  social:
+    - icon: simple/linkedin
+      link: https://www.linkedin.com/in/thomas-j%C3%A4ggi-026350141/
+
+copyright: Copyright &copy; 2024 Thomas Jäggi, Berne University of Applied Sciences
+
+markdown_extensions:
+  - attr_list
+  - tables
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.keys
+  - pymdownx.critic
+
+
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+exclude_docs: |
+  spick/installationsjournal.md
+  spick/spick_markdown.md
+
+nav:
+  - 'ABOUT THIS WEBSITE': index.md
+  - 'LE01-CSVs mit Python': 
+      - 'UE01-1-Aufgaben': le01/ue01-1.md
+      - 'UE01-1-Lösungsvorschläge': le01/Loesungsvorschlaege_ue01-1.md
+  - 'LE02-SELECT Abfragen': 
+      - 'UE02-Chinook-DB': le02/UE02-1.md
+      - 'UE02-1-Aufgaben I': le02/Loesungsvorschlaege_UE02-1.md
+      - 'UE02-2-Aufgaben II': le02/UE02-2.md
+  - 'LE03-Weiterführende SELECTs':
+      - 'UE03-1-AB-Ranking Table und View': le03/UE03-01-AB.md
+      - 'UE03-2-Datum und Zeit': le03/UE03-2.md
+      - 'UE03-3-CSV in SQLite': le03/UE03-3.md
+      - 'UE03-4-SQL-Abfragen Strasserverz.': le03/UE03-4.md
+  - 'LE04-SQL und Python':
+      - 'Einführung Python mit SQLite': le04/le04-einfpythonsqlite.md
+      - 'Einführung Bindings': le04/le04-einfbindings.md
+      - 'Einführung CRUD': le04/le04-einfcrud.md
+      - 'UE04-01': le04/ue04-01.md
+      - 'UE04-02': le04/ue04-02.md
+      - 'UE04-03': le04/ue04-03.md
+      - 'UE04-04': le04/ue04-04.md
+  - 'LE05-Docker-MySQL-Relationenmodell': 
+      - le05/README.md
+      - 'DOCKER-Installation MySQL-phpmyadmin': le05/instMySQL.md
+      - 'Nützliche Docker-Befehle': le05/useful-docker-commands.md
+      - 'UE05-01-MySQL und erste Datenbank': le05/ue05-01.md
+      - 'UE05-02-Datentransfer von SQLite-DB nach MySQL': le05/ue05-02.md
+      - 'UE05-03-Relationenmodell-PK-FK-ref.Integrität': le05/ue05-03.md
+  - 'LE06-Normalformen/ERM': 
+      - le06/README.md
+      - 'UE06-01-Funktionale und Transitive Abhängigkeit - 3NF - SQL': le06/ue06-01.md
+      - 'UE06-02-Kardinalität-ERM': le06/ue06-02.md
+      - 'UE06-03-Schuldatenbank in MySQL': le06/ue06-03.md
+  - 'LE07-REPETITION': 
+      - le07/README.md
+      - 'UE07-01-Übungen': le07/ue07-01.md
+  - 'Kompetenznachweis': 
+      - lekn/README.md
+  - 'LE08-Table-JOINs': 
+      - le08/README.md
+      - 'UE08-01-INNER JOIN': le08/ue08-01.md
+      - 'UE08-02-LEFT-/RIGHT-JOIN': le08/ue08-02.md
+      - 'UE08-03-Unterabfragen': le08/ue08-03.md
+      - 'UE08-04-INSERT-SELECT': le08/ue08-04.md
+  - 'LE09-INDEX-Transaktion': 
+      - le09/README.md
+      - 'UE09-01-INDEX': le09/ue09-01.md
+      - 'INDEX-PERFORMANCE': le09/index-perf-messung.md
+      - 'UE09-02-Transaktion mit SQL': le09/ue09-02.md
+      - 'UE09-03-Transaktion mit Python': le09/ue09-03.md
+      - 'UE09-04-Chinook-Python-ERM': le09/ue09-04.md
+      - 'MySQL-Python: Verbindungsvarianten': le09/ue09-05.md
+  - 'LE10-ORM und Einstieg in PostgreSQL': 
+      - le10/README.md
+      - 'PeeWee-Einführungsbeispiel': le10/PeeWee_Example.md
+      - 'UE10-01 Aufgabe mit PeeWee Teil1': le10/ue10-01.md
+      - 'UE10-02 Aufgabe mit PeeWee Teil2': le10/ue10-02.md
+      - 'UE10-03 eigenes ORM erstellen': le10/ue10-03.md
+      - 'PostgreSQL installieren': le10/postgresql-install.md
+      - 'Python mit PostgreSQL verbinden': le10/python-postgresql.md
+      - 'UE10-04 Mit PostgreSQL arbeiten': le10/ue10-04.md
+  - 'LE11-Timeseries Datenbanken': 
+      - le11/README.md
+      - 'Einführung TSDB und InfluxDB': le11/tsdb-einfuehrung.md
+      - 'InfluxDB installieren': le11/inst-influxdb-docker.md
+      - 'Einführungsbeispiel': le11/influxdb-einfuehrungsbeispiel.md
+      - 'UE11-01': le11/ue11-01.md
+      - 'UE11-02': le11/ue11-02.md
+      - 'UE11-03 Option': le11/ue11-03.md
+      - 'UE11-04 Integrierte Aufgabe': le11/ue11-04.md
+  - 'LE12-NoSQL Datenbanken': 
+      - le12/README.md
