@@ -1,5 +1,5 @@
 <figure markdown="span">
-  ![Image title](../img/17-12-2024_20-29-46.png){ width="400" }
+  ![Image title](../img/17-12-2024_20-29-46.png){ width="600" }
   <figcaption></figcaption>
 </figure>
 
@@ -32,7 +32,6 @@ Bei Apache Cassandra ist der Prozess umgekehrt. Hier wird zuerst die Anwendung e
 
 Dieses Vorgehen, hier vereinfacht beschrieben,  ist nicht nur für Cassandra typisch, sondern für alle NoSQL-Datenbanken.
 
-**Diesen Approach werden Sie auch bemerken, wenn Sie im praktischen Teil die Tabellen für eine To-Do-Liste erstellen.**
 
 
 <figure markdown="span">
@@ -47,7 +46,7 @@ Die Consistency  kann jedoch mit der Anzahl eingesetzter Nodes in einem Cassandr
 
 
 <figure markdown="span">
-  ![Image title](../img/17-12-2024_20-35-23.png){ width="600" }
+  ![Image title](../img/17-12-2024_20-35-23.png){ width="800" }
   <figcaption></figcaption>
 </figure>
 
@@ -57,7 +56,7 @@ Cassandra ist somit eine horizontal skalierbare, opensource NoSQL Datenbank.
 Die Datenbank besteht aus mehreren Nodes, die logisch in einem Ring zusammengefasst sind. Die Nodes replizieren sich, so dass die DB stets konsistent ist. 
 
 <figure markdown="span">
-  ![Image title](../img/17-12-2024_20-38-04.png){ width="600" }
+  ![Image title](../img/17-12-2024_20-38-04.png){ width="800" }
   <figcaption></figcaption>
 </figure>
 
@@ -67,7 +66,7 @@ In der Dokumentation wird folgendes gesagt:
 ***„To double your capacity or double your throughput, double the number of nodes.“***
 
 <figure markdown="span">
-  ![Image title](../img/17-12-2024_20-38-34.png){ width="600" }
+  ![Image title](../img/17-12-2024_20-38-34.png){ width="800" }
   <figcaption></figcaption>
 </figure>
 
