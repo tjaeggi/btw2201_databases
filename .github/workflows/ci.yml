@@ -28,5 +28,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-exporter
       - run: pip install mkdocs-glightbox
+      - run: pip install docums-enumerate-headings-plugin
       - run: playwright install chrome --with-deps
       - run: mkdocs gh-deploy --force
