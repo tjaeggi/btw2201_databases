@@ -201,4 +201,6 @@ nav:
       - 'UE11-04 Integrierte Aufgabe': le11/ue11-04.md
   - 'LE12-NoSQL Datenbanken': 
       - le12/README.md
-      - 'Installation Apache Cassandra': le12/install-3nodecassandraCluster.md
+      - 'Installation Apache Cassandra als 3-Node-Cluster': le12/install-3nodecassandraCluster.md
+      - 'Tutorial': le12/ApacheCassandraTutorial.md
+      - 'Aufgabe': le12/NoSQL_Aufgabe.md

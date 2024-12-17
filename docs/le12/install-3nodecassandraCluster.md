@@ -187,7 +187,7 @@ oder mit `docker ps -a`
 
 `docker exec cassandra-3 nodetool status`
 
-Erst wenn alle Nodes up sind, ist der Cluster bereit. Jeder Node hat eine eigene IP-Adresse. Diese wird für die Kommunikation unter den Cluster-Nodes verwendet. 
+Erst wenn alle 3 Nodes up sind, ist der Cluster bereit. Jeder Node hat eine eigene IP-Adresse. Diese wird für die Kommunikation unter den Cluster-Nodes verwendet. 
 
 `UN` heisst: `Up` and `Normal`
 
