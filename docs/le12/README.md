@@ -1,4 +1,6 @@
-# LE12 - NoSQL
+# LE12 - NoSQL-Datenbanken
+
+
 
 ## Leverage the NoSQL boom
 
