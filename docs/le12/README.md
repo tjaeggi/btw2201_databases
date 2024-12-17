@@ -11,7 +11,7 @@
 
 <figure markdown="span">
   ![Image title](../img/17-12-2024_11-35-31.png){ width="1000" }
-  <figcaption>DB Lscape</figcaption>
+  <figcaption>DB Lserwecape</figcaption>
 </figure>
 
 
