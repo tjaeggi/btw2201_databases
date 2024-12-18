@@ -70,12 +70,12 @@ In der Dokumentation wird folgendes gesagt:
   <figcaption></figcaption>
 </figure>
 
-Die Message ist somit einfach: Je mehr Nodes, desto mehr Durchsatz.
+Die Message ist somit einfach: **Je mehr Nodes, desto mehr Durchsatz.**
 
 In diesem Zusammenhang bildet das Konzept der *Partitions* eine entscheidende Rolle.
 
 ### Partitions
-Daten können auf mehrere Nodes repliziert werden. Dies erhöht die Verfügbarkeit und Fehlertoleranz. In Cassandra exisitert der Begriff des R**eplication Factors RF**. Dieser besagt, auf wie vielen Nodes die Daten repliziert werden sollen. Wenn unser Cassandra System aus einem Node besteht, ist der RF=1. Mit RF=2 werden die Daten auf einem weiteren Node repliziert, usw.
+Daten können auf mehrere Nodes repliziert werden. Dies erhöht die Verfügbarkeit und Fehlertoleranz. In Cassandra exisitert der Begriff des **Replication Factors RF**. Dieser besagt, auf wie vielen Nodes die Daten repliziert werden sollen. Wenn unser Cassandra System aus einem Node besteht, ist der RF=1. Mit RF=2 werden die Daten auf einem weiteren Node repliziert, usw.
 
 Der Betrieb von Cassandra macht Sinn, wenn das System aus mehrere Nodes besteht. Alle Nodes zusammen bilden einen **Cluster** oder "Ring".
 **Nodes sind untereinander gleichwertig** und jeder Node hat dieselben Funktionalitäten wie alle andern. Man spricht hier auch von einer *masterless architecture*. 
