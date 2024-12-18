@@ -75,13 +75,13 @@ Die Message ist somit einfach: Je mehr Nodes, desto mehr Durchsatz.
 In diesem Zusammenhang bildet das Konzept der *Partitions* eine entscheidende Rolle.
 
 ### Partitions
-Daten können auf mehrere Nodes repliziert werden. Dies erhöht die Verfügbarkeit und Fehlertoleranz. In Cassandra exisitert der Begriff des Replication Factors RF. Dieser besagt, auf wie vielen Nodes die Daten repliziert werden sollen. Wenn unser Cassandra System aus einem Node besteht, ist der RF=1. Mit RF=2 werden die Daten auf einem weiteren Node repliziert, usw.
+Daten können auf mehrere Nodes repliziert werden. Dies erhöht die Verfügbarkeit und Fehlertoleranz. In Cassandra exisitert der Begriff des R**eplication Factors RF**. Dieser besagt, auf wie vielen Nodes die Daten repliziert werden sollen. Wenn unser Cassandra System aus einem Node besteht, ist der RF=1. Mit RF=2 werden die Daten auf einem weiteren Node repliziert, usw.
 
-Der Betrieb von Cassandra macht Sinn, wenn das System aus mehrere Nodes besteht. Alle Nodes zusammen bilden einen Cluster oder "Ring".
-Nodes sind untereinander gleichwertig und jeder Node hat dieselben Funktionalitäten wie alle andern. Man spricht hier auch von einer "masterless architecture". 
+Der Betrieb von Cassandra macht Sinn, wenn das System aus mehrere Nodes besteht. Alle Nodes zusammen bilden einen **Cluster** oder "Ring".
+**Nodes sind untereinander gleichwertig** und jeder Node hat dieselben Funktionalitäten wie alle andern. Man spricht hier auch von einer *masterless architecture*. 
 
-Jeder Node besitzt einen Satz von sogenannten Tokens. Diese Tokens spielen eine Rolle, wenn es darum geht, auf welchem Node innerhalb des Clusters die Daten abgespeichert werden sollen.  Dazu wird jeder verwaltbaren Datenzeile ein Partition Key zugeordnet. Dieser Key ist entscheidend für die Nodes, welche die Datenzeile abspeichern sollen. Wenn Daten in einem Cassandra Cluster eingefügt werden, wird als erster Schritt dieser Partition Key erstellt. Dieser Key bestimmt dann den Node, welcher für die Daten "verantwortlich" ist. Die Erstellung des Keys erfolgt durch das Generieren eines Hash-Wertes, welcher auf die Wertebereiche der Tokens abgestimmt ist, für welche die Nodes verantwortlich sind.
-Für die Zuweisung des Nodes ist der *Database Coodinator* verantwortlich. Jeder Node in einem Cluster kann diese Rolle als Coodinator übernehmen. Alle Nodes kommunizieren mit dem sogenannten *gossip*-Protokoll. Dieses Protokoll legt den aktuellen Coodinator fest. Das gossip-Protokoll legt auch fest, welcher Node für welche Token-Ranges verantwortlich ist. 
+Jeder Node besitzt einen Satz von sogenannten **Tokens**. Diese Tokens spielen eine Rolle, wenn es darum geht, auf welchem Node innerhalb des Clusters die Daten abgespeichert werden sollen.  Dazu wird jeder verwaltbaren Datenzeile ein **Partition Key** zugeordnet. Dieser Key ist entscheidend für die Nodes, welche die Datenzeile abspeichern sollen. Wenn Daten in einem Cassandra Cluster eingefügt werden, wird als erster Schritt dieser Partition Key erstellt. Dieser Key **bestimmt dann den Node, welcher für die Daten "verantwortlich" ist**. Die Erstellung des Keys erfolgt durch das Generieren eines **Hash-Wertes**, welcher auf die Wertebereiche der Tokens abgestimmt ist, für welche die Nodes verantwortlich sind.
+Für die Zuweisung des Nodes ist der *Database Coodinator* verantwortlich. Jeder Node in einem Cluster kann diese Rolle als Coodinator übernehmen. Alle Nodes kommunizieren mit dem sogenannten ***gossip*-Protokoll**. Dieses Protokoll legt den aktuellen Coodinator fest. Das gossip-Protokoll legt auch fest, welcher Node für welche Token-Ranges verantwortlich ist. 
 Wenn nun Daten im Cluster eingefügt werden, beispielsweise eine neue Zeile in einer Tabelle, bestimmt der aktuelle Coodinator die Partition Nummer, beispielsweise Nr. 59.
 Der Coordinator schaut nun, welcher Node für Token Nr 59 verantwortlich ist und leitet die Daten an diesen weiter. Dieser Node wird auch *Replica Node* genannt. Wenn RF > 1 ist, werden diese Daten an mehrere Nodes weitergeleitet. Bei RF=1 erhält nur ein Node die Daten.
 
@@ -109,7 +109,7 @@ Es ist so auch nicht erstaunlich, dass die Erfinder von Cassandra ehemalige Face
 </figure>
 
 
-Cassandra gilt als AP-System (Available Partition-tolerant) im Sinne des CAP-Theorems, welches Sie bereits kennen. Es "opfert" also das dritte Element in diesem Konzept, die Consistency. Diese Consistency kann jedoch parametriert werden, indem der *Consistency Level* *(CL)* in Cassandra eingestellt werden kann. Der CL besagt, wie viele Nodes im Cluster minimal ein Read/Write acknowledge dem Coordinator abgeben müssen, bevor die Operation als erfolgreich behandelt wird. Dieser *CL* basiert auf dem *Replication Factor RF*. Wenn RF=3 ist, müssen die Mehrheit der Nodes für eine Operation dem Coordinator ein *acknowledge* senden. In diesem Fall müssen das mindestens 2 Nodes machen. Wenn das nicht der Fall ist, wird die Operation vom Coodinator als nicht erfolgreich behandelt. Bei RF=6 ist der CL=(6/2+1)=4. Mindestens 4 Nodes müssen in diesem Fall ein acknowledge senden. Der *Consistency Level CL* wird auch als *Quorum* bezeichnet. 
+Cassandra gilt als **AP-System** (Available Partition-tolerant) im Sinne des CAP-Theorems, welches Sie bereits kennen. Es "opfert" also das dritte Element in diesem Konzept, die Consistency. Diese Consistency kann jedoch parametriert werden, indem der *Consistency Level* *(CL)* in Cassandra eingestellt werden kann. Der CL besagt, wie viele Nodes im Cluster minimal ein Read/Write acknowledge dem Coordinator abgeben müssen, bevor die Operation als erfolgreich behandelt wird. Dieser *CL* basiert auf dem *Replication Factor RF*. Wenn RF=3 ist, müssen die Mehrheit der Nodes für eine Operation dem Coordinator ein *acknowledge* senden. In diesem Fall müssen das mindestens 2 Nodes machen. Wenn das nicht der Fall ist, wird die Operation vom Coodinator als nicht erfolgreich behandelt. Bei RF=6 ist der CL=(6/2+1)=4. Mindestens 4 Nodes müssen in diesem Fall ein acknowledge senden. Der *Consistency Level CL* wird auch als *Quorum* bezeichnet. 
 
 
 
@@ -168,16 +168,16 @@ Damit wir ein Keyspace mit RF=3 erstellt. Die Strategie definiert, wie Daten in 
 
 !!! info "Warum starten wir mit 3 Nodes?"
 
-    * Es wird empfohlen, stets mit mindestens 3 Nodes ein Cassandra System zu betreiben.     
+    * Es wird empfohlen, stets mit **mindestens 3 Nodes** ein Cassandra System zu betreiben.     
 
-    * Wenn Consistency verlangt wird, benötigen wir ein Acknowlegement von mindestens 2 Nodes.    
+    * Wenn **Consistency** verlangt wird, benötigen wir ein **Acknowlegement von mindestens 2 Nodes**.    
 
     * Wenn ein Node ausfällt, ist der Cluster immer noch verfügbar, weil noch 2  Nodes vorhanden sind.    
 
     * Das Verständnis dazu wird im Verlaufe dieser Übungen entstehen.
 
 
-    Unsere 3 Nodes sollten also hiermit Up and Running sein:
+    Unsere 3 Nodes sollten also hiermit *Up* *and Running* sein:
     ```
     vmadmin@cassandravm:~/scripts$ docker exec cassandra-3 nodetool status
     Datacenter: datacenter1
@@ -203,15 +203,15 @@ cqlsh>
 ```
 
 
-Dieses Szenario hier ist realistisch für einen kleinen Cluster. In einer produktiven Umgebung würden die Nodes auf eigenen Rechnern laufen, um die Performance zu erhöhen.
+Dieses Szenario hier ist realistisch für einen kleinen Cluster. **In einer produktiven Umgebung würden die Nodes auf eigenen Rechnern laufen**, um die Performance zu erhöhen.
 
 Bevor wir beginnen Tabellen zu erstellen, ist es nützlich einige **Basics zum Tabellendesign** zu verstehen.
 
 ## Eintauchen und Hands-On in die Cassandra Architektur
-Cassandra ist eine dezentralisierte multi-node Datenbank, welche physisch über mehrere Standorte verteilt ist. Sie verwendet Replikation und Partitionen und ist dadurch enorm skalierbar für Lese- und Schreiboperationen.
+Cassandra ist eine *dezentralisierte multi-node Datenbank*, welche **physisch über mehrere Standorte** verteilt ist. Sie verwendet *Replikation* und *Partitionen* und ist dadurch enorm **skalierbar für Lese- und Schreiboperationen**.
 
 ### Dezentralisation
-Cassandra ist dezentral organisiert. Jeder Node ist gleichwertig; es sind Peers! Jeder Node agiert in verschiedenen Rollen und ohne zentralen Controller.
+Cassandra ist **dezentral organisiert**. Jeder Node ist gleichwertig; es sind Peers! Jeder Node agiert in verschiedenen Rollen und ohne zentralen Controller.
 
 Die dezentrale Architektur von Cassandra erlaubt es, dass Nodes ausfallen können und auch nodes hinzugefügt werden, ohne dass das ganze System dadurch gestört wird.
 
@@ -219,7 +219,7 @@ Die dezentrale Architektur von Cassandra erlaubt es, dass Nodes ausfallen könne
 
 Daten werden auf verschiedene Nodes repliziert. Wenn ein Request anliegt, kann dieser von jedem Node verarbeitet werden.
 
-Der initiale Request-Empfänger wird zu einem Coodinator Node für diesen Request. Wenn andere Nodes zwecks Konsistenzüberprüfung kontaktiert werden müssen, verlangt der Koordinator die benötigten Daten von den Replica Nodes.
+Der **initiale Request-Empfänger wird zu einem Coodinator Node** für diesen Request. Wenn andere Nodes zwecks Konsistenzüberprüfung kontaktiert werden müssen, verlangt der Koordinator die benötigten Daten von den Replica Nodes.
 
 Der Koordinator kann mit einem sogenannten  [Consistent Hashing Algorithmus](https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html?highlight=consistency#dataset-partitioning-consistent-hashing) den Node oder die Nodes ermitteln, welche die Daten bereitstellen können. 
 
@@ -241,13 +241,13 @@ Der Koordinator-Node ist für viele Dinge zuständig, z. Bsp. auch für das Repa
     Partitioning is a method of splitting and storing a single logical dataset in multiple databases. By distributing the data among multiple machines, a cluster of database systems can store larger datasets and handle additional requests.
 
 
-In Cassandra werden Daten in einem definierten Schema (Keyspace) verwaltet. Innerhalb dieses Schemas werden die Tabellen angelegt.
+In Cassandra werden Daten in einem definierten Schema, dem sogenannten *Keyspace* verwaltet. Innerhalb dieses *Keyspace* werden die Tabellen angelegt.
 
-Zusätzlich wird auch in Cassandra ein Primary Key für jede Tabelle definiert. Nur so ist eine eindeutige Identifizierung eines Datensatzes möglich.
+Zusätzlich wird auch in Cassandra ein *Primary Key* für jede Tabelle definiert. Nur so ist eine eindeutige Identifizierung eines Datensatzes möglich.
 
 Das Konzept der Primary Keys in Cassandra ist komplexer als in traditionellen relationalen Datenbanken, wie . Bsp, MySQL.
 
-In Cassandra beinhaltet ein Primary Key 2 Teile:
+**In Cassandra beinhaltet ein Primary Key 2 Teile**:
 * einen obligatorischen  **Partition Key** und
 * ein  optionales Set von  **Clustering Columns**.
 
@@ -303,7 +303,7 @@ CREATE TABLE users_by_country (
 );
 ```
 
-Pasten Sie den obigen CREATE-Befehl einfach in den `cqlsh`-Prompt. Es werden jeweils Punkte am Anfang der Zeile erscheinen, bis der Befehl abgeschlossen ist. Das sieht dann so aus:
+Pasten Sie den obigen CREATE-Befehl einfach in den `cqlsh`-Prompt. Es werden jeweils Punkte am Anfang der Zeile erscheinen, bis der Befehl mit `;` abgeschlossen ist. Das sieht dann so aus:
 
 
 <figure markdown="span">
@@ -349,7 +349,7 @@ Vielleicht stellen Sie sich hier die Frage, warum `country` als essentiellen Tei
 
 Dies wird klar, nachdem Sie hier die Basics von Cassandra  durchgearbeitet haben.
   
-Das Konzept des Partitioning ist die Grundlage für die enorme Skalierungsfähigkeit von Cassandra.
+Das **Konzept des Partitioning** ist die **Grundlage für die enorme Skalierungsfähigkeit** von Cassandra.
 In diesem Beispiel basieren die Partitionen auf dem `country`. Alle Zeilen (Rows) mit `country`=US werden in ein und derselben Partition gehalten. Alle andern Zeilen mit `country`=UK werden in einer andern Partition verwaltet.
 
 Neben dem Begriff *Partitioning* wird auch der Begriff *Shard* verwendet. Die Bedeutung ist dieselbe.
@@ -362,14 +362,14 @@ Neben dem Begriff *Partitioning* wird auch der Begriff *Shard* verwendet. Die Be
 
 
 Basierend auf dem Wert des Partition Keys werden Partitionen mit entsprechenden Daten gefüllt.
-Diese Partition Keys sind also zuständig, welche Nodes welche Partitionen verwalten.
+**Diese Partition Keys sind also zuständig, welche Nodes welche Partitionen verwalten.**
 Das Verteilen der Daten auf mehrere Nodes ist die Basis der Skalierbarkeit von Cassandra.
 
-Der User / die Anwendung liest oder schreibt die Daten, indem dazu mehrere Nodes involviert sind. Der Partition Key ist immer dafür verantwortlich, dass die richtigen Nodes angesprochen werden.
+Der User / die Anwendung liest oder schreibt die Daten, indem dazu **mehrere Nodes** involviert sind. Der Partition Key ist immer dafür verantwortlich, dass die richtigen Nodes angesprochen werden.
 
 Das Verständnis der Datenverteilung, basierend auf Partitionen, ist sehr wichtig beim Design einer Applikation.
 
-Hier unterscheidet sich Cassandra sehr stark gegenüber den klassischen relationalen Datenbanken.
+**Hier unterscheidet sich Cassandra sehr stark gegenüber den klassischen relationalen Datenbanken.**
 
 
 !!! info "Was bedeutet horizontale Skalierung??"
@@ -384,16 +384,16 @@ Der PK definiert die Spalte, um Records eindeutig zu identifizieren. Nur `countr
 Der Partition Key ist wichtig, um Daten gleichmässig zwischen Nodes zu verteilen und wichtig, um die Daten effizient lesen zu können. Das definierte Schema wurde so festgelegt, dass die Daten meist pro Land abgefragt werden sollen, deshalb wurde `country` als Partition Key definiert:
 `PRIMARY KEY ((country), user_email)`
 
-Eine Abfrage über alle Zeilen mit Selektion des Landes performed damit sehr gut: 
-cqlsh> 
-  SELECT * FROM users_by_country WHERE country='US';
+Eine Abfrage über alle Zeilen mit Selektion des Landes *performed* damit sehr gut: 
+
+`cqlsh> SELECT * FROM users_by_country WHERE country='US';`
   
 <figure markdown="span">
   ![Image title](../img/17-12-2024_21-11-06.png){ width="400" }
   <figcaption></figcaption>
 </figure>
   
-Ihre cqlsh-shell sendet den Request nur an einen Casandra-Node - by default.
+Ihre `cqlsh`-shell sendet den Request nur an einen Casandra-Node - by default.
 Dies bezeichnet man als *Consitency Level of One*.
 
 
@@ -475,9 +475,10 @@ cqlsh>
 SELECT * FROM users_by_email WHERE age=26 ALLOW FILTERING;
 ```
 
-Ohne  `ALLOW FILTERING` würde der Query nicht ausgeführt werden, bzw. eine Fehlermeldung wird dabei generiert. Dies soll verhindern, dass "expensive Queries", also Queries, welche eine hohe Last auf den Nodes erzeugen, abgesetzt werden.
+Ohne  `ALLOW FILTERING` würde der Query **nicht** ausgeführt werden, bzw. eine Fehlermeldung wird dabei generiert. Dies soll verhindern, dass "expensive Queries", also Queries, welche eine hohe Last auf den Nodes erzeugen, abgesetzt werden.
 
 Fehlermeldung, wenn `ALLOW FILTERING` nicht verwendet wird:
+
 `InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"`
 
 
@@ -492,25 +493,25 @@ Fehlermeldung, wenn `ALLOW FILTERING` nicht verwendet wird:
 
     Der Partition Key spielt eine zentrale Rolle bei der Organisation und Verwaltung von Daten in Apache Cassandra. Hier sind einige wichtige Aspekte und Bedeutungen des Partition Keys:
 
-    1. **Datenverteilung**: Der Partition Key bestimmt, auf welchem Knoten im Cassandra-Cluster die Daten gespeichert werden. Dies geschieht durch einen Hashing-Mechanismus, der sicherstellt, dass Daten gleichmäßig über alle Knoten verteilt werden. Dadurch wird eine optimale Lastverteilung und Skalierbarkeit erreicht.
+    1. **Datenverteilung**: Der Partition Key bestimmt, auf welchem Knoten im Cassandra-Cluster die Daten gespeichert werden. Dies geschieht durch einen *Hashing-Mechanismus*, der sicherstellt, dass Daten gleichmässig über alle Knoten verteilt werden. Dadurch wird eine optimale Lastverteilung und Skalierbarkeit erreicht.
     2. **Performance und Abfrageoptimierung**: Da der Partition Key verwendet wird, um Daten auf spezifischen Knoten zu speichern, können Abfragen, die den Partition Key verwenden, sehr effizient und schnell ausgeführt werden. Abfragen, die den Partition Key nicht enthalten, können jedoch langsamer sein, da sie alle Knoten im Cluster durchsuchen müssen.
     3. **Datenlokalisierung**: Daten, die denselben Partition Key teilen, werden auf demselben Knoten gespeichert. Dies erleichtert das Abrufen und die Verarbeitung zusammenhängender Daten. Zum Beispiel können alle Informationen zu einem spezifischen Benutzer unter einem einzigen Partition Key gespeichert werden, was schnelle und effiziente Abfragen ermöglicht.
-    4. **Replikation und Fehlertoleranz**: Der Partition Key spielt auch eine Rolle bei der Replikation von Daten. Cassandra verwendet den Partition Key, um zu bestimmen, auf welchen Knoten Daten repliziert werden, basierend auf der Konfiguration des Replikationsfaktors. Dies erhöht die Fehlertoleranz und die Verfügbarkeit der Daten.
+    4. **Replikation und Fehlertoleranz**: Der Partition Key spielt auch eine Rolle bei der Replikation von Daten. Cassandra verwendet den Partition Key, um zu bestimmen, auf welchen Knoten Daten repliziert werden, basierend auf der Konfiguration des *Replikationsfaktors*. Dies erhöht die Fehlertoleranz und die Verfügbarkeit der Daten.
     5. **Datenmodellierung**: Bei der Gestaltung des Datenmodells in Cassandra ist die Wahl des Partition Keys von entscheidender Bedeutung. Ein gut gewählter Partition Key kann die Abfrageleistung erheblich verbessern und die Effizienz der Datenverteilung sicherstellen.
 
-    Zusammengefasst ist der Partition Key ein kritischer Bestandteil von Cassandra, der die Datenverteilung, Abfrageleistung, Fehlertoleranz und die gesamte Effizienz des Systems beeinflusst.
+    Zusammengefasst ist der *Partition Key* ein **kritischer Bestandteil von Cassandra**, der die Datenverteilung, Abfrageleistung, Fehlertoleranz und die gesamte Effizienz des Systems beeinflusst.
 
 
 ### Replication
 
-Skalierbarkeit mit nur Partitionierung ist limitiert! Dieses Element wird ergänzt mit dem Konzept der Replikation!
+Skalierbarkeit mit nur Partitionierung ist limitiert! Dieses Element wird ergänzt mit dem **Konzept der Replikation**!
 
 Betrachten Sie write requests, welche nur eine Partition betreffen. Alle requests würden an einen einzigen Node gesendet werden, welcher für diese Partition zuständig ist. Seine CPU, das Memory, der I/O-Durchsatz wären sehr belastet. Zusätzlich möchten Sie auch, dass der Request bearbeitet wird, wenn der Node nicht verfügbar ist.
 
-Hier kommt das Konzept der Replikation zum Zug. Durch das Duplizieren der Daten auf mehrere Nodes, sog. Replicas, kann der Durchsatz erhöht werden, indem Nodes simultan Daten bereitstellen können. Auch erhöht dieses Konzept die Verfügbarkeit, weil ein Ausfall eines Nodes von andern Nodes abgefangen werden kann.
+Hier kommt das Konzept der Replikation zum Zug. Durch das Duplizieren der Daten auf mehrere Nodes, sog. *Replicas*, kann der Durchsatz erhöht werden, indem Nodes simultan Daten bereitstellen können. Auch erhöht dieses Konzept die Verfügbarkeit, weil ein Ausfall eines Nodes von andern Nodes abgefangen werden kann.
 
-In Cassandra kann deshalb für jeden Keyspace ein Replication Factor (RF) definiert werden.
-Unseren Keyspace M165 haben wir mit eine RF von 3 festgelegt.
+In Cassandra kann deshalb **für jeden Keyspace ein Replication Factor (RF)** definiert werden.
+Unseren Keyspace `M165` haben wir mit eine RF von 3 festgelegt.
 
 ```
 cqlsh> CREATE KEYSPACE M165
@@ -520,15 +521,13 @@ cqlsh> CREATE KEYSPACE M165
   };
 ```
   
-RF=1:
-Nur eine Kopie eines Records wird im Cluster gehalten. Wenn der Node mit dieser Kopie ausfällt, dass der Record nicht abgefragt werden.
+**RF=1:** Nur eine Kopie eines Records wird im Cluster gehalten. Wenn der Node mit dieser Kopie ausfällt, dass der Record nicht abgefragt werden.
 
-RF=2:
-Ein Record wird auf 2 verschiedenen Nodes gehalten. Jeder Node ist gleichgestellt. Es gibt keinen "Master"-Replica-Node. Ein Node kann auch ausfallen und die Abfrage wird trotzdem erfolgreich sein.
+**RF=2:** Ein Record wird auf 2 verschiedenen Nodes gehalten. Jeder Node ist gleichgestellt. Es gibt keinen "Master"-Replica-Node. Ein Node kann auch ausfallen und die Abfrage wird trotzdem erfolgreich sein.
 
-Als generelle Regel sollte der Replication Factor RF nie grösser als die Anzahl Nodes in einem Cluster sein. Man kann aber den Replication Factor zu Beginn höher einstellen und dann später die gewünschte Anzahl Nodes hinzufügen.
+Als generelle Regel sollte der Replication Factor **RF nie grösser als die Anzahl Nodes** in einem Cluster sein. Man kann aber den Replication Factor zu Beginn höher einstellen und dann später die gewünschte Anzahl Nodes hinzufügen.
   
-In produktiven Umgebungen ist ein RF von 3 empfohlen. Dies gewährt Sicherheit, dass es sehr unwahrscheinlich wird, dass Daten verloren gehen oder kein Zugriff darauf erfolgen kann.
+In produktiven Umgebungen ist ein **RF von 3 empfohlen**. Dies gewährt Sicherheit, dass es sehr unwahrscheinlich wird, dass Daten verloren gehen oder kein Zugriff darauf erfolgen kann.
 
 Auch im Fall von inkonsistenten Daten (die Replicas haben unterschiedliche Daten), können die einzelnen Nodes nach dem Daten-Status abgefragt werden. Es kann dann entschieden werden, ob der Status der Mehrheit der Nodes der gültige sein soll.
 
@@ -573,9 +572,9 @@ Wie verhalten wir uns in dieser Situation?
 </figure>
 
 1. Soll das Schreiben verhindert werden, weil Node 2 nicht erreichbar ist? Dies würde bedeuten, dass wir die Verfügbarkeit opfern zugunsten der Datenkonsistenz.
-2. Akzeptiren wir den Schreibzugriff auf Node 1 und lassen wir Lesezugriffe von Node 1 und 2 zu?Das System wäre mit diesem Entscheid weiterhin verfügbar. Wir riskieren jedoch, dass Daten nicht auf jedem Replication Node identisch ist, weil ja hier in unserem Beispiel Node 1 mit Node 2 nicht replizieren kann. In diesem Fall opfern wir Datenkonsistenz zugunsten der Verfügbarkeit.
+2. Akzeptiren wir den Schreibzugriff auf Node 1 und lassen wir Lesezugriffe von Node 1 und 2 zu? Das System wäre mit diesem Entscheid weiterhin verfügbar. Wir riskieren jedoch, dass Daten nicht auf jedem Replication Node identisch ist, weil ja hier in unserem Beispiel Node 1 mit Node 2 nicht replizieren kann. In diesem Fall opfern wir Datenkonsistenz zugunsten der Verfügbarkeit.
 
-Die entscheidende Frage ist: Wollen wir Verfügbarkeit oder Datenkonsistenz?
+**Die entscheidende Frage ist: Wollen wir Verfügbarkeit oder Datenkonsistenz?**
 
 Ein anderer Faktor ist folgender: 
 Das Garantieren von Konsistenz bedingt, dass wir mehrere Nodes anfragen müssen. Dies versursacht eine "Wartezeit", um alle Antworten der Nodes auswerten zu können. Wollen wir diese Wartezeit (Latency) zugunsten der Konsistenz akzeptieren?
@@ -788,7 +787,7 @@ After learning about partitioning, replication and consistency levels, let's hea
 You've already learned a lot about the fundamentals of Cassandra.
 
 
-Let's put your knowledge into practice and design a to-do list application that receives many more reads than writes.
+Let's put your knowledge into practice and design a **to-do list application** that receives many more reads than writes.
 
 The best approach is to analyze some user stories you want to fulfill with your table design:
 
@@ -864,7 +863,7 @@ You need to set a partition key to ensure the data is organised for efficient re
 
 ### Keep Data in Sync Using `BATCH` Statements
 
-Due to the duplication, you need to take care to keep data consistent. In Cassandra, you can do that by using `BATCH` statements that give you an all-at-once guarantee, also called atomicity.
+Due to the duplication, you need to take care to **keep data consistent**. In Cassandra, you can do that by using `BATCH` statements that give you an all-at-once guarantee, also called *atomicity*.
 
 This might sound like a lot of work, and yes, it is a lot of work! If you have a table schema with many relationships, you will have more work compared to a normalized table schema.
 
@@ -872,7 +871,7 @@ This might sound like a lot of work, and yes, it is a lot of work! If you have a
 
 !!! info "What is a normalized table schema?"
 
-    A normalized table schema is optimized to contain no duplications. Instead, data is referenced by ID and needs to be joined later. In Cassandra, you try to avoid normalized tables. It is not even possible to write a query that contains a join.
+    A normalized table schema is optimized to contain no duplications. Instead, data is referenced by ID and needs to be joined later. In Cassandra, you **try to avoid normalized tables**. **It is not even possible to write a query that contains a join**.
 
 
 
@@ -885,7 +884,7 @@ Batch statements are cheap on a single partition, but dangerous when you execute
 
 In general, batches are costly.
 
-There are other ways to apply changes eventually. If you need to execute them very often, consider using async queries instead with a proper retry mechanism. 
+There are other ways to apply changes eventually. If you need to execute them very often, consider using *async queries* instead with a proper retry mechanism. 
 
 Depending on the way you access your Cassandra, the driver might already offer you retry capabilities.
 
@@ -932,17 +931,17 @@ All the data exists and can be accessed in a performant way using all the define
 
 ### Tombstones
 
-Cassandra is a multi-node cluster that contains replicated data on different nodes. Therefore, a delete can not simply delete a particular record.
+Cassandra is a multi-node cluster that contains **replicated data on different nodes**. **Therefore, a delete can not simply delete a particular record**.
 
-For a delete operation, a new entry is added to the commit-log like for any other insert and update mutation. These deletes are called tombstones, and they flag a specific value for deletion.
+For a delete operation, a new entry is added to the commit-log like for any other insert and update mutation. These deletes are called *tombstones*, and they **flag a specific value for deletion.**
 
 Tombstones exist only on disk and can be analyzed and traced as described in this blog post: [About Deletes and Tombstones in Cassandra.](https://thelastpickle.com/blog/2016/07/27/about-deletes-and-tombstones.html)
 
-In Cassandra, you can set a time to live on inserted data. After the time passed, the record will be automatically deleted. When you set a time to live (TTL), a tombstone is created with a date in the future.
+In Cassandra, you can set a time to live on inserted data. After the time passed, the record will be automatically deleted. When you set a time to live (`TTL`), a tombstone is created with a date in the future.
 
 In comparison, a regular delete query is the same with the difference that the time date of the tombstone is set to the moment the delete is executed.
 
-Let’s create a tombstone by setting a TTL in seconds which basically function as a delayed delete:
+Let’s create a tombstone by setting a `TTL` in seconds which basically function as a **delayed delete**:
 
 
 
@@ -971,19 +970,19 @@ Unfortunately, there are also others.
 
 For example, when you insert a null value, a tombstone is created for the given cell. And as mentioned for delete requests, different types of tombstones are stored. 
 
-By default, after 10 days, data that is marked by a tombstone is freed with a compaction execution. This time can be configured and reduced using the `gc_grace_seconds` option in the Cassandra configuration.
+By default, after 10 days, data that is marked by a tombstone is freed with a *compaction execution*. This time can be configured and reduced using the `gc_grace_seconds` option in the Cassandra configuration.
 
 
 
 !!! info "When is a compaction executed?"
 
-    When the operation is executed depends mainly on the selected strategy. In general, a compaction execution takes SSTables and creates     new SSTables out of it.
+    When the operation is executed depends mainly on the selected strategy. In general, a compaction execution takes SSTables and creates new SSTables out of it.
     The most common executions are:    
 
     * When conditions for a compaction are true, that triggers compaction execution when data is inserted
-    * A manually executed major compaction using the nodetool
+    * A manually executed major compaction using the `nodetool`
 
-Sometimes, tombstones not deleted for the following reasons:
+Sometimes, tombstones are not deleted for the following reasons:
 
 * **Null values mark** values to be deleted and are stored as tombstones. This can be avoided by either replacing null with a static value, or not setting the value at all if the value is null
 * **Empty lists and sets** are similar to null for Cassandra and create a tombstone, so don’t insert them if they’re empty. Take care to avoid null pointer exceptions when storing and retrieving data in your application
@@ -1000,11 +999,11 @@ Usually you would never have that many tombstones. But mistakes happen, and you 
 
 ### UPDATEs sind INSERTs und INSERTs sind UPDATEs !
 
-In Cassandra, everything is append-only. There is no difference between an update and insert.
+In Cassandra, **everything is append-only**. There is **no difference between an update and insert**.
 
 You already learned that a primary key defines the uniqueness of a row. If there is no entry yet, a new row will appear, and if there is already an entry, the entry will be updated. It does not matter if you execute an update or insert a query.
 
-The primary key in our example is set to user_email and creation_date that defines record uniqueness.
+The primary key in our example is set to `user_email` and `creation_date` that defines record uniqueness.
 
 Let’s insert a new record:
 
@@ -1051,10 +1050,4 @@ So `UPDATE` and `INSERT` are technically the same. Don’t think that an `INSERT
 
 The same applies to an `UPDATE` — it will be executed, even if the row doesn’t exist.
 
-The reason for this is because, by design, Cassandra rarely reads before writing to keep performance high. The only exceptions are described in the next section about lightweight transactions.
-
-But, there are restrictions what actions you can execute based on an update or insert:
-
-* Counters can only be changed with `UPDATE`, not with Insert
-* `IF NOT EXISTS` can only be used in combination with an `INSERT`
-* `IF EXISTS` can only be used in combination with an `UPDATE`
+**The reason for this is because, by design, Cassandra rarely reads before writing to keep performance high.**
