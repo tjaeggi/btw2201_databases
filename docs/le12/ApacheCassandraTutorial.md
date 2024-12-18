@@ -162,7 +162,9 @@ Als Antwort erhalten Sie alle existierenden *keyspaces*. Ein *Keyspace* enthält
 
 Bevor wir Tabellen anlegen, müssen wir einen Keyspace erstellen. Wir erstellen diesen mit einem Replication Factor 3. Daten werden also auf allen 3 Nodes verwaltet:
 
-`cqlsh> CREATE KEYSPACE M165 WITH REPLICATION = { 'class' : 'NetworkTopologyStrategy', 'datacenter1': 3};`
+`cqlsh>` Eingabe:
+
+`CREATE KEYSPACE M165 WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};`
 
 Damit wir ein Keyspace mit RF=3 erstellt. Die Strategie definiert, wie Daten in verschiedenen Datacenters repliziert werden soll. Vergleiche dazu das Kapitel zu den Partitions.
 
