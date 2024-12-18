@@ -13,7 +13,7 @@ services:
     image: "cassandra:latest"  # cassandra:5.0.2
     container_name: "cassandra-1"
     ports:
-      - 7000:7000
+      - 7000:7000    # Mac-User: 7001:7000
       - 9042:9042
     networks:
       - cassandra-net
