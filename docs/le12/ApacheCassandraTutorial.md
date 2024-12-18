@@ -192,7 +192,7 @@ Damit wir ein Keyspace mit RF=3 erstellt. Die Strategie definiert, wie Daten in 
 
 
 
-Die Nodes hören auf den Ports 9042, 9043 und 9044 auf Client-Requests. Den jeweils verwendeten Port sehen Sie beim Starten der cqlsh-Shell:
+Die Nodes hören auf den Ports `9042`, `9043` und `9044` auf Client-Requests. Den jeweils verwendeten Port sehen Sie beim Starten der cqlsh-Shell:
 `docker exec -it cassandra-1 cqlsh`
 
 ```
