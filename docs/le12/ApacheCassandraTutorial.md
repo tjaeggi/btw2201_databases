@@ -5,11 +5,11 @@
 
 !!! note "Zielsetzung des Tutorials"
 
-    Erfahren Sie, wie eine horizontal skalierbare Datenbank funktioniert. Das gibt Ihnen einen Eindruck, wie Millionen von Endusern mit derselben Anwendung arbeiten können. Beispiele von Anwendungen grosser Firmen, die du sicher kennst: Netflix, Spotify, X, LinkedIn, Apple, Facebook, Uber, Pinterest, JPMorgan Chase, Visa, NetApp,.. 
+    Erfahren Sie, wie eine *horizontal skalierbare Datenbank* funktioniert. Das gibt Ihnen einen Eindruck, wie Millionen von Endusern mit derselben Anwendung arbeiten können. Beispiele von Anwendungen grosser Firmen, die wir alle kennen: Netflix, Spotify, X, LinkedIn, Apple, Facebook, Instagramm, Uber, Pinterest, JPMorgan Chase, Visa, NetApp,.. 
     
-    All diese Firmen setzen für Ihre global verteilten Anwendungen (unter anderen) *Apache Cassandra* ein.
+    All diese Firmen setzen für Ihre global verteilten Anwendungen (unter anderen) ***Apache Cassandra*** ein.
 
-    Weiter ist es eine gute Erfahrung, während der Ausbildung einmal mit NoSQL gearbeitet zu haben. Diese Datenbanken sind bei Anwendungen im Bereich von BigData omnipräsent. 
+    Weiter ist es eine gute Erfahrung, während der Ausbildung einmal mit **NoSQL** gearbeitet zu haben. Diese Datenbanken sind bei Anwendungen im Bereich von *BigData* omnipräsent. 
 
 
 ## Eigenschaften von Cassandra
