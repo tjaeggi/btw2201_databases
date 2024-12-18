@@ -166,7 +166,7 @@ Bevor wir Tabellen anlegen, müssen wir einen Keyspace erstellen. Wir erstellen 
 
 `CREATE KEYSPACE M165 WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};`
 
-Die Syntax wir [hier](https://www.tutorialspoint.com/cassandra/cassandra_create_keyspace.htm){:target="_blank"} erklärt:
+Die Syntax wir [hier](https://www.tutorialspoint.com/cassandra/cassandra_create_keyspace.htm){:target="_blank"} erklärt.
 
 
 
