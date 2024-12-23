@@ -28,7 +28,7 @@ Im unteren Bild entsprechen die Kreise einzelner Nodes. Die Verbindungen zwische
 Im Relationalen Modell wird zuerst die Datenstruktur analysiert und dann am Ende die Applikation darauf angewendet. Die Applikation ruft Queries auf, um die benötigten Informationen aus dem Datenmodell zu holen.
 
 
-Bei Apache Cassandra ist der Prozess umgekehrt. Hier wird zuerst die Anwendung entwickelt. Es wird entschieden, welche Queries in der Anwendung ausgeführt werden müssen. Dies führt zur Überlegung, wie das logische Datenmodell aussehen muss.Nachdem die Queries und das Datenmodell definiert sind, werden die Daten in Cassandra geladen.
+Bei Apache Cassandra ist der Prozess umgekehrt. Hier wird zuerst die Anwendung entwickelt. Es wird entschieden, welche Queries in der Anwendung ausgeführt werden müssen. Dies führt zur Überlegung, wie das logische Datenmodell aussehen muss. Nachdem die Queries und das Datenmodell definiert sind, werden die Daten in Cassandra geladen.
 
 Dieses Vorgehen, hier vereinfacht beschrieben,  ist nicht nur für Cassandra typisch, sondern für alle NoSQL-Datenbanken.
 
@@ -166,7 +166,7 @@ Bevor wir Tabellen anlegen, müssen wir einen Keyspace erstellen. Wir erstellen 
 
 `CREATE KEYSPACE M165 WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};`
 
-Die Syntax wir [hier](https://www.tutorialspoint.com/cassandra/cassandra_create_keyspace.htm){:target="_blank"} erklärt.
+Die Syntax wird [hier](https://www.tutorialspoint.com/cassandra/cassandra_create_keyspace.htm){:target="_blank"} erklärt.
 
 
 

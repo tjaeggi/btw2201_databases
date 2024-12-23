@@ -3,12 +3,14 @@ site_url: https://tjaeggi.github.io/btw2201_databases/
 theme:
   name: material
   font:
-    #text: Roboto
+    # text: Roboto
     # text: Open Sans
-    text: Noto Sans
-    #code: Red Hat Mono
-    code: Noto Mono
-    #code: Ubuntu Mono
+    # text: Noto Sans
+    # code: Red Hat Mono
+    # code: Noto Mono
+    # code: Ubuntu Mono
+    text: Nunito
+    code: Roboto Mono
   logo:  assets/LearningServicesLogo.png
   favicon: assets/LearningServicesLogo.png
   #icon:
