@@ -90,6 +90,7 @@ extra:
 copyright: Copyright &copy; 2024 Thomas Jäggi, Berne University of Applied Sciences
 
 markdown_extensions:
+  - def_list
   - attr_list
   - tables
   - md_in_html
@@ -206,3 +207,9 @@ nav:
       - 'Installation Apache Cassandra als 3-Node-Cluster': le12/install-3nodecassandraCluster.md
       - 'Tutorial': le12/ApacheCassandraTutorial.md
       - 'Aufgabe': le12/NoSQL_Aufgabe.md
+  - 'LE13-Repetitionslektion':
+      - le13/README.md 
+  - 'LE14-Prüfungsvorbereitung':
+      - le14/README.md
+  - 'Schlussprüfung': 
+      - schlusspruefung/README.md
