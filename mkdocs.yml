@@ -209,8 +209,8 @@ nav:
       - 'Aufgabe': le12/NoSQL_Aufgabe.md
   - 'LE13-Repetitionslektion':
       - le13/README.md
-      - 'ERM-Python-Praxis': le13/ue13-praxis.md
-      - 'Theorie': le13/ue13-theorie.md
+      - 'PRAKTISCHE AUFGABEN': le13/ue13-praxis.md
+      - 'THEORETISCHE AUFGABEN': le13/ue13-theorie.md
   - 'LE14-Prüfungsvorbereitung':
       - le14/README.md
   - 'Schlussprüfung': 
