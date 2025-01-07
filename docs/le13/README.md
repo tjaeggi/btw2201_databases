@@ -18,7 +18,7 @@ An der Abschlussprüfung wird es 2 Fragetypen geben:
 - THEORETISCHE AUFGABEN (45 Minuten)
 
     * KPRIM und Freitext Aufgaben zu den behandelten Themen
-    * zu den theoretischen Aufgabentypen zählen auch Aufgaben zur Beurteilung von vorgegebenem Code (SQL, Python)
+    * zu den theoretischen Aufgabentypen zählen auch Aufgaben zur Beurteilung von vorgegebenem Code (SQL, Python) oder einem vorgegebenem ERM
     * **keine Hilfsmittel erlaubt**
 
 

@@ -54,5 +54,24 @@
     `ERROR 1824 (HY000): Failed to open the referenced table 'person'`
 
 
+!!! question "UE13-Theorie-Frage 6"
+
+    Beschreibe was nachfolgendes Query macht. Dazu sei möglichst detailliert und beschreibe/interpretiere das resultierende Datenset. Es dürfen auch grosszügige (aber sinnvolle) Annahmen gemacht werden.
+
+    `SELECT COUNT(DISTINCT `address`) AS `street` FROM `contacts`;`
+
+!!! question "UE13-Theorie-Frage 7"
+
+    Erkläre in Deinen eigenen Worten, was ein ORM konzeptionell macht.
+
+!!! question "UE13-Theorie-Frage 8"
+    Beschreibe die Idee hinter einem JOIN und was ist der Unterschied eines RIGHT JOIN und eines LEFT JOIN?
 
 
+!!! question "UE13-Theorie-Frage 9"
+
+    Sie sind dabei eine Datenbank zu modelieren: Es gibt verschiedene Kategorien und dazugehörige Produkte. Dabei soll es möglich sein, dass beliebige Unterkategorien erstellt werden können. Ein Produkt gehört entweder einer Kategorie oder Unterkategorie an. Beschreiben Sie in Worten (kein Code) eine mögliche Lösung.
+
+!!! question "UE13-Theorie-Frage 10"
+
+    Nenne vier verschiedene Datentypen eines Datenbankmanagementsystems und gebe Beispielwerte an.
