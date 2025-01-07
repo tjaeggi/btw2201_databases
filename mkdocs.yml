@@ -87,7 +87,7 @@ extra:
     - icon: simple/linkedin
       link: https://www.linkedin.com/in/thomas-j%C3%A4ggi-026350141/
 
-copyright: Copyright &copy; 2024 Thomas Jäggi, Berne University of Applied Sciences - BFH
+copyright:  2024 &copy; Thomas Jäggi, Berne University of Applied Sciences - Berner Fachhochschule - BFH
 
 markdown_extensions:
   - def_list
