@@ -115,7 +115,7 @@ Generiere dir als Erstes ein API Token. Dieses werden wir für alles Weitere als
   <figcaption></figcaption>
 </figure>
 
-Beispieltoken:
+Beispieltoken ⚠️ NICHT kopieren ist ein Beispiel! ⚠️
 ```
 h9Bdxy-qm6djPdE5fP8PD8SnEwp46A88cFlgJU-VKlIraRbdQlHHJut44Lelf1Tqr1Ck4WyeYqYD5dZPSILCtw==
 ```

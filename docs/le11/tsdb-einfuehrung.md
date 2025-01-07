@@ -2,17 +2,22 @@
 pdf: true
 ---
 
-# Eigenschaften Timeseries-Datenbanken (TSDB) und InfluxDB
+# Einführung InfluxDB als Vertreter einer TSDB
 
-Eine Zeitreihendatenbank (Time Series Database, TSDB) ist speziell für das Speichern und Analysieren von Zeitreihendaten optimiert
+InfluxDB ist eine **NoSQL-Datenbank**. Sie ist speziell für das Speichern und Abfragen von Zeitreihendaten entwickelt worden, also Daten, die über die Zeit hinweg aufgezeichnet werden, wie Sensordaten, Metriken, Events und Logs.
+Mehr Details zu NoSQL-Datenbanken folgen in LE12.
 
-**allgemeine Eigenschaften** von Zeitreihendatenbanken:
+## Merkmale von InfluxDB
 
-* **Indizierung über Zeitstempel**: Zeitstempel sind der Hauptindex für die Daten.
-* **Skalierbarkeit**: Sie können grosse Datenmengen verarbeiten, oft mehrere 100.000 Messwerte pro Sekunde.
-* Keine starke Konsistenzgarantien: Stattdessen bieten sie Skalierbarkeit und schnelle Abfragen.
-* Automatische **Datenreduktion**: Ältere Daten können automatisch gelöscht oder komprimiert werden.
-* **Zeitbasierte Abfragen**: Abfragen basierend auf Zeitstempeln sind einfach und schnell
+- **Zeitreihen-Datenbank**: Optimiert für das Speichern von Datenpunkten, die mit Zeitstempeln versehen sind.
+- **SQL-ähnliche Abfragesprache**: Verwendet **InfluxQL**, eine SQL-ähnliche Abfragesprache, die speziell für Zeitreihendaten entwickelt wurde.
+- **Hohe Schreibgeschwindigkeit**: InfluxDB ist auf hohe Schreibgeschwindigkeiten ausgelegt und kann grosse Mengen an Daten effizient verarbeiten.
+- **Retention Policies**: Unterstützt Aufbewahrungsrichtlinien, um Daten nach einer bestimmten Zeit automatisch zu löschen oder zu archivieren.
+- Einfach zu verwenden: Installation und Konfiguration sind relativ einfach, und es bietet eine Vielzahl von Visualisierungs- und Analysewerkzeugen.
+
+
+
+
 
 ## Spezifische Eigenschaften von InfluxDB
 
@@ -30,7 +35,14 @@ Hier sind einige ihrer spezifischen **Eigenschaften**:
 * **Datenmodell**: Die Daten werden in drei Hauptkomponenten gespeichert: *Measurements*, *Fields* und *Tags*. *Measurements* sind ähnlich wie Tabellen, *Fields* sind die Werte und *Tags* sind zusätzliche Metadaten, die die Daten kategorisieren2
 * InfluxDB ist besonders nützlich für Anwendungen wie **IoT** und **Überwachung und Analyse von Sensordaten**
 
-### InfluxDB - der *Bucket*
+## Anwendungsbereiche von InfluxDB
+- **Überwachung und Metriken**: In der IT zur Überwachung von Servern, Netzwerken und Anwendungen.
+- **IoT (Internet der Dinge)**: Zur Verarbeitung und Analyse von Sensordaten aus IoT-Geräten.
+- **Finanzanalyse**: Zur Analyse und Überwachung von Finanzmarktdaten und Handelsaktivitäten.
+
+## InfluxDB-Konzepte
+
+### Bucket
 In InfluxDB ist ein *Bucket* eine grundlegende Datenspeichereinheit, die sowohl Zeitreihendaten als auch Metadaten speichert. Hier sind einige wesentliche Punkte:
 
 * **Zeitbasierte Retention**
@@ -57,7 +69,7 @@ In diesem Beispiel filterst du Daten aus dem `sensor_data` Bucket und berechnest
 
 Ein *Bucket* in InfluxDB ist ein zentraler Punkt, um Daten mit klaren Aufbewahrungsrichtlinien, Zugriffssteuerungen und einer strukturierten Organisation zu verwalten. Es ist ein **grundlegender Baustein im Datenmanagement mit InfluxDB**.
 
-### InfluxDB - das *Measurement* (Messung)
+### Measurement (Messung)
 
 In InfluxDB ist ein *Measurement* (Messung) ein logisches Konzept, das einer Tabelle in relationalen Datenbanken ähnelt.
 
@@ -106,9 +118,9 @@ from(bucket: "my_bucket")
 
 Ein ***Measurement*** in InfluxDB ist eine zentrale Komponente, die eine **Sammlung von Datenpunkten** darstellt, die über die Zeit hinweg erfasst wurden. Es enthält *Fields* für die tatsächlichen Messwerte und *Tags* für die Kategorisierung und schnelle Abfrage von Daten.
 
-### InfluxDB - die Abfragesprache *Flux*
+### Abfragesprache *Flux*
 
-Die Abfragesprache *Flux* ist eine leistungsstarke, auf Zeitreihendaten spezialisierte Sprache, die für die Verwaltung und Analyse von Daten in InfluxDB entwickelt wurde.
+Die Abfragesprache *Flux* ist eine auf Zeitreihendaten spezialisierte Sprache, die für die Verwaltung und Analyse von Daten in InfluxDB entwickelt wurde.
 
 
 
@@ -147,7 +159,7 @@ Die Abfragesprache *Flux* ist eine leistungsstarke, auf Zeitreihendaten speziali
       |> myFunc()
       ```
 
-      [Define custom functions](https://docs.influxdata.com/flux/v0/define-functions/){:target="_blank"}
+      siehe dazu: [Define custom functions](https://docs.influxdata.com/flux/v0/define-functions/){:target="_blank"}
 
 6. Support für Task Automation
       1. Flux kann für die Automatisierung von Aufgaben verwendet werden, z.B. für geplante Abfragen und Benachrichtigungen. Dies ist nützlich für kontinuierliche Datenverarbeitung und Überwachung.
@@ -198,12 +210,12 @@ combined_data
 
 
 
-*Flux ist eine mächtige und flexible Abfragesprache, die speziell für die Arbeit mit Zeitreihendaten optimiert ist. Ihre Eigenschaften ermöglichen komplexe und umfassende Datenanalysen, die über einfache SQL-Abfragen hinausgehen.*
+*Flux ist eine Abfragesprache, die speziell für die Arbeit mit Zeitreihendaten optimiert ist. Ihre Eigenschaften ermöglichen Datenanalysen, die über einfache SQL-Abfragen hinausgehen.*
 
 
-## Hinweis zu Query-Sprachen in InfluxDB
+#### Hinweis zu Query-Sprachen in InfluxDB
 
-!!! note "Query Sprachen in InfluxDB"
+!!! info "Query Sprachen in InfluxDB"
     Bei den Versionen 0.x und 1.x von **InfluxDB** wurde die Sprache *InfluxQL* verwendet. Wir arbeiten hier mit der Version 2.7. In Version 2.x wurde *InfluxQL* durch *Flux* abgelöst. Hinweise dazu finden sich [hier](https://docs.influxdata.com/influxdb/v2/get-started/query/?t=influx+CLI){:target="_blank"} unter *Query data with InfluxQL*.
 
 
