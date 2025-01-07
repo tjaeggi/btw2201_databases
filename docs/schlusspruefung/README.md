@@ -14,10 +14,14 @@ Ort: W.23
 - Teil 1 - Theorie:   14:00 - 14:45
 
     * Kprim und Freitext Fragen
-    * Keine Hilfsmittel
+    * **Keine Hilfsmittel**
 
 - Teil 2 - Praxis:   15:00 - 16:15
 
     * Erarbeiten von SQL- und Python-Scripts
     * Persönliches Arbeitsgerät samt allen Ressourcen
-        * Internet, Moodle, GitLab, Übungen. LLM's nicht erlaubt.
+        * Internet, Moodle, Übungen und Inhalte auf [dieser](https://tjaeggi.github.io/btw2201_databases/){:target="_blank"} Seite 
+        * **LLM's nicht erlaubt**.
+
+
+
