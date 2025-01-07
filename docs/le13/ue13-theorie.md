@@ -1,5 +1,5 @@
 
-# Thoriefragen
+# Theoretische Fragen
 
 
 !!! question "UE13-Theorie-Frage 1 - NoSQL oder RDBMS?"

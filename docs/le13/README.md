@@ -1,1 +1,26 @@
 # LE13 - Repetitionslektion
+
+Die folgenden Aufgaben sind Beispiele wie sie an der Abschlussprüfung vorkommen können. Einige Fragen wurden aus Prüfungen der vergangenen Jahre übernommen.
+
+An der Abschlussprüfung wird es 2 Fragetypen geben:
+
+- PRAKTISCHE AUFGABEN (75 Minuten)
+
+    * Das Erstellen von ERM's aufgrund einer fachlichen Anforderung. Dazu kann Bleistift und Papier verwendet werden.
+    * Das Erstellen von SQL-Queries zum Ermitteln der gewünschten Informationen 
+    * Das Erstellen von DB's mit Tabellen, Keys und Constraints inkl. dem Einlesen von Demodatensätzen mit Hilfe von SQL-Skripts
+    * Python-Programmierung in Verbindung mit einer Datenbank. Eingaben, Queries mit Verarbeitung der Daten mittels eines Python-Skripts wird im Rahmen der gemachten Übungen gefordert.
+    * Ihr Arbeitsgerät ist mit allen Tools, welche wir für die Übungen verwendet haben, ausgestattet und lauffähig. Insbesondere MySQL-Workbench, DB Browser für SQLite (oder DBeaver) und eine Python-Programmierumgebung ihrer Wahl. Zusätzliche oder andere Tools sind NICHT verboten. Es gilt nur die Anforderung, dass die Aufgaben gelöst werden können, insbesondere auch dann, wenn Ihnen eine Datenbank auf einem entfernten Rechner zur Verfügung gestellt wird.
+    * Die Abgabe Ihrer Ergebnisse der praktischen Aufgaben erfolgt in Form eines SQL's, eines SQL-Skriptes, eines Python-Skripts oder auf Papier (z.Bsp. ERM).
+    * Für die praktischen Aufgaben sind **alle Hilfsmittel erlaubt, ausser die Verwendung von LLM's** (ChatGPT, etc). 
+
+
+- THEORETISCHE AUFGABEN (45 Minuten)
+
+    * KPRIM und Freitext Aufgaben zu den behandelten Themen
+    * zu den theoretischen Aufgabentypen zählen auch Aufgaben zur Beurteilung von vorgegebenem Code (SQL, Python)
+    * **keine Hilfsmittel erlaubt**
+
+
+
+Die Gewichtung für die Beurteilung der Abschlussprüfung (65%) für Praxis und Theorie ist 60:40.

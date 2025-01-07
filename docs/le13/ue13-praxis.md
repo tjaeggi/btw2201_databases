@@ -1,6 +1,4 @@
-# Praktische INTEGRIERTE ÜBUNGEN
-
-Das Erstellen von ERM's zu einer fachlichen Anforderung ist eine wichtige Datenbank-Thematik. Daher hier Aufgaben aus vergangenen Prüfungen.
+# Praktische Aufgaben
 
 ## Aufgabe 1: BIBLIOTHEK
 
@@ -157,7 +155,7 @@ Das Erstellen von ERM's zu einer fachlichen Anforderung ist eine wichtige Datenb
         * Idealerweise muss nur eine einzelne Zahl (2009) angepasst werden und Dein SQLite produziert auch ein korrektes Resultat für andere Jahre
     
     
-### Hilfestellung Aufgabe 4
+### Hilfestellung FORMULA 1-DB
 
 ??? info "Hilfestellung"
     Hier siehst Du das ERM der Formula1-DB. 
