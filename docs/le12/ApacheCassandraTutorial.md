@@ -17,7 +17,7 @@
 Cassandra ist ein verteiltes Datenbank Management System, welches für die Verarbeitung grosser Datenvolumen geeignet ist.
 Die Architektur ist auf mehrere Nodes (Rechner) verteilt. Die Daten werden unter den Nodes repliziert. Das führt zu einer hohen Verfügbarkeit ohne single point of failure, wenn >= 3 Nodes eingesetzt werden.
 
-Im unteren Bild entsprechen die Kreise einzelner Nodes. Die Verbindungen zwischen den Kreisen symbolisieren die verteilte Architektur. Der Client sendet seine Anfragen an einen Node in einem Cassandra-Cluster. Der Node, welcher die Anfrage annimmt, wird als Coodinator bezeichnet. Jeder Node innerhalb eines Cluster kann diese Rolle übernehmen.
+Im unteren Bild entsprechen die Kreise einzelner Nodes. Die Verbindungen zwischen den Kreisen symbolisieren die verteilte Architektur. Der Client sendet seine Anfragen an einen Node in einem Cassandra-Cluster. Der Node, welcher die Anfrage annimmt, wird als Coodinator bezeichnet. Jeder Node innerhalb eines Cluster kann diese Rolle übernehmen
 
 <figure markdown="span">
   ![Image title](../img/17-12-2024_20-33-05.png){ width="600" }
