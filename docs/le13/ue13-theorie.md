@@ -75,3 +75,14 @@
 !!! question "UE13-Theorie-Frage 10"
 
     Nenne vier verschiedene Datentypen eines Datenbankmanagementsystems und gebe Beispielwerte an.
+
+!!! question "UE13-Theorie-Frage 11"
+
+    Es existieren konzeptionellen Elementen in einem RDBMS, welche Elementen in InfluxDB sehr ähnlich sind. Die Begriffe sind jedoch unterschiedlich. Stellen Sie 4 Begriffe in einer Vergleichstabelle einander gegenüber.
+
+    |Element in RDBMS |Element in InfluxDB|
+    |-----------------|-------------------|
+    |.                |.                  |
+    |.                |.                  |
+    |.                |.                  |
+    |.                |.                  |
