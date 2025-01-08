@@ -118,6 +118,26 @@ from(bucket: "my_bucket")
 
 Ein ***Measurement*** in InfluxDB ist eine zentrale Komponente, die eine **Sammlung von Datenpunkten** darstellt, die über die Zeit hinweg erfasst wurden. Es enthält *Fields* für die tatsächlichen Messwerte und *Tags* für die Kategorisierung und schnelle Abfrage von Daten.
 
+### Konzeptvergleich Fields und Tags gegenüber einem RDBMS
+
+- **Fields** und **Tags** bei InfluxDB können wie folgt mit einem relationalen Datenbankmanagementsystem (RDBMS) verglichen werden:
+
+    * **Fields**: In InfluxDB enthalten Fields die eigentlichen Messwerte (Datenpunkte), die Sie speichern. Sie entsprechen den Spaltenwerten in einer Tabelle eines RDBMS. Beispielsweise könnten Temperatur und Feuchtigkeit in einer Wetterdatenbank als Fields gespeichert werden. Fields sind nicht indexiert, was bedeutet, dass Abfragen, die auf Fields basieren, langsamer sein können, insbesondere bei grossen Datenmengen.
+    * **Tags**: Tags sind Metadaten, die verwendet werden, um Daten in InfluxDB zu indexieren und zu organisieren. Tags entsprechen den Schlüsseln in einer Datenbank, die verwendet werden, um Abfragen zu optimieren. In einem RDBMS würden Tags den indexierten Spalten oder den Primär- und Fremdschlüsseln ähnlich sein. Zum Beispiel könnten der Standort (z.B. Stadtname) und der Sensortyp als Tags gespeichert werden.
+
+
+Hier eine Vergleichstabelle zur Verdeutlichung:
+
+
+|InfluxDB   |RDBMS   |
+|---|---|
+|Fields   |Spaltenwerte   |
+|Tags   |Indexierte Spalten/Schlüssel   |
+
+
+Tags werden verwendet, um Daten effizient zu finden und zu filtern, während Fields die spezifischen Messwerte enthalten.
+
+
 ### Abfragesprache *Flux*
 
 Die Abfragesprache *Flux* ist eine auf Zeitreihendaten spezialisierte Sprache, die für die Verwaltung und Analyse von Daten in InfluxDB entwickelt wurde.
