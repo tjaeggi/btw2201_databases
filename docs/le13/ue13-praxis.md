@@ -1,5 +1,15 @@
 # Praktische Aufgaben
 
+## Phasenmodell für den Datenbankentwurf
+
+Die Aufgaben unterliegen dem Modell des Datenbankentwurfs. Hier nochmals in einer grafischen Darstellung.
+
+<figure markdown="span">
+  ![Image title](../img/PhasenDB-Entwurf.png){ width="1000" }
+  <figcaption>Phasenmodell für den Datenbankentwurf</figcaption>
+</figure>
+
+
 ## Aufgabe 1: BIBLIOTHEK
 
 !!! question "UE13-Praxis1 - BIBLIOTHEK"
@@ -16,7 +26,7 @@
         1.  Buch: ISBN, Titel, Erscheinungsjahr, Seitenzahl, Verlags-ID (Fremdschlüssel)
         2.  Autor: Autor-ID, Vorname, Nachname, Geburtsdatum
         3.  Verlag: Verlags-ID, Name, Adresse
-        4.  Mitglied: Mitglieds-ID, Vorname, Nachname, Geburtsdatum, Mitgliedsdatum
+        4.  Mitglied: Mitglied-ID, Vorname, Nachname, Geburtsdatum, Mitgliedsdatum
         5.  Ausleihe: Ausleih-ID, Buch-ISBN (Fremdschlüssel), Mitglieds-ID (Fremdschlüssel), Ausleihdatum Rückgabedatum
     
     
@@ -27,6 +37,46 @@
         3.  Ein Mitglied kann mehrere Bücher ausleihen, und jedes Buch kann von verschiedenen Mitgliedern ausgeliehen werden.
     
     
+??? success "Lösungsvorschlag - BIBLIOTHEK"
+
+    **konzeptionelles ERM**
+  
+    **Kardinalitäten**
+
+    1.  Ein Buch kann von mehreren Autoren geschrieben werden, und ein Autor kann mehrere Bücher schreiben. (Many-to-Many Beziehung). 
+        1.  Daraus folgt, dass eine Zwischentabelle erstellt werden muss: ***Buch_Autor*** mit `Buch-ISBN` und `Autor-ID` als Fremdschlüssel. Kombiniert ergeben sie den Primärschlüssel. **Anmerkung** **hier**: aus einem PK, der aus mehreren FK zusammengesetzt ist, kann ein eigener *künstlicher* PK erstellt werden, z.Bsp. Buch_Autor_ID. Dieser PK wird dann einfach von 1 hochgezählt. Funktional ist diese Methode identisch mit einem zusammengesetzten PK. Die Entscheidung dazu fällen wir beim Erstellen des logischen ERM.
+    2.  Ein Buch wird von einem Verlag verlegt und ein Verlag verlegt mehrere Bücher. (One-to-Many Beziehung)
+        1.  Ein Buch hat eine `Verlags-ID` als Fremdschlüssel.
+    3.  Ein Mitglied kann mehrere Bücher ausleihen, und jedes Buch kann von verschiedenen Mitgliedern ausgeliehen werden. (Many-to-Many Beziehung). 
+        1.  Hier wird die Beziehung Buch - Mitglied als m:m beschrieben. Die Beziehung ist die Ausleihe!
+        2.  Hier ist etwas offen gelassen: Was ist genau eine Ausleihe? Hat eine Ausleihe mehrere Bücher oder gilt eine Ausleihe pro Buch? Falls eine Ausleihe mehrere Bücher umfassen kann, dann entsteht eine zusätzliche Entität "Ausleihe", in welcher mehrere Bücher erfasst werden können. Wenn jedoch jedes Buch das ausgeliehen wird, als Ausleihe verstanden wird, kann die Beziehung Buch-Mitglied (m:m) direkt als Ausleihe verstanden werden. Die Beziehung Buch - Mitglied ist die Ausleihe! 
+        3.  Im Beispiel hier werden wir diesen Fall betrachten. Andernfalls müssten wir die Ausleihe als eigene Entität modellieren und die Beziehungen Ausleihe-Buch und Ausleihe - Mitglied untersuchen.
+    
+    <figure markdown="span">
+    ![Image title](../img/UE13-Bibliothek_konzERM.drawio.png){ width="700" }
+    <figcaption>Konzeptionelles ERM Bibliothek</figcaption>
+    </figure>
+    
+    **logisches ERM**
+    
+    <figure markdown="span">
+    ![Image title](../img/logERMBibliothek.png){ width="1000" }
+    <figcaption>logisches ERM Bibliothek</figcaption>
+    </figure>
+    
+
+    **ERM mit Beispiel-Records**
+    
+    diese Darstellungsart zeigt sehr schnell, ob sich die Problemstellung in der DB-Struktur abbilden lässt. 
+    Man hat hier nicht so schön Platz, um die Datentypen zu spezifizieren.
+
+    Es ist aber ein guter Test, um sein eigenes Modell zu prüfen. Es ist ebanfalls ein gutes Kommunikationsmittel, um  mit dem Auftraggeber die Problemstellung zu verifizieren. Habe ich das Problem in allen Details verstanden? 
+
+    <figure markdown="span">
+    ![Image title](../img/logERMBspRecords.png){ width="1000" }
+    <figcaption>logisches ERM mit Datensätzen als Beispiele</figcaption>
+    </figure>
+
 
 
 
