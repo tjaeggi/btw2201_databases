@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://tjaeggi.github.io/btw2201_databases/le13/ue13-praxis/" rel="canonical"/>
+<link href="../" rel="prev"/>
+<link href="../ue13-theorie/" rel="next"/>
+<link href="../../assets/LearningServicesLogo.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.49" name="generator"/>
+<title>PRAKTISCHE AUFGABEN - WING - btw2201-Databases</title>
+<link href="../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Nunito";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="deep-orange" data-md-color-primary="light-blue" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#praktische-aufgaben">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="WING - btw2201-Databases" class="md-header__button md-logo" data-md-component="logo" href="../.." title="WING - btw2201-Databases">
+<img alt="logo" src="../../assets/LearningServicesLogo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            WING - btw2201-Databases
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              PRAKTISCHE AUFGABEN
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Dark mode" class="md-option" data-md-color-accent="deep-orange" data-md-color-media="" data-md-color-primary="light-blue" data-md-color-scheme="slate" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="Light mode" class="md-option" data-md-color-accent="deep-orange" data-md-color-media="" data-md-color-primary="light-blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="WING - btw2201-Databases" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="WING - btw2201-Databases">
+<img alt="logo" src="../../assets/LearningServicesLogo.png"/>
+</a>
+    WING - btw2201-Databases
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    ABOUT THIS WEBSITE
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    LE01-CSVs mit Python
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            LE01-CSVs mit Python
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le01/ue01-1/">
+<span class="md-ellipsis">
+    UE01-1-Aufgaben
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le01/Loesungsvorschlaege_ue01-1/">
+<span class="md-ellipsis">
+    UE01-1-Lösungsvorschläge
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    LE02-SELECT Abfragen
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            LE02-SELECT Abfragen
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le02/UE02-1/">
+<span class="md-ellipsis">
+    UE02-Chinook-DB
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le02/Loesungsvorschlaege_UE02-1/">
+<span class="md-ellipsis">
+    UE02-1-Aufgaben I
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le02/UE02-2/">
+<span class="md-ellipsis">
+    UE02-2-Aufgaben II
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    LE03-Weiterführende SELECTs
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            LE03-Weiterführende SELECTs
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le03/UE03-01-AB/">
+<span class="md-ellipsis">
+    UE03-1-AB-Ranking Table und View
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le03/UE03-2/">
+<span class="md-ellipsis">
+    UE03-2-Datum und Zeit
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le03/UE03-3/">
+<span class="md-ellipsis">
+    UE03-3-CSV in SQLite
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le03/UE03-4/">
+<span class="md-ellipsis">
+    UE03-4-SQL-Abfragen Strasserverz.
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    LE04-SQL und Python
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            LE04-SQL und Python
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le04/le04-einfpythonsqlite/">
+<span class="md-ellipsis">
+    Einführung Python mit SQLite
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le04/le04-einfbindings/">
+<span class="md-ellipsis">
+    Einführung Bindings
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le04/le04-einfcrud/">
+<span class="md-ellipsis">
+    Einführung CRUD
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le04/ue04-01/">
+<span class="md-ellipsis">
+    UE04-01
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le04/ue04-02/">
+<span class="md-ellipsis">
+    UE04-02
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le04/ue04-03/">
+<span class="md-ellipsis">
+    UE04-03
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le04/ue04-04/">
+<span class="md-ellipsis">
+    UE04-04
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le05/">
+<span class="md-ellipsis">
+    LE05-Docker-MySQL-Relationenmodell
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            LE05-Docker-MySQL-Relationenmodell
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le05/instMySQL/">
+<span class="md-ellipsis">
+    DOCKER-Installation MySQL-phpmyadmin
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le05/useful-docker-commands/">
+<span class="md-ellipsis">
+    Nützliche Docker-Befehle
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le05/ue05-01/">
+<span class="md-ellipsis">
+    UE05-01-MySQL und erste Datenbank
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le05/ue05-02/">
+<span class="md-ellipsis">
+    UE05-02-Datentransfer von SQLite-DB nach MySQL
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le05/ue05-03/">
+<span class="md-ellipsis">
+    UE05-03-Relationenmodell-PK-FK-ref.Integrität
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le06/">
+<span class="md-ellipsis">
+    LE06-Normalformen/ERM
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            LE06-Normalformen/ERM
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le06/ue06-01/">
+<span class="md-ellipsis">
+    UE06-01-Funktionale und Transitive Abhängigkeit - 3NF - SQL
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le06/ue06-02/">
+<span class="md-ellipsis">
+    UE06-02-Kardinalität-ERM
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le06/ue06-03/">
+<span class="md-ellipsis">
+    UE06-03-Schuldatenbank in MySQL
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le07/">
+<span class="md-ellipsis">
+    LE07-REPETITION
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            LE07-REPETITION
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le07/ue07-01/">
+<span class="md-ellipsis">
+    UE07-01-Übungen
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../lekn/">
+<span class="md-ellipsis">
+    Kompetenznachweis
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            Kompetenznachweis
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le08/">
+<span class="md-ellipsis">
+    LE08-Table-JOINs
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            LE08-Table-JOINs
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le08/ue08-01/">
+<span class="md-ellipsis">
+    UE08-01-INNER JOIN
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le08/ue08-02/">
+<span class="md-ellipsis">
+    UE08-02-LEFT-/RIGHT-JOIN
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le08/ue08-03/">
+<span class="md-ellipsis">
+    UE08-03-Unterabfragen
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le08/ue08-04/">
+<span class="md-ellipsis">
+    UE08-04-INSERT-SELECT
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_11" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le09/">
+<span class="md-ellipsis">
+    LE09-INDEX-Transaktion
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            LE09-INDEX-Transaktion
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le09/ue09-01/">
+<span class="md-ellipsis">
+    UE09-01-INDEX
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le09/index-perf-messung/">
+<span class="md-ellipsis">
+    INDEX-PERFORMANCE
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le09/ue09-02/">
+<span class="md-ellipsis">
+    UE09-02-Transaktion mit SQL
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le09/ue09-03/">
+<span class="md-ellipsis">
+    UE09-03-Transaktion mit Python
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le09/ue09-04/">
+<span class="md-ellipsis">
+    UE09-04-Chinook-Python-ERM
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le09/ue09-05/">
+<span class="md-ellipsis">
+    MySQL-Python: Verbindungsvarianten
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_12" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le10/">
+<span class="md-ellipsis">
+    LE10-ORM und Einstieg in PostgreSQL
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+            LE10-ORM und Einstieg in PostgreSQL
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le10/PeeWee_Example/">
+<span class="md-ellipsis">
+    PeeWee-Einführungsbeispiel
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le10/ue10-01/">
+<span class="md-ellipsis">
+    UE10-01 Aufgabe mit PeeWee Teil1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le10/ue10-02/">
+<span class="md-ellipsis">
+    UE10-02 Aufgabe mit PeeWee Teil2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le10/ue10-03/">
+<span class="md-ellipsis">
+    UE10-03 eigenes ORM erstellen
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le10/postgresql-install/">
+<span class="md-ellipsis">
+    PostgreSQL installieren
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le10/python-postgresql/">
+<span class="md-ellipsis">
+    Python mit PostgreSQL verbinden
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le10/ue10-04/">
+<span class="md-ellipsis">
+    UE10-04 Mit PostgreSQL arbeiten
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le11/">
+<span class="md-ellipsis">
+    LE11-Timeseries Datenbanken
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
+            LE11-Timeseries Datenbanken
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le11/tsdb-einfuehrung/">
+<span class="md-ellipsis">
+    Einführung TSDB und InfluxDB
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le11/inst-influxdb-docker/">
+<span class="md-ellipsis">
+    InfluxDB installieren
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le11/influxdb-einfuehrungsbeispiel/">
+<span class="md-ellipsis">
+    Einführungsbeispiel
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le11/ue11-01/">
+<span class="md-ellipsis">
+    UE11-01
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le11/ue11-02/">
+<span class="md-ellipsis">
+    UE11-02
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le11/ue11-03/">
+<span class="md-ellipsis">
+    UE11-03 Option
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le11/ue11-04/">
+<span class="md-ellipsis">
+    UE11-04 Integrierte Aufgabe
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_14" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le12/">
+<span class="md-ellipsis">
+    LE12-NoSQL Datenbanken
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_14_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_14">
+<span class="md-nav__icon md-icon"></span>
+            LE12-NoSQL Datenbanken
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le12/install-3nodecassandraCluster/">
+<span class="md-ellipsis">
+    Installation Apache Cassandra als 3-Node-Cluster
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le12/ApacheCassandraTutorial/">
+<span class="md-ellipsis">
+    Tutorial
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../le12/NoSQL_Aufgabe/">
+<span class="md-ellipsis">
+    Aufgabe
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_15" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    LE13-Repetitionslektion
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_15_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_15">
+<span class="md-nav__icon md-icon"></span>
+            LE13-Repetitionslektion
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    PRAKTISCHE AUFGABEN
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    PRAKTISCHE AUFGABEN
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phasenmodell-fur-den-datenbankentwurf">
+<span class="md-ellipsis">
+      Phasenmodell für den Datenbankentwurf
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-1-bibliothek">
+<span class="md-ellipsis">
+      Aufgabe 1: BIBLIOTHEK
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-2-unihockey">
+<span class="md-ellipsis">
+      Aufgabe 2: UNIHOCKEY
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-3-chatapplikation">
+<span class="md-ellipsis">
+      Aufgabe 3: CHATAPPLIKATION
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-4-formula-1">
+<span class="md-ellipsis">
+      Aufgabe 4: FORMULA 1
+    </span>
+</a>
+<nav aria-label="Aufgabe 4: FORMULA 1" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hilfestellung-formula-1-db">
+<span class="md-ellipsis">
+      Hilfestellung FORMULA 1-DB
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-5-smartwatches">
+<span class="md-ellipsis">
+      Aufgabe 5: SMARTWATCHES
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ue13-theorie/">
+<span class="md-ellipsis">
+    THEORETISCHE AUFGABEN
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_16" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../le14/">
+<span class="md-ellipsis">
+    LE14-Prüfungsvorbereitung
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_16_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_16">
+<span class="md-nav__icon md-icon"></span>
+            LE14-Prüfungsvorbereitung
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_17" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../schlusspruefung/">
+<span class="md-ellipsis">
+    Schlussprüfung
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_17_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_17">
+<span class="md-nav__icon md-icon"></span>
+            Schlussprüfung
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phasenmodell-fur-den-datenbankentwurf">
+<span class="md-ellipsis">
+      Phasenmodell für den Datenbankentwurf
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-1-bibliothek">
+<span class="md-ellipsis">
+      Aufgabe 1: BIBLIOTHEK
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-2-unihockey">
+<span class="md-ellipsis">
+      Aufgabe 2: UNIHOCKEY
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-3-chatapplikation">
+<span class="md-ellipsis">
+      Aufgabe 3: CHATAPPLIKATION
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-4-formula-1">
+<span class="md-ellipsis">
+      Aufgabe 4: FORMULA 1
+    </span>
+</a>
+<nav aria-label="Aufgabe 4: FORMULA 1" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hilfestellung-formula-1-db">
+<span class="md-ellipsis">
+      Hilfestellung FORMULA 1-DB
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aufgabe-5-smartwatches">
+<span class="md-ellipsis">
+      Aufgabe 5: SMARTWATCHES
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="praktische-aufgaben">Praktische Aufgaben</h1>
+<h2 id="phasenmodell-fur-den-datenbankentwurf">Phasenmodell für den Datenbankentwurf</h2>
+<p>Die Aufgaben unterliegen dem Modell des Datenbankentwurfs. Hier nochmals in einer grafischen Darstellung.</p>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/PhasenDB-Entwurf.png"><img alt="Image title" src="../../img/PhasenDB-Entwurf.png" width="1000"/></a>
+<figcaption>Phasenmodell für den Datenbankentwurf</figcaption>
+</figure>
+<h2 id="aufgabe-1-bibliothek">Aufgabe 1: BIBLIOTHEK</h2>
+<div class="admonition question">
+<p class="admonition-title">UE13-Praxis1 - BIBLIOTHEK</p>
+<p>ERM1:
+Sie wurden beauftragt, eine Datenbank für eine Bibliothek zu entwerfen. Die Bibliothek möchte ihre Bücher, Autoren, Verlage,     Mitglieder und Ausleihen effizient verwalten. Ihre Aufgabe ist es, ein ERM zu erstellen, das alle relevanten Entitäten und deren     Beziehungen abbildet.</p>
+<p>Ihre Aufgabe ist es für folgende Anforderungen ein <strong>konzeptionelles</strong> und ein <strong>logisches</strong> ERM zu erstellen.</p>
+<p>Anforderungen:</p>
+<ol>
+<li>
+<p>Entitäten und Attribute:</p>
+<ol>
+<li>Buch: ISBN, Titel, Erscheinungsjahr, Seitenzahl, Verlags-ID (Fremdschlüssel)</li>
+<li>Autor: Autor-ID, Vorname, Nachname, Geburtsdatum</li>
+<li>Verlag: Verlags-ID, Name, Adresse</li>
+<li>Mitglied: Mitglied-ID, Vorname, Nachname, Geburtsdatum, Mitgliedsdatum</li>
+<li>Ausleihe: Ausleih-ID, Buch-ISBN (Fremdschlüssel), Mitglieds-ID (Fremdschlüssel), Ausleihdatum Rückgabedatum</li>
+</ol>
+</li>
+<li>
+<p>Beziehungen</p>
+<ol>
+<li>Ein Buch kann von mehreren Autoren geschrieben werden, und ein Autor kann mehrere Bücher schreiben.</li>
+<li>Ein Buch wird von einem Verlag verlegt.</li>
+<li>Ein Mitglied kann mehrere Bücher ausleihen, und jedes Buch kann von verschiedenen Mitgliedern ausgeliehen werden.</li>
+</ol>
+</li>
+</ol>
+</div>
+<details class="success">
+<summary>Lösungsvorschlag - BIBLIOTHEK</summary>
+<p><strong>konzeptionelles ERM</strong></p>
+<p><strong>Kardinalitäten</strong></p>
+<ol>
+<li>Ein Buch kann von mehreren Autoren geschrieben werden, und ein Autor kann mehrere Bücher schreiben. (Many-to-Many Beziehung). <ol>
+<li>Daraus folgt, dass eine Zwischentabelle erstellt werden muss: <strong><em>Buch_Autor</em></strong> mit <code>Buch-ISBN</code> und <code>Autor-ID</code> als Fremdschlüssel. Kombiniert ergeben sie den Primärschlüssel. <strong>Anmerkung</strong> <strong>hier</strong>: aus einem PK, der aus mehreren FK zusammengesetzt ist, kann ein eigener <em>künstlicher</em> PK erstellt werden, z.Bsp. Buch_Autor_ID. Dieser PK wird dann einfach von 1 hochgezählt. Funktional ist diese Methode identisch mit einem zusammengesetzten PK. Die Entscheidung dazu fällen wir beim Erstellen des logischen ERM.</li>
+</ol>
+</li>
+<li>Ein Buch wird von einem Verlag verlegt und ein Verlag verlegt mehrere Bücher. (One-to-Many Beziehung)<ol>
+<li>Ein Buch hat eine <code>Verlags-ID</code> als Fremdschlüssel.</li>
+</ol>
+</li>
+<li>Ein Mitglied kann mehrere Bücher ausleihen, und jedes Buch kann von verschiedenen Mitgliedern ausgeliehen werden. (Many-to-Many Beziehung). <ol>
+<li>Hier wird die Beziehung Buch - Mitglied als m:m beschrieben. Die Beziehung ist die Ausleihe!</li>
+<li>Hier ist etwas offen gelassen: Was ist genau eine Ausleihe? Hat eine Ausleihe mehrere Bücher oder gilt eine Ausleihe pro Buch? Falls eine Ausleihe mehrere Bücher umfassen kann, dann entsteht eine zusätzliche Entität "Ausleihe", in welcher mehrere Bücher erfasst werden können. Wenn jedoch jedes Buch das ausgeliehen wird, als Ausleihe verstanden wird, kann die Beziehung Buch-Mitglied (m:m) direkt als Ausleihe verstanden werden. Die Beziehung Buch - Mitglied ist die Ausleihe! </li>
+<li>Im Beispiel hier werden wir diesen Fall betrachten. Andernfalls müssten wir die Ausleihe als eigene Entität modellieren und die Beziehungen Ausleihe-Buch und Ausleihe - Mitglied untersuchen.</li>
+</ol>
+</li>
+</ol>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/UE13-Bibliothek_konzERM.drawio.png"><img alt="Image title" src="../../img/UE13-Bibliothek_konzERM.drawio.png" width="700"/></a>
+<figcaption>Konzeptionelles ERM Bibliothek</figcaption>
+</figure></p>
+<p><strong>logisches ERM</strong></p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/logERMBibliothek.png"><img alt="Image title" src="../../img/logERMBibliothek.png" width="1000"/></a>
+<figcaption>logisches ERM Bibliothek</figcaption>
+</figure></p>
+<p><strong>ERM mit Beispiel-Records</strong></p>
+<p>diese Darstellungsart zeigt sehr schnell, ob sich die Problemstellung in der DB-Struktur abbilden lässt. 
+Man hat hier nicht so schön Platz, um die Datentypen zu spezifizieren.</p>
+<p>Es ist aber ein guter Test, um sein eigenes Modell zu prüfen. Es ist ebanfalls ein gutes Kommunikationsmittel, um  mit dem Auftraggeber die Problemstellung zu verifizieren. Habe ich das Problem in allen Details verstanden? </p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/logERMBspRecords.png"><img alt="Image title" src="../../img/logERMBspRecords.png" width="1000"/></a>
+<figcaption>logisches ERM mit Datensätzen als Beispiele</figcaption>
+</figure></p>
+</details>
+<h2 id="aufgabe-2-unihockey">Aufgabe 2: UNIHOCKEY</h2>
+<div class="admonition question">
+<p class="admonition-title">UE13-Praxis2 - UNIHOCKEY</p>
+<p>ERM 2:</p>
+<p>Ein Unihockeyclub nimmt mit seinem Team, bestehend aus mehreren Spielern, an verschiedenen Turnieren teil. Bei den Turnieren gibt es jeweils mehrere Spiele, die gegen andere Klubs ausgetragen werden. Pro gewonnenes Spiel gibt es 3 Punkte für das     siegreiche Team und pro unentschiedenes Spiel jeweils 1 Punkt für beide Teams. Pro Spiel, werden die erzielten Punkte/Goals protokolliert: der Schütze und die Zeit.</p>
+<p>Am Schluss soll eine Übersicht erstellt werden darüber, welche Teams am besten waren.</p>
+<p>Beispiel:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>SVSE<span class="w"> </span>Unihockey<span class="w"> </span>Schweizermeisterschaft
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>Name<span class="w">        </span>Gewonnen<span class="w">  </span>Unentschieden<span class="w">  </span>Verloren<span class="w">  </span>Punkte
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>Team<span class="w"> </span>H<span class="w">          </span><span class="m">6</span><span class="w">           </span><span class="m">0</span><span class="w">            </span><span class="m">0</span><span class="w">       </span><span class="m">18</span>
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>Team<span class="w"> </span>F<span class="w">          </span><span class="m">5</span><span class="w">           </span><span class="m">1</span><span class="w">            </span><span class="m">0</span><span class="w">       </span><span class="m">16</span>
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>....
+</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>Team<span class="w"> </span>B<span class="w">          </span><span class="m">1</span><span class="w">           </span><span class="m">2</span><span class="w">            </span><span class="m">3</span><span class="w">       </span><span class="m">5</span>
+</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>Team<span class="w"> </span>I<span class="w">          </span><span class="m">0</span><span class="w">           </span><span class="m">1</span><span class="w">            </span><span class="m">5</span><span class="w">       </span><span class="m">1</span>
+</span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>Plauschturnier<span class="w"> </span>Misch-Masch-Master
+</span><span id="__span-0-10"><a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>Name<span class="w">        </span>Gewonnen<span class="w">  </span>Unentschieden<span class="w">  </span>Verloren<span class="w">  </span>Punkte
+</span><span id="__span-0-11"><a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>Team<span class="w"> </span>X<span class="w">          </span><span class="m">4</span><span class="w">           </span><span class="m">0</span><span class="w">            </span><span class="m">0</span><span class="w">       </span><span class="m">12</span>
+</span><span id="__span-0-12"><a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>Team<span class="w"> </span>Y<span class="w">          </span><span class="m">3</span><span class="w">           </span><span class="m">0</span><span class="w">            </span><span class="m">1</span><span class="w">       </span><span class="m">9</span>
+</span><span id="__span-0-13"><a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>....
+</span><span id="__span-0-14"><a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>Team<span class="w"> </span>W<span class="w">          </span><span class="m">2</span><span class="w">           </span><span class="m">0</span><span class="w">            </span><span class="m">2</span><span class="w">       </span><span class="m">6</span>
+</span><span id="__span-0-15"><a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>Team<span class="w"> </span>Z<span class="w">          </span><span class="m">1</span><span class="w">           </span><span class="m">1</span><span class="w">            </span><span class="m">2</span><span class="w">       </span><span class="m">4</span>
+</span></code></pre></div>
+<p>Mit dieser Ausgangslage bekommst Du den Auftrag eine dazugehörige Applikation samt relationalem Datenbank(-Schema) umzusetzen. </p>
+<ul>
+<li>
+<p>Aufgabe</p>
+<ul>
+<li>Erstelle die physische Umsetzung der DB mit SQL-Befehlen in MySQL oder SQLite. Füge auch Beispieldatensätze hinzu. Als Grundlage und Hilfestellung, greifst Du auf das vorher erstellte logische ERM zurück.</li>
+<li>Erstelle ein Python Skript, welches Abfragen auf die erstellte DB ausführt und textlich darstellt.</li>
+</ul>
+</li>
+</ul>
+</div>
+<details class="success">
+<summary>Lösungsvorschlag - Unihockey-Turnier</summary>
+<p><strong>Kardinalitäten</strong></p>
+<ol>
+<li>Ein Team besteht aus mehreren Spielern, und jeder Spieler gehört genau zu einem Team. (One-to-Many Beziehung)</li>
+<li>Ein Turnier hat mehrere Spiele, und jedes Spiel gehört zu genau einem Turnier. (One-to-Many Beziehung)</li>
+<li>Jedes Spiel hat zwei Teams, und ein Team kann an mehreren Spielen teilnehmen. (Many-to-Many Beziehung mit Attributen)</li>
+<li>Ein Tor wird in einem bestimmten Spiel von einem bestimmten Spieler erzielt. (One-to-Many Beziehung)</li>
+</ol>
+<p><strong>Konzeptionelles ERM</strong></p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/UE13-TurnierUniHockey.drawio.png"><img alt="Image title" src="../../img/UE13-TurnierUniHockey.drawio.png" width="700"/></a>
+<figcaption>Konzeptionelles ERM Unihockey-Turnier</figcaption>
+</figure></p>
+<ul>
+<li><code>Team</code> hat eine 1:m Beziehung zu <code>Spieler</code>.</li>
+<li><code>Spiel</code> hat eine m:m Beziehung zu <code>Team</code> (über Team1 und Team2).</li>
+<li><code>Spiel</code> hat eine 1:m Beziehung zu <code>Tor</code>.</li>
+<li><code>Tor</code> hat eine 1:m Beziehung zu <code>Spieler</code></li>
+</ul>
+<p><strong>Logisches ERM mit Demorecords</strong></p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/logERMDemoRecordsUniHockey.png"><img alt="Image title" src="../../img/logERMDemoRecordsUniHockey.png" width="1000"/></a>
+<figcaption>logisches ERM Unihockey-Turnier mit Demo-Records</figcaption>
+</figure></p>
+<p><strong>Physische Datenbank</strong></p>
+<p>DATENBANK ERSTELLEN mit</p>
+<p><code>sqlite3  .\unihockey-DB.db</code></p>
+<p>oder mit </p>
+<p>DB Browser (SQLite)</p>
+<p>CREATE TABLES:</p>
+<div class="language-SQL highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">"Team"</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="ss">"TeamID"</span><span class="w">    </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="ss">"Name"</span><span class="w">  </span><span class="nb">TEXT</span><span class="p">,</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="ss">"TeamID"</span><span class="p">)</span>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="p">);</span>
+</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">"Turnier"</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-9"><a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="ss">"TurnierID"</span><span class="w"> </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-10"><a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="ss">"Name"</span><span class="w">  </span><span class="nb">TEXT</span><span class="p">,</span>
+</span><span id="__span-1-11"><a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="ss">"Datum"</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span>
+</span><span id="__span-1-12"><a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="ss">"TurnierID"</span><span class="p">)</span>
+</span><span id="__span-1-13"><a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="p">);</span>
+</span><span id="__span-1-14"><a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">"Team"</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-16"><a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="ss">"TeamID"</span><span class="w">    </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-17"><a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="ss">"Name"</span><span class="w">  </span><span class="nb">TEXT</span><span class="p">,</span>
+</span><span id="__span-1-18"><a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="ss">"TeamID"</span><span class="p">)</span>
+</span><span id="__span-1-19"><a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="p">);</span>
+</span><span id="__span-1-20"><a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a>
+</span><span id="__span-1-21"><a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a>
+</span><span id="__span-1-22"><a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">"Spieler"</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-23"><a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="ss">"SpielerID"</span><span class="w"> </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-24"><a href="#__codelineno-1-24" id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="ss">"Vorname"</span><span class="w">   </span><span class="nb">TEXT</span><span class="p">,</span>
+</span><span id="__span-1-25"><a href="#__codelineno-1-25" id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="ss">"Name"</span><span class="w">  </span><span class="nb">TEXT</span><span class="p">,</span>
+</span><span id="__span-1-26"><a href="#__codelineno-1-26" id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="ss">"TeamID"</span><span class="w">    </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-27"><a href="#__codelineno-1-27" id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="ss">"SpielerID"</span><span class="p">),</span>
+</span><span id="__span-1-28"><a href="#__codelineno-1-28" id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Team</span><span class="p">(</span><span class="n">TeamID</span><span class="p">)</span>
+</span><span id="__span-1-29"><a href="#__codelineno-1-29" id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="p">);</span>
+</span><span id="__span-1-30"><a href="#__codelineno-1-30" id="__codelineno-1-30" name="__codelineno-1-30"></a>
+</span><span id="__span-1-31"><a href="#__codelineno-1-31" id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">"Spiel"</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-32"><a href="#__codelineno-1-32" id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="ss">"SpielID"</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-33"><a href="#__codelineno-1-33" id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="ss">"TurnierID"</span><span class="w"> </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-34"><a href="#__codelineno-1-34" id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="ss">"Team1ID"</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-35"><a href="#__codelineno-1-35" id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="ss">"Team2ID"</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-36"><a href="#__codelineno-1-36" id="__codelineno-1-36" name="__codelineno-1-36"></a><span class="ss">"Zeit"</span><span class="w">  </span><span class="nb">TEXT</span><span class="p">,</span>
+</span><span id="__span-1-37"><a href="#__codelineno-1-37" id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="ss">"Team1Punkte"</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-38"><a href="#__codelineno-1-38" id="__codelineno-1-38" name="__codelineno-1-38"></a><span class="ss">"Team2Punkte"</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-39"><a href="#__codelineno-1-39" id="__codelineno-1-39" name="__codelineno-1-39"></a><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="ss">"SpielID"</span><span class="p">),</span>
+</span><span id="__span-1-40"><a href="#__codelineno-1-40" id="__codelineno-1-40" name="__codelineno-1-40"></a><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">TurnierID</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Turnier</span><span class="p">(</span><span class="n">TurnierID</span><span class="p">),</span>
+</span><span id="__span-1-41"><a href="#__codelineno-1-41" id="__codelineno-1-41" name="__codelineno-1-41"></a><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Team1ID</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Team</span><span class="p">(</span><span class="n">TeamID</span><span class="p">),</span>
+</span><span id="__span-1-42"><a href="#__codelineno-1-42" id="__codelineno-1-42" name="__codelineno-1-42"></a><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">Team2ID</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Team</span><span class="p">(</span><span class="n">TeamID</span><span class="p">)</span>
+</span><span id="__span-1-43"><a href="#__codelineno-1-43" id="__codelineno-1-43" name="__codelineno-1-43"></a><span class="p">);</span>
+</span><span id="__span-1-44"><a href="#__codelineno-1-44" id="__codelineno-1-44" name="__codelineno-1-44"></a>
+</span><span id="__span-1-45"><a href="#__codelineno-1-45" id="__codelineno-1-45" name="__codelineno-1-45"></a>
+</span><span id="__span-1-46"><a href="#__codelineno-1-46" id="__codelineno-1-46" name="__codelineno-1-46"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">"Tor"</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-47"><a href="#__codelineno-1-47" id="__codelineno-1-47" name="__codelineno-1-47"></a><span class="ss">"TorID"</span><span class="w"> </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-48"><a href="#__codelineno-1-48" id="__codelineno-1-48" name="__codelineno-1-48"></a><span class="ss">"SpielID"</span><span class="w">   </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-49"><a href="#__codelineno-1-49" id="__codelineno-1-49" name="__codelineno-1-49"></a><span class="ss">"SpielerID"</span><span class="w"> </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-50"><a href="#__codelineno-1-50" id="__codelineno-1-50" name="__codelineno-1-50"></a><span class="ss">"Minute"</span><span class="w">    </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-1-51"><a href="#__codelineno-1-51" id="__codelineno-1-51" name="__codelineno-1-51"></a><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="ss">"TorID"</span><span class="p">),</span>
+</span><span id="__span-1-52"><a href="#__codelineno-1-52" id="__codelineno-1-52" name="__codelineno-1-52"></a><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">SpielID</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Spiel</span><span class="p">(</span><span class="n">SpielID</span><span class="p">),</span>
+</span><span id="__span-1-53"><a href="#__codelineno-1-53" id="__codelineno-1-53" name="__codelineno-1-53"></a><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="n">SpielerID</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Spieler</span><span class="p">(</span><span class="n">SpielerID</span><span class="p">)</span>
+</span><span id="__span-1-54"><a href="#__codelineno-1-54" id="__codelineno-1-54" name="__codelineno-1-54"></a><span class="p">);</span>
+</span></code></pre></div>
+<p>INSERT DEMO DATA:</p>
+<div class="language-SQL highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="ss">"Team H"</span><span class="p">);</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="ss">"Team F"</span><span class="p">);</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="ss">"Team B"</span><span class="p">);</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="ss">"Team I"</span><span class="p">);</span>
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="ss">"Team X"</span><span class="p">);</span>
+</span><span id="__span-2-6"><a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="ss">"Team Y"</span><span class="p">);</span>
+</span><span id="__span-2-7"><a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="ss">"Team W"</span><span class="p">);</span>
+</span><span id="__span-2-8"><a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Team</span><span class="w"> </span><span class="p">(</span><span class="n">TeamID</span><span class="p">,</span><span class="n">Name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="ss">"Team Z"</span><span class="p">);</span>
+</span><span id="__span-2-9"><a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Turnier</span><span class="w"> </span><span class="p">(</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">Datum</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="ss">"SVSE SM"</span><span class="p">,</span><span class="ss">"2024-07-01"</span><span class="p">);</span>
+</span><span id="__span-2-11"><a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Turnier</span><span class="w"> </span><span class="p">(</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">Datum</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="ss">"Plausch MischMasch"</span><span class="p">,</span><span class="ss">"2024-08-02"</span><span class="p">);</span>
+</span><span id="__span-2-12"><a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Turnier</span><span class="w"> </span><span class="p">(</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">Datum</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="ss">"RegioCup"</span><span class="p">,</span><span class="ss">"2024-09-11"</span><span class="p">);</span>
+</span><span id="__span-2-13"><a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Turnier</span><span class="w"> </span><span class="p">(</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">Datum</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="ss">"Mix Turnier 24"</span><span class="p">,</span><span class="ss">"2024-12-12"</span><span class="p">);</span>
+</span><span id="__span-2-14"><a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="ss">"Fritz"</span><span class="p">,</span><span class="ss">"Meier"</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-2-17"><a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="ss">"Hans"</span><span class="p">,</span><span class="ss">"Müller"</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-2-18"><a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="ss">"Kurt"</span><span class="p">,</span><span class="ss">"Viroux"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-2-19"><a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="ss">"Thomas"</span><span class="p">,</span><span class="ss">"Benz"</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-2-20"><a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="ss">"Urs"</span><span class="p">,</span><span class="ss">"Huber"</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-2-21"><a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="ss">"Georg"</span><span class="p">,</span><span class="ss">"Fischlin"</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+</span><span id="__span-2-22"><a href="#__codelineno-2-22" id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="ss">"Laurent"</span><span class="p">,</span><span class="ss">"Jans"</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+</span><span id="__span-2-23"><a href="#__codelineno-2-23" id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spieler</span><span class="w"> </span><span class="p">(</span><span class="n">SpielerID</span><span class="p">,</span><span class="n">Vorname</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">TeamID</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="ss">"Daniel"</span><span class="p">,</span><span class="ss">"Cassis"</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+</span><span id="__span-2-24"><a href="#__codelineno-2-24" id="__codelineno-2-24" name="__codelineno-2-24"></a>
+</span><span id="__span-2-25"><a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spiel</span><span class="w"> </span><span class="p">(</span><span class="n">SpielID</span><span class="p">,</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Team1ID</span><span class="p">,</span><span class="n">Team2ID</span><span class="p">,</span><span class="n">Zeit</span><span class="p">,</span><span class="n">Team1Punkte</span><span class="p">,</span><span class="n">Team2Punkte</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="ss">"08:00"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-2-26"><a href="#__codelineno-2-26" id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spiel</span><span class="w"> </span><span class="p">(</span><span class="n">SpielID</span><span class="p">,</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Team1ID</span><span class="p">,</span><span class="n">Team2ID</span><span class="p">,</span><span class="n">Zeit</span><span class="p">,</span><span class="n">Team1Punkte</span><span class="p">,</span><span class="n">Team2Punkte</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="ss">"09:00"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-2-27"><a href="#__codelineno-2-27" id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spiel</span><span class="w"> </span><span class="p">(</span><span class="n">SpielID</span><span class="p">,</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Team1ID</span><span class="p">,</span><span class="n">Team2ID</span><span class="p">,</span><span class="n">Zeit</span><span class="p">,</span><span class="n">Team1Punkte</span><span class="p">,</span><span class="n">Team2Punkte</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="ss">"10:00"</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-2-28"><a href="#__codelineno-2-28" id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spiel</span><span class="w"> </span><span class="p">(</span><span class="n">SpielID</span><span class="p">,</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Team1ID</span><span class="p">,</span><span class="n">Team2ID</span><span class="p">,</span><span class="n">Zeit</span><span class="p">,</span><span class="n">Team1Punkte</span><span class="p">,</span><span class="n">Team2Punkte</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="ss">"11:00"</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+</span><span id="__span-2-29"><a href="#__codelineno-2-29" id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Spiel</span><span class="w"> </span><span class="p">(</span><span class="n">SpielID</span><span class="p">,</span><span class="n">TurnierID</span><span class="p">,</span><span class="n">Team1ID</span><span class="p">,</span><span class="n">Team2ID</span><span class="p">,</span><span class="n">Zeit</span><span class="p">,</span><span class="n">Team1Punkte</span><span class="p">,</span><span class="n">Team2Punkte</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="ss">"12:00"</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+</span><span id="__span-2-30"><a href="#__codelineno-2-30" id="__codelineno-2-30" name="__codelineno-2-30"></a>
+</span><span id="__span-2-31"><a href="#__codelineno-2-31" id="__codelineno-2-31" name="__codelineno-2-31"></a>
+</span><span id="__span-2-32"><a href="#__codelineno-2-32" id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Tor</span><span class="w"> </span><span class="p">(</span><span class="n">TorID</span><span class="p">,</span><span class="n">SpielID</span><span class="p">,</span><span class="n">SpielerID</span><span class="p">,</span><span class="k">Minute</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">);</span>
+</span><span id="__span-2-33"><a href="#__codelineno-2-33" id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Tor</span><span class="w"> </span><span class="p">(</span><span class="n">TorID</span><span class="p">,</span><span class="n">SpielID</span><span class="p">,</span><span class="n">SpielerID</span><span class="p">,</span><span class="k">Minute</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">14</span><span class="p">);</span>
+</span><span id="__span-2-34"><a href="#__codelineno-2-34" id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Tor</span><span class="w"> </span><span class="p">(</span><span class="n">TorID</span><span class="p">,</span><span class="n">SpielID</span><span class="p">,</span><span class="n">SpielerID</span><span class="p">,</span><span class="k">Minute</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">25</span><span class="p">);</span>
+</span><span id="__span-2-35"><a href="#__codelineno-2-35" id="__codelineno-2-35" name="__codelineno-2-35"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Tor</span><span class="w"> </span><span class="p">(</span><span class="n">TorID</span><span class="p">,</span><span class="n">SpielID</span><span class="p">,</span><span class="n">SpielerID</span><span class="p">,</span><span class="k">Minute</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-2-36"><a href="#__codelineno-2-36" id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Tor</span><span class="w"> </span><span class="p">(</span><span class="n">TorID</span><span class="p">,</span><span class="n">SpielID</span><span class="p">,</span><span class="n">SpielerID</span><span class="p">,</span><span class="k">Minute</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">);</span>
+</span></code></pre></div>
+<p>SQL-QUERY: <em>Wie erhält man die Punkte pro Team?</em></p>
+<div class="language-SQL highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">SELECT</span><span class="w"> </span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="n">team</span><span class="p">.</span><span class="n">name</span><span class="p">,</span>
+</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="k">SUM</span><span class="p">(</span><span class="k">CASE</span><span class="w"> </span>
+</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team1punkte</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team2punkte</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span>
+</span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">            </span><span class="k">CASE</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="n">team</span><span class="p">.</span><span class="n">teamid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team1id</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">END</span>
+</span><span id="__span-3-6"><a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team1punkte</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team2punkte</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span>
+</span><span id="__span-3-7"><a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">            </span><span class="k">CASE</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="n">team</span><span class="p">.</span><span class="n">teamid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team2id</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">END</span>
+</span><span id="__span-3-8"><a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team1punkte</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team2punkte</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span>
+</span><span id="__span-3-9"><a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">            </span><span class="k">CASE</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="n">team</span><span class="p">.</span><span class="n">teamid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team1id</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">team</span><span class="p">.</span><span class="n">teamid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team2id</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">END</span>
+</span><span id="__span-3-10"><a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="k">END</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">punkte</span>
+</span><span id="__span-3-11"><a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="k">FROM</span><span class="w"> </span>
+</span><span id="__span-3-12"><a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">    </span><span class="n">team</span>
+</span><span id="__span-3-13"><a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span>
+</span><span id="__span-3-14"><a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">    </span><span class="n">spiel</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">team</span><span class="p">.</span><span class="n">teamid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team1id</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">team</span><span class="p">.</span><span class="n">teamid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spiel</span><span class="p">.</span><span class="n">team2id</span>
+</span><span id="__span-3-15"><a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
+</span><span id="__span-3-16"><a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">    </span><span class="n">team</span><span class="p">.</span><span class="n">name</span><span class="p">;</span><span class="w">    </span>
+</span></code></pre></div>
+<p>Resultat mit vorhandenen Demo-Daten:</p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/14-01-2025_21-25-24.png"><img alt="Punkte pro Team" src="../../img/14-01-2025_21-25-24.png" width="100"/></a>
+<figcaption>Punkte pro Team</figcaption>
+</figure></p>
+<p>Und nun noch ein Python-Skript, welches die Datenbank mit den Tabellen erstellt, Demodatensätze einfügt und eine Abfrage macht:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Python-Skript zum Erstellen der SQLite-DB mit Tabellen, Demorecords und Query</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-4-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-4-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-4-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-4-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-4-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-4-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-4-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-4-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-4-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-4-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-4-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-4-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-4-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-4-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-4-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-4-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-4-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-4-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-4-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-4-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-4-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-4-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-4-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-4-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-4-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-4-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-4-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-4-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-4-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-4-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-4-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-4-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-4-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-4-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-4-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-4-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-4-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-4-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-4-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-4-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-4-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-4-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-4-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-4-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-4-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-4-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-4-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-4-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-4-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-4-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-4-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-4-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-4-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-4-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-4-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-4-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-4-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-4-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-4-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-4-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-4-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-4-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-4-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-4-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-4-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-4-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-4-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-4-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-4-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-4-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-4-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-4-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-4-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-4-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-4-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-4-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-4-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-4-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-4-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-4-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-4-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-4-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-4-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-4-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-4-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-4-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-4-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-4-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-4-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-4-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-4-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-4-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-4-100">100</a></span>
+<span class="normal"><a href="#__codelineno-4-101">101</a></span>
+<span class="normal"><a href="#__codelineno-4-102">102</a></span>
+<span class="normal"><a href="#__codelineno-4-103">103</a></span>
+<span class="normal"><a href="#__codelineno-4-104">104</a></span>
+<span class="normal"><a href="#__codelineno-4-105">105</a></span>
+<span class="normal"><a href="#__codelineno-4-106">106</a></span>
+<span class="normal"><a href="#__codelineno-4-107">107</a></span>
+<span class="normal"><a href="#__codelineno-4-108">108</a></span>
+<span class="normal"><a href="#__codelineno-4-109">109</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sqlite3</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="c1"># Verbindung zur SQLite-Datenbank herstellen (oder erstellen, falls sie nicht existiert)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'UniHockeyTurnier.db'</span><span class="p">)</span>    
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="c1"># Einen Cursor erstellen, um SQL-Befehle auszuführen</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>    
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="c1"># SQL-Befehle zum Erstellen der Tabellen</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="n">create_tables_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="s2">CREATE TABLE IF NOT EXISTS Team (</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="s2">    TeamID INTEGER PRIMARY KEY,</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="s2">    Name TEXT</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="s2">);    </span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15"></a>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="s2">CREATE TABLE IF NOT EXISTS Turnier (</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="s2">    TurnierID INTEGER PRIMARY KEY,</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="s2">    Name TEXT,</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="s2">    Datum TEXT</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="s2">);    </span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21"></a>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22"></a><span class="s2">CREATE TABLE IF NOT EXISTS Spieler (</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23"></a><span class="s2">    SpielerID INTEGER PRIMARY KEY,</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24"></a><span class="s2">    Vorname TEXT,</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25"></a><span class="s2">    Name TEXT,</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="s2">    TeamID INTEGER,</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="s2">    FOREIGN KEY(TeamID) REFERENCES Team(TeamID)</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="s2">);    </span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29"></a>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30"></a><span class="s2">CREATE TABLE IF NOT EXISTS Spiel (</span>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31"></a><span class="s2">    SpielID INTEGER PRIMARY KEY,</span>
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32"></a><span class="s2">    TurnierID INTEGER,</span>
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33"></a><span class="s2">    Team1ID INTEGER,</span>
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34"></a><span class="s2">    Team2ID INTEGER,</span>
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35"></a><span class="s2">    Zeit TEXT,</span>
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36"></a><span class="s2">    Team1Punkte INTEGER,</span>
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37"></a><span class="s2">    Team2Punkte INTEGER,</span>
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38"></a><span class="s2">    FOREIGN KEY(TurnierID) REFERENCES Turnier(TurnierID),</span>
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39"></a><span class="s2">    FOREIGN KEY(Team1ID) REFERENCES Team(TeamID),</span>
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40"></a><span class="s2">    FOREIGN KEY(Team2ID) REFERENCES Team(TeamID)</span>
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41"></a><span class="s2">);    </span>
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42"></a>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43"></a><span class="s2">CREATE TABLE IF NOT EXISTS Tor (</span>
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44"></a><span class="s2">    TorID INTEGER PRIMARY KEY,</span>
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45"></a><span class="s2">    SpielID INTEGER,</span>
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46"></a><span class="s2">    SpielerID INTEGER,</span>
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47"></a><span class="s2">    Minute INTEGER,</span>
+</span><span id="__span-4-48"><a id="__codelineno-4-48" name="__codelineno-4-48"></a><span class="s2">    FOREIGN KEY(SpielID) REFERENCES Spiel(SpielID),</span>
+</span><span id="__span-4-49"><a id="__codelineno-4-49" name="__codelineno-4-49"></a><span class="s2">    FOREIGN KEY(SpielerID) REFERENCES Spieler(SpielerID)</span>
+</span><span id="__span-4-50"><a id="__codelineno-4-50" name="__codelineno-4-50"></a><span class="s2">);</span>
+</span><span id="__span-4-51"><a id="__codelineno-4-51" name="__codelineno-4-51"></a><span class="s2">"""</span>    
+</span><span id="__span-4-52"><a id="__codelineno-4-52" name="__codelineno-4-52"></a>
+</span><span id="__span-4-53"><a id="__codelineno-4-53" name="__codelineno-4-53"></a><span class="c1"># Ausführung der SQL-Befehle</span>
+</span><span id="__span-4-54"><a id="__codelineno-4-54" name="__codelineno-4-54"></a><span class="n">cursor</span><span class="o">.</span><span class="n">executescript</span><span class="p">(</span><span class="n">create_tables_query</span><span class="p">)</span>    
+</span><span id="__span-4-55"><a id="__codelineno-4-55" name="__codelineno-4-55"></a>
+</span><span id="__span-4-56"><a id="__codelineno-4-56" name="__codelineno-4-56"></a><span class="c1"># Datensätze einfügen</span>
+</span><span id="__span-4-57"><a id="__codelineno-4-57" name="__codelineno-4-57"></a><span class="n">insert_data_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-4-58"><a id="__codelineno-4-58" name="__codelineno-4-58"></a><span class="s2">INSERT INTO Team (TeamID, Name) VALUES </span>
+</span><span id="__span-4-59"><a id="__codelineno-4-59" name="__codelineno-4-59"></a><span class="s2">(1, 'Team H'), (2, 'Team F'), (3, 'Team B'), (4, 'Team I'), </span>
+</span><span id="__span-4-60"><a id="__codelineno-4-60" name="__codelineno-4-60"></a><span class="s2">(5, 'Team X'), (6, 'Team Y'), (7, 'Team W'), (8, 'Team Z');    </span>
+</span><span id="__span-4-61"><a id="__codelineno-4-61" name="__codelineno-4-61"></a>
+</span><span id="__span-4-62"><a id="__codelineno-4-62" name="__codelineno-4-62"></a><span class="s2">INSERT INTO Turnier (TurnierID, Name, Datum) VALUES </span>
+</span><span id="__span-4-63"><a id="__codelineno-4-63" name="__codelineno-4-63"></a><span class="s2">(1, 'SVSE SM', '2024-07-01'), (2, 'Plausch MischMasch', '2024-08-02'), </span>
+</span><span id="__span-4-64"><a id="__codelineno-4-64" name="__codelineno-4-64"></a><span class="s2">(3, 'RegioCup', '2024-09-11'), (4, 'Mix Turnier 24', '2024-12-12');    </span>
+</span><span id="__span-4-65"><a id="__codelineno-4-65" name="__codelineno-4-65"></a>
+</span><span id="__span-4-66"><a id="__codelineno-4-66" name="__codelineno-4-66"></a><span class="s2">INSERT INTO Spieler (SpielerID, Vorname, Name, TeamID) VALUES </span>
+</span><span id="__span-4-67"><a id="__codelineno-4-67" name="__codelineno-4-67"></a><span class="s2">(1, 'Fritz', 'Meier', 1), (2, 'Hans', 'Müller', 1), (3, 'Kurt', 'Viroux', 2), </span>
+</span><span id="__span-4-68"><a id="__codelineno-4-68" name="__codelineno-4-68"></a><span class="s2">(4, 'Thomas', 'Benz', 2), (5, 'Urs', 'Huber', 1), (6, 'Georg', 'Fischlin', 3), </span>
+</span><span id="__span-4-69"><a id="__codelineno-4-69" name="__codelineno-4-69"></a><span class="s2">(7, 'Laurent', 'Jans', 4), (8, 'Daniel', 'Cassis', 4);    </span>
+</span><span id="__span-4-70"><a id="__codelineno-4-70" name="__codelineno-4-70"></a>
+</span><span id="__span-4-71"><a id="__codelineno-4-71" name="__codelineno-4-71"></a><span class="s2">INSERT INTO Spiel (SpielID, TurnierID, Team1ID, Team2ID, Zeit, Team1Punkte, Team2Punkte) VALUES </span>
+</span><span id="__span-4-72"><a id="__codelineno-4-72" name="__codelineno-4-72"></a><span class="s2">(1, 1, 1, 2, '08:00', 3, 0), (2, 1, 1, 3, '09:00', 3, 0), (3, 1, 1, 4, '10:00', 3, 0), </span>
+</span><span id="__span-4-73"><a id="__codelineno-4-73" name="__codelineno-4-73"></a><span class="s2">(4, 1, 2, 1, '11:00', 0, 3), (5, 1, 3, 1, '12:00', 0, 3);    </span>
+</span><span id="__span-4-74"><a id="__codelineno-4-74" name="__codelineno-4-74"></a>
+</span><span id="__span-4-75"><a id="__codelineno-4-75" name="__codelineno-4-75"></a><span class="s2">INSERT INTO Tor (TorID, SpielID, SpielerID, Minute) VALUES </span>
+</span><span id="__span-4-76"><a id="__codelineno-4-76" name="__codelineno-4-76"></a><span class="s2">(1, 1, 1, 7), (2, 1, 2, 14), (3, 3, 5, 25), (4, 4, 1, 2), (5, 5, 1, 8);</span>
+</span><span id="__span-4-77"><a id="__codelineno-4-77" name="__codelineno-4-77"></a><span class="s2">"""</span>    
+</span><span id="__span-4-78"><a id="__codelineno-4-78" name="__codelineno-4-78"></a>
+</span><span id="__span-4-79"><a id="__codelineno-4-79" name="__codelineno-4-79"></a><span class="c1"># Ausführung der SQL-Befehle</span>
+</span><span id="__span-4-80"><a id="__codelineno-4-80" name="__codelineno-4-80"></a><span class="n">cursor</span><span class="o">.</span><span class="n">executescript</span><span class="p">(</span><span class="n">insert_data_query</span><span class="p">)</span>    
+</span><span id="__span-4-81"><a id="__codelineno-4-81" name="__codelineno-4-81"></a>
+</span><span id="__span-4-82"><a id="__codelineno-4-82" name="__codelineno-4-82"></a><span class="c1"># Abfrage ausführen und Ergebnisse anzeigen</span>
+</span><span id="__span-4-83"><a id="__codelineno-4-83" name="__codelineno-4-83"></a><span class="n">query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-4-84"><a id="__codelineno-4-84" name="__codelineno-4-84"></a><span class="s2">SELECT team.name, SUM(</span>
+</span><span id="__span-4-85"><a id="__codelineno-4-85" name="__codelineno-4-85"></a><span class="s2">    CASE </span>
+</span><span id="__span-4-86"><a id="__codelineno-4-86" name="__codelineno-4-86"></a><span class="s2">        WHEN spiel.team1punkte &gt; spiel.team2punkte THEN </span>
+</span><span id="__span-4-87"><a id="__codelineno-4-87" name="__codelineno-4-87"></a><span class="s2">            CASE WHEN team.teamid = spiel.team1id THEN 3 ELSE 0 END</span>
+</span><span id="__span-4-88"><a id="__codelineno-4-88" name="__codelineno-4-88"></a><span class="s2">        WHEN spiel.team1punkte &lt; spiel.team2punkte THEN </span>
+</span><span id="__span-4-89"><a id="__codelineno-4-89" name="__codelineno-4-89"></a><span class="s2">            CASE WHEN team.teamid = spiel.team2id THEN 3 ELSE 0 END</span>
+</span><span id="__span-4-90"><a id="__codelineno-4-90" name="__codelineno-4-90"></a><span class="s2">        WHEN spiel.team1punkte = spiel.team2punkte THEN </span>
+</span><span id="__span-4-91"><a id="__codelineno-4-91" name="__codelineno-4-91"></a><span class="s2">            CASE WHEN team.teamid = spiel.team1id OR team.teamid = spiel.team2id THEN 1 ELSE 0 END</span>
+</span><span id="__span-4-92"><a id="__codelineno-4-92" name="__codelineno-4-92"></a><span class="s2">    END) AS punkte</span>
+</span><span id="__span-4-93"><a id="__codelineno-4-93" name="__codelineno-4-93"></a><span class="s2">FROM team</span>
+</span><span id="__span-4-94"><a id="__codelineno-4-94" name="__codelineno-4-94"></a><span class="s2">LEFT JOIN spiel ON team.teamid = spiel.team1id OR team.teamid = spiel.team2id</span>
+</span><span id="__span-4-95"><a id="__codelineno-4-95" name="__codelineno-4-95"></a><span class="s2">GROUP BY team.name;</span>
+</span><span id="__span-4-96"><a id="__codelineno-4-96" name="__codelineno-4-96"></a><span class="s2">"""</span>    
+</span><span id="__span-4-97"><a id="__codelineno-4-97" name="__codelineno-4-97"></a>
+</span><span id="__span-4-98"><a id="__codelineno-4-98" name="__codelineno-4-98"></a><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+</span><span id="__span-4-99"><a id="__codelineno-4-99" name="__codelineno-4-99"></a><span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>    
+</span><span id="__span-4-100"><a id="__codelineno-4-100" name="__codelineno-4-100"></a>
+</span><span id="__span-4-101"><a id="__codelineno-4-101" name="__codelineno-4-101"></a><span class="c1"># Ergebnisse ausgeben</span>
+</span><span id="__span-4-102"><a id="__codelineno-4-102" name="__codelineno-4-102"></a><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+</span><span id="__span-4-103"><a id="__codelineno-4-103" name="__codelineno-4-103"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Team: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">, Punkte: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>    
+</span><span id="__span-4-104"><a id="__codelineno-4-104" name="__codelineno-4-104"></a>
+</span><span id="__span-4-105"><a id="__codelineno-4-105" name="__codelineno-4-105"></a><span class="c1"># Änderungen speichern und Verbindung schliessen</span>
+</span><span id="__span-4-106"><a id="__codelineno-4-106" name="__codelineno-4-106"></a><span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span><span id="__span-4-107"><a id="__codelineno-4-107" name="__codelineno-4-107"></a><span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>    
+</span><span id="__span-4-108"><a id="__codelineno-4-108" name="__codelineno-4-108"></a>
+</span><span id="__span-4-109"><a id="__codelineno-4-109" name="__codelineno-4-109"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Datenbank und Tabellen erfolgreich erstellt, Datensätze eingefügt und Abfrage ausgeführt."</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Ausgabe:</p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/14-01-2025_21-54-51.png"><img alt="Image title" src="../../img/14-01-2025_21-54-51.png" width="500"/></a>
+<figcaption>Ausgabe der Punkte pro Team</figcaption>
+</figure></p>
+<p>und hier noch ein Python-Skript, welches die Punktestände pro Team mit Hilfe von Pandas durchführt:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Python-Skript-Auswertung der Punktestände mit Pandas</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span>
+<span class="normal"><a href="#__codelineno-5-25">25</a></span>
+<span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span>
+<span class="normal"><a href="#__codelineno-5-29">29</a></span>
+<span class="normal"><a href="#__codelineno-5-30">30</a></span>
+<span class="normal"><a href="#__codelineno-5-31">31</a></span>
+<span class="normal"><a href="#__codelineno-5-32">32</a></span>
+<span class="normal"><a href="#__codelineno-5-33">33</a></span>
+<span class="normal"><a href="#__codelineno-5-34">34</a></span>
+<span class="normal"><a href="#__codelineno-5-35">35</a></span>
+<span class="normal"><a href="#__codelineno-5-36">36</a></span>
+<span class="normal"><a href="#__codelineno-5-37">37</a></span>
+<span class="normal"><a href="#__codelineno-5-38">38</a></span>
+<span class="normal"><a href="#__codelineno-5-39">39</a></span>
+<span class="normal"><a href="#__codelineno-5-40">40</a></span>
+<span class="normal"><a href="#__codelineno-5-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sqlite3</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>    
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1"># Verbindung zur SQLite-Datenbank herstellen</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'UniHockeyTurnier.db'</span><span class="p">)</span>    
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="c1"># Name und Datum des Turniers</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="n">turnier_name</span> <span class="o">=</span> <span class="s1">'SVSE SM'</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="n">turnier_datum</span> <span class="o">=</span> <span class="s1">'2024-07-01'</span>    
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="c1"># Abfrage der relevanten Tabellen in DataFrames laden</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="n">teams_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">"SELECT * FROM Team"</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="n">spiele_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="s2">SELECT * </span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="s2">FROM Spiel </span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="s2">WHERE TurnierID = (SELECT TurnierID FROM Turnier WHERE Name = '</span><span class="si">{</span><span class="n">turnier_name</span><span class="si">}</span><span class="s2">' AND Datum = '</span><span class="si">{</span><span class="n">turnier_datum</span><span class="si">}</span><span class="s2">')</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="s2">"""</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>    
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18"></a>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="c1"># Berechnung der Punkte pro Team</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="n">punkte_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="n">punkte_df</span><span class="p">[</span><span class="s1">'TeamID'</span><span class="p">]</span> <span class="o">=</span> <span class="n">teams_df</span><span class="p">[</span><span class="s1">'TeamID'</span><span class="p">]</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22"></a><span class="n">punkte_df</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">]</span> <span class="o">=</span> <span class="n">teams_df</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">]</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23"></a><span class="n">punkte_df</span><span class="p">[</span><span class="s1">'Punkte'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>    
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24"></a>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25"></a><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">spiele_df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26"></a>    <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team1Punkte'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team2Punkte'</span><span class="p">]:</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27"></a>        <span class="n">punkte_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">punkte_df</span><span class="p">[</span><span class="s1">'TeamID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team1ID'</span><span class="p">],</span> <span class="s1">'Punkte'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">3</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28"></a>    <span class="k">elif</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team1Punkte'</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team2Punkte'</span><span class="p">]:</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29"></a>        <span class="n">punkte_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">punkte_df</span><span class="p">[</span><span class="s1">'TeamID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team2ID'</span><span class="p">],</span> <span class="s1">'Punkte'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">3</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31"></a>        <span class="n">punkte_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">punkte_df</span><span class="p">[</span><span class="s1">'TeamID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team1ID'</span><span class="p">],</span> <span class="s1">'Punkte'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32"></a>        <span class="n">punkte_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">punkte_df</span><span class="p">[</span><span class="s1">'TeamID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Team2ID'</span><span class="p">],</span> <span class="s1">'Punkte'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>    
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33"></a>
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34"></a><span class="c1"># Überschrift erstellen</span>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Punktestände für Turnier </span><span class="si">{</span><span class="n">turnier_name</span><span class="si">}</span><span class="s2"> vom </span><span class="si">{</span><span class="n">turnier_datum</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>    
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36"></a>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37"></a><span class="c1"># Ergebnisse anzeigen</span>
+</span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38"></a><span class="nb">print</span><span class="p">(</span><span class="n">punkte_df</span><span class="p">[[</span><span class="s1">'Name'</span><span class="p">,</span> <span class="s1">'Punkte'</span><span class="p">]])</span>    
+</span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39"></a>
+</span><span id="__span-5-40"><a id="__codelineno-5-40" name="__codelineno-5-40"></a><span class="c1"># Verbindung schliessen</span>
+</span><span id="__span-5-41"><a id="__codelineno-5-41" name="__codelineno-5-41"></a><span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Resultat:</p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/14-01-2025_22-21-31.png"><img alt="Image title" src="../../img/14-01-2025_22-21-31.png" width="400"/></a>
+<figcaption>Ausgabe der Punkte pro Team mit Überschrift</figcaption>
+</figure></p>
+</details>
+<h2 id="aufgabe-3-chatapplikation">Aufgabe 3: CHATAPPLIKATION</h2>
+<div class="admonition question">
+<p class="admonition-title">UE13-Praxis3 - CHATAPPLIKATION</p>
+<p>Eine Chatapplikation erlaubt es Nutzern sich zu unterhalten. Die Konversationen sind jeweils zwischen zwei oder mehr Teilnehmer. Sobald mehr als zwei Teilnehmer dabei sind, ist es ein Gruppenchat. Es können natürlich Nachrichten im Textformat verschickt werden. Neuerdings werden aber auch Bilder und GIFs unterstützt. Bilder/GIFs werden nicht in der Datenbank abgelegt, sondern jeweils nur ein String, welcher den Pfad der Datei (Bild/GIF) repräsentiert.    </p>
+<p>Am Schluss soll über alle Konversationen hinweg ein Verlauf (nach Zeit sortiert) der Konversation angezeigt werden.    </p>
+<p>Beispiel:    </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>Konversation von Seb + Max
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>--------------------------
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>16:04 Seb: "Hast Du mir die Lösung für Aufgabe A?"
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>16:07 Max: "Ich schicke dir einen Screenshot!"
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>16:08 Max: (Media-Nachricht) path/to/file.jpeg    
+</span><span id="__span-6-6"><a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a>Gruppenchat zwischen Seb + Dan + Max
+</span><span id="__span-6-9"><a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a>-------------------------
+</span><span id="__span-6-10"><a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a>15:52 Dan: "Habt ihr morgen Abend schon was vor?"
+</span><span id="__span-6-11"><a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a>15:55 Seb: "Nein, was willst Du unternehmen?"
+</span><span id="__span-6-12"><a href="#__codelineno-6-12" id="__codelineno-6-12" name="__codelineno-6-12"></a>15:57 Max: "Weihnachstmarkt?"
+</span></code></pre></div>
+<ul>
+<li>
+<p>Aufgabe    </p>
+<ul>
+<li>Erstelle die physische Umsetzung der DB mit SQL-Befehlen in MySQL oder SQLite. Füge auch Beispieldatensätze hinzu. Als Grundlage und Hilfestellung, greifst Du auf das vorher erstellte konzeptionelle und logische ERM zurück.</li>
+<li>Erstelle ein Python Skript, welches Abfragen auf die erstellte DB ausführt und textlich darstellt.</li>
+</ul>
+</li>
+</ul>
+</div>
+<details class="success">
+<summary>Lösungsvorschlag - Chat-Applikation</summary>
+<p>Dieser Lösungsvorschlag fehlt noch. Wird nachgereicht.</p>
+</details>
+<h2 id="aufgabe-4-formula-1">Aufgabe 4: FORMULA 1</h2>
+<div class="admonition question">
+<p class="admonition-title">UE13-Praxis4 - FORMULA 1</p>
+<p>Nachfolgend steht Dir eine SQLite-Datenbank zur Verfügung. Es ist Teil der Aufgabe herauszufinden, wie die Datenbank aufgebaut ist und wo welche Informationen gespeichert sind. Die Datenbank hat einige Beziehungen und Tabellen mit ähnlichen (aber nicht gleichen) Informationen. Für Dich bedeutet das, dass es mehrere korrekte Lösungsansätze gibt. Lass Dich also nicht verwirren - studiere die Datenbank und wenn Du die nötigen Informationen hast, schreibe das SELECT dazu.</p>
+<ul>
+<li>
+<p>Als Tool um die Datenbank zu öffnen und zu analysieren, kannst Du verschiedene Tools verwenden:</p>
+<ul>
+<li><a href="https://sqlitebrowser.org/" target="_blank">DB Browser (SQLite)</a> </li>
+<li>Eine Alternative ist auch <a href="https://dbeaver.io//" target="_blank">DBeaver Community</a>.</li>
+<li>Auch die Verwendung von SQLite in der Konsole ist möglich:
+<figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/07-01-2025_21-21-37.png"><img alt="Image title" src="../../img/07-01-2025_21-21-37.png" width="600"/></a>
+<figcaption>SQLite in der Konsole</figcaption>
+</figure></li>
+</ul>
+</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Bitte beachten!</p>
+<p>Es wird an der Prüfung erwartet, dass ein Tool für SQLite und MySQL auf dem Notebook lauffähig ist und bedient werden kann.</p>
+</div>
+<p><a download="formula1.db" href="../../static/formula1.db">Download SQLite formula1.db</a></p>
+<p>Dein SELECT soll folgende Übersicht produzieren. Es sollen die erreichten Punkte aller Rennen absteigend sortiert der Season im Jahre <strong>2009</strong> dargestellt werden. Also die erste Zeile soll der Weltmeister mit den meisten Punkten sein: Jenson Button mit 95 Punkten.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>forename |surname        |total_points|
+</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>---------+---------------+------------+
+</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>Jenson   |Button         |          95|
+</span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>Sebastian|Vettel         |          84|
+</span><span id="__span-7-5"><a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a>Rubens   |Barrichello    |          77|
+</span><span id="__span-7-6"><a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a>Mark     |Webber         |        69.5|
+</span><span id="__span-7-7"><a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a>Lewis    |Hamilton       |          49|
+</span><span id="__span-7-8"><a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a>Kimi     |Kimi Räikkönen |          48|
+</span><span id="__span-7-9"><a href="#__codelineno-7-9" id="__codelineno-7-9" name="__codelineno-7-9"></a>Nico     |Rosberg        |        34.5|
+</span><span id="__span-7-10"><a href="#__codelineno-7-10" id="__codelineno-7-10" name="__codelineno-7-10"></a>Jarno    |Trulli         |        32.5|
+</span><span id="__span-7-11"><a href="#__codelineno-7-11" id="__codelineno-7-11" name="__codelineno-7-11"></a>Fernando |Alonso         |          26|
+</span><span id="__span-7-12"><a href="#__codelineno-7-12" id="__codelineno-7-12" name="__codelineno-7-12"></a>Timo     |Glock          |          24|
+</span><span id="__span-7-13"><a href="#__codelineno-7-13" id="__codelineno-7-13" name="__codelineno-7-13"></a>Felipe   |Massa          |          22|
+</span><span id="__span-7-14"><a href="#__codelineno-7-14" id="__codelineno-7-14" name="__codelineno-7-14"></a>Heikki   |Kovalainen     |          22|
+</span><span id="__span-7-15"><a href="#__codelineno-7-15" id="__codelineno-7-15" name="__codelineno-7-15"></a>Nick     |Heidfeld       |          19|
+</span><span id="__span-7-16"><a href="#__codelineno-7-16" id="__codelineno-7-16" name="__codelineno-7-16"></a>Robert   |Kubica         |          17|
+</span><span id="__span-7-17"><a href="#__codelineno-7-17" id="__codelineno-7-17" name="__codelineno-7-17"></a>.
+</span><span id="__span-7-18"><a href="#__codelineno-7-18" id="__codelineno-7-18" name="__codelineno-7-18"></a>.
+</span></code></pre></div>
+<ul>
+<li>
+<p>Hinweise</p>
+<ul>
+<li>Sonderzeichen müssen nicht korrekt dargestellt werden!</li>
+<li>Die Reihenfolge bei Punktegleichheit spielt keine Rolle!</li>
+<li>Idealerweise muss nur eine einzelne Zahl (2009) angepasst werden und Dein SQLite produziert auch ein korrektes Resultat für andere Jahre</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="hilfestellung-formula-1-db">Hilfestellung FORMULA 1-DB</h3>
+<details class="info">
+<summary>Hilfestellung</summary>
+<p>Hier siehst Du das ERM der Formula1-DB. </p>
+<p>Hinweis: In der Prüfungsaufgabe war diese Hilfestellung nicht vorhanden.</p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/ERM-formula1.png"><img alt="Image title" src="../../img/ERM-formula1.png" width="1000"/></a>
+<figcaption>ERM Formula1 Datenbank</figcaption>
+</figure></p>
+</details>
+<details class="success">
+<summary>Lösungsvorschlag - Formula 1</summary>
+<div class="language-SQL highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">SELECT</span><span class="w"> </span>
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">    </span><span class="n">drivers</span><span class="p">.</span><span class="n">forename</span><span class="p">,</span><span class="n">drivers</span><span class="p">.</span><span class="n">surname</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">points</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total_points</span>
+</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="k">FROM</span><span class="w"> </span>
+</span><span id="__span-8-4"><a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">    </span><span class="n">drivers</span>
+</span><span id="__span-8-5"><a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="k">JOIN</span><span class="w"> </span>
+</span><span id="__span-8-6"><a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">    </span><span class="n">results</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">drivers</span><span class="p">.</span><span class="n">driverId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">results</span><span class="p">.</span><span class="n">driverId</span>
+</span><span id="__span-8-7"><a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="k">JOIN</span>
+</span><span id="__span-8-8"><a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="w">    </span><span class="n">races</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">races</span><span class="p">.</span><span class="n">raceId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">results</span><span class="p">.</span><span class="n">raceId</span><span class="w"> </span>
+</span><span id="__span-8-9"><a href="#__codelineno-8-9" id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="k">WHERE</span><span class="w"> </span>
+</span><span id="__span-8-10"><a href="#__codelineno-8-10" id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="w">    </span><span class="n">races</span><span class="p">.</span><span class="k">year</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">2009</span>
+</span><span id="__span-8-11"><a href="#__codelineno-8-11" id="__codelineno-8-11" name="__codelineno-8-11"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
+</span><span id="__span-8-12"><a href="#__codelineno-8-12" id="__codelineno-8-12" name="__codelineno-8-12"></a><span class="w">    </span><span class="n">drivers</span><span class="p">.</span><span class="n">surname</span>
+</span><span id="__span-8-13"><a href="#__codelineno-8-13" id="__codelineno-8-13" name="__codelineno-8-13"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span>
+</span><span id="__span-8-14"><a href="#__codelineno-8-14" id="__codelineno-8-14" name="__codelineno-8-14"></a><span class="w">    </span><span class="n">total_points</span><span class="w"> </span><span class="k">DESC</span>
+</span><span id="__span-8-15"><a href="#__codelineno-8-15" id="__codelineno-8-15" name="__codelineno-8-15"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">100</span>
+</span></code></pre></div>
+<p>Erklärungen</p>
+<ul>
+<li><code>JOIN</code>: Verknüpft die <code>drivers</code>-Tabelle mit der <code>results</code>-Tabelle basierend auf der <code>driver_id</code>.</li>
+<li><code>SUM</code>: Summiert die Punkte (points) für jeden Fahrer. Dies ist eine Aggregatsfunktion, welche von <code>GROUP BY</code> benötigt wird.</li>
+<li><code>GROUP BY</code>: Gruppiert die Ergebnisse nach Fahrernamen. </li>
+<li><code>ORDER BY</code>: Sortiert die Ergebnisse nach der Gesamtsumme der Punkte in absteigender Reihenfolge.</li>
+<li><code>LIMIT 1</code>: Gibt nur den Fahrer mit den meisten Punkten zurück.</li>
+</ul>
+<p>Eine Abfrage auf dem Command-prompt, ohne SQlite starten zu müssen, könnte so gemacht werden:</p>
+<p><code>sqlite3  -init abfrage.sql .\formula1.db .quit</code></p>
+<p>Hier enthält die Datei <code>abfrage.sql</code> das Query und <code>.quit</code> verlässt gleich wieder die SQLite-Umgebung:</p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/14-01-2025_22-44-49.png"><img alt="Image title" src="../../img/14-01-2025_22-44-49.png" width="600"/></a>
+<figcaption>SQLite-Abfrage in einer Zeile</figcaption>
+</figure></p>
+</details>
+<h2 id="aufgabe-5-smartwatches">Aufgabe 5: SMARTWATCHES</h2>
+<div class="admonition question">
+<p class="admonition-title">UE13-Praxis5 - SMARTWATCHES</p>
+<p>Die Auswahl für Smartwatches soll in einem standardisierten Format abgespeichert werden. Die verschiedenen Hersteller haben verschiedene Produkte, welche zu unterschiedlichen Zeitpunkten auf dem Markt erschienen sind. Jede dieser Uhren hat meist spezifische physische Gegebenheiten (Grösse, Gewicht, Display, etc). Die Uhren haben auch Eigenschaften, welche sie teilen. Nennen wir sie verschiedene Funktionalitäten (Features). Ein Beispiel könnte sein Pulssensor, Wasserdichtheit und viele weitere.</p>
+<ul>
+<li>
+<p>Aufgabe</p>
+<ul>
+<li>Erstellen Sie dazu ein konzeptionelles und logisches ERM</li>
+<li>Erstellen Sie die Datenbank physisch mit einer DB und einem Tool ihrer Wahl inkl. Demodaten. Erstellen Sie dazu ein SQL-Skript, welches alles enthält: Erstellung des Schemas, Kreieren der Tabellen mit Constraints, Laden von Demodatensätzen.</li>
+<li>Auch hier sollten sie mit Python auf die DB zugreifen können und Abfragen ausühren.</li>
+</ul>
+</li>
+</ul>
+</div>
+<details class="success">
+<summary>Lösungsvorschlag - SMARTWATCHES</summary>
+<p><strong>KARDINALITÄTEN</strong></p>
+<ul>
+<li>Ein Hersteller hat mehrere Produkte. (One-to-Many Beziehung)</li>
+<li>Ein Produkt kann mehrere Features haben, und ein Feature kann zu mehreren Produkten gehören. (Many-to-Many Beziehung). Features bezeichnen physische Eigenschaften der Uhr, welche in der Beziehung Produkt-Feature als Attribut erfasst werden kann.</li>
+</ul>
+<p><strong>Konzeptionelles ERM SMARTWATCHES</strong></p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/UE13-konzERM_smartwatches.png"><img alt="Image title" src="../../img/UE13-konzERM_smartwatches.png" width="700"/></a>
+<figcaption>konzeptionelles ERM SMARTWATCHES</figcaption>
+</figure></p>
+<p>Die m:m - Beziehung bedingt eine Zwischentabelle <code>Produkt_Feature</code>. Darin können wir die physischen Eigenschaften mit Attributen abbilden.</p>
+<p><strong>Logisches ERM SMARTWATCHES</strong></p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/log_ERM_Smartwatch.png"><img alt="Image title" src="../../img/log_ERM_Smartwatch.png" width="700"/></a>
+<figcaption>logisches ERM SMARTWATCHES</figcaption>
+</figure></p>
+<p><strong>Python-Skript zum Erstellen einer MySQL-Datenbank und der Tabellen</strong></p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Erstellung der Smartwatch-Datenbank mit Tabellen</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span>
+<span class="normal"><a href="#__codelineno-9-23">23</a></span>
+<span class="normal"><a href="#__codelineno-9-24">24</a></span>
+<span class="normal"><a href="#__codelineno-9-25">25</a></span>
+<span class="normal"><a href="#__codelineno-9-26">26</a></span>
+<span class="normal"><a href="#__codelineno-9-27">27</a></span>
+<span class="normal"><a href="#__codelineno-9-28">28</a></span>
+<span class="normal"><a href="#__codelineno-9-29">29</a></span>
+<span class="normal"><a href="#__codelineno-9-30">30</a></span>
+<span class="normal"><a href="#__codelineno-9-31">31</a></span>
+<span class="normal"><a href="#__codelineno-9-32">32</a></span>
+<span class="normal"><a href="#__codelineno-9-33">33</a></span>
+<span class="normal"><a href="#__codelineno-9-34">34</a></span>
+<span class="normal"><a href="#__codelineno-9-35">35</a></span>
+<span class="normal"><a href="#__codelineno-9-36">36</a></span>
+<span class="normal"><a href="#__codelineno-9-37">37</a></span>
+<span class="normal"><a href="#__codelineno-9-38">38</a></span>
+<span class="normal"><a href="#__codelineno-9-39">39</a></span>
+<span class="normal"><a href="#__codelineno-9-40">40</a></span>
+<span class="normal"><a href="#__codelineno-9-41">41</a></span>
+<span class="normal"><a href="#__codelineno-9-42">42</a></span>
+<span class="normal"><a href="#__codelineno-9-43">43</a></span>
+<span class="normal"><a href="#__codelineno-9-44">44</a></span>
+<span class="normal"><a href="#__codelineno-9-45">45</a></span>
+<span class="normal"><a href="#__codelineno-9-46">46</a></span>
+<span class="normal"><a href="#__codelineno-9-47">47</a></span>
+<span class="normal"><a href="#__codelineno-9-48">48</a></span>
+<span class="normal"><a href="#__codelineno-9-49">49</a></span>
+<span class="normal"><a href="#__codelineno-9-50">50</a></span>
+<span class="normal"><a href="#__codelineno-9-51">51</a></span>
+<span class="normal"><a href="#__codelineno-9-52">52</a></span>
+<span class="normal"><a href="#__codelineno-9-53">53</a></span>
+<span class="normal"><a href="#__codelineno-9-54">54</a></span>
+<span class="normal"><a href="#__codelineno-9-55">55</a></span>
+<span class="normal"><a href="#__codelineno-9-56">56</a></span>
+<span class="normal"><a href="#__codelineno-9-57">57</a></span>
+<span class="normal"><a href="#__codelineno-9-58">58</a></span>
+<span class="normal"><a href="#__codelineno-9-59">59</a></span>
+<span class="normal"><a href="#__codelineno-9-60">60</a></span>
+<span class="normal"><a href="#__codelineno-9-61">61</a></span>
+<span class="normal"><a href="#__codelineno-9-62">62</a></span>
+<span class="normal"><a href="#__codelineno-9-63">63</a></span>
+<span class="normal"><a href="#__codelineno-9-64">64</a></span>
+<span class="normal"><a href="#__codelineno-9-65">65</a></span>
+<span class="normal"><a href="#__codelineno-9-66">66</a></span>
+<span class="normal"><a href="#__codelineno-9-67">67</a></span>
+<span class="normal"><a href="#__codelineno-9-68">68</a></span>
+<span class="normal"><a href="#__codelineno-9-69">69</a></span>
+<span class="normal"><a href="#__codelineno-9-70">70</a></span>
+<span class="normal"><a href="#__codelineno-9-71">71</a></span>
+<span class="normal"><a href="#__codelineno-9-72">72</a></span>
+<span class="normal"><a href="#__codelineno-9-73">73</a></span>
+<span class="normal"><a href="#__codelineno-9-74">74</a></span>
+<span class="normal"><a href="#__codelineno-9-75">75</a></span>
+<span class="normal"><a href="#__codelineno-9-76">76</a></span>
+<span class="normal"><a href="#__codelineno-9-77">77</a></span>
+<span class="normal"><a href="#__codelineno-9-78">78</a></span>
+<span class="normal"><a href="#__codelineno-9-79">79</a></span>
+<span class="normal"><a href="#__codelineno-9-80">80</a></span>
+<span class="normal"><a href="#__codelineno-9-81">81</a></span>
+<span class="normal"><a href="#__codelineno-9-82">82</a></span>
+<span class="normal"><a href="#__codelineno-9-83">83</a></span>
+<span class="normal"><a href="#__codelineno-9-84">84</a></span>
+<span class="normal"><a href="#__codelineno-9-85">85</a></span>
+<span class="normal"><a href="#__codelineno-9-86">86</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mysql.connector</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mysql.connector</span><span class="w"> </span><span class="kn">import</span> <span class="n">errorcode</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="c1"># Verbindung zur MySQL-Datenbank herstellen</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a>    <span class="n">connection</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a>        <span class="n">host</span><span class="o">=</span><span class="s1">'localhost'</span><span class="p">,</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a>        <span class="n">user</span><span class="o">=</span><span class="s1">'tom'</span><span class="p">,</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a>        <span class="n">password</span><span class="o">=</span><span class="s1">'passwort'</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a>    <span class="p">)</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12"></a>    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13"></a>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14"></a>    <span class="c1"># Datenbank erstellen</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15"></a>    <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16"></a>        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"CREATE DATABASE SMARTWATCHES_V1"</span><span class="p">)</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Datenbank 'SMARTWATCHES_V1' erfolgreich erstellt."</span><span class="p">)</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18"></a>    <span class="k">except</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19"></a>        <span class="k">if</span> <span class="n">err</span><span class="o">.</span><span class="n">errno</span> <span class="o">==</span> <span class="n">errorcode</span><span class="o">.</span><span class="n">ER_DB_CREATE_EXISTS</span><span class="p">:</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">"Datenbank 'SMARTWATCHES_V1' existiert bereits."</span><span class="p">)</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fehler beim Erstellen der Datenbank: </span><span class="si">{</span><span class="n">err</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23"></a>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24"></a>    <span class="c1"># Verbindung zur erstellten Datenbank</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25"></a>    <span class="n">connection</span><span class="o">.</span><span class="n">database</span> <span class="o">=</span> <span class="s1">'SMARTWATCHES_V1'</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26"></a>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27"></a>    <span class="c1"># Tabelle Hersteller erstellen</span>
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28"></a>    <span class="n">create_table_hersteller_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29"></a><span class="s2">    CREATE TABLE Hersteller (</span>
+</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30"></a><span class="s2">        HerstellerID INT AUTO_INCREMENT PRIMARY KEY,</span>
+</span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31"></a><span class="s2">        Name VARCHAR(255),</span>
+</span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32"></a><span class="s2">        Land VARCHAR(255)</span>
+</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33"></a><span class="s2">    )</span>
+</span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34"></a><span class="s2">    """</span>
+</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">create_table_hersteller_query</span><span class="p">)</span>
+</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Tabelle 'Hersteller' erfolgreich erstellt."</span><span class="p">)</span>
+</span><span id="__span-9-37"><a id="__codelineno-9-37" name="__codelineno-9-37"></a>
+</span><span id="__span-9-38"><a id="__codelineno-9-38" name="__codelineno-9-38"></a>    <span class="c1"># Tabelle Produkt erstellen</span>
+</span><span id="__span-9-39"><a id="__codelineno-9-39" name="__codelineno-9-39"></a>    <span class="n">create_table_produkt_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-9-40"><a id="__codelineno-9-40" name="__codelineno-9-40"></a><span class="s2">    CREATE TABLE Produkt (</span>
+</span><span id="__span-9-41"><a id="__codelineno-9-41" name="__codelineno-9-41"></a><span class="s2">        ProduktID INT AUTO_INCREMENT PRIMARY KEY,</span>
+</span><span id="__span-9-42"><a id="__codelineno-9-42" name="__codelineno-9-42"></a><span class="s2">        HerstellerID INT,</span>
+</span><span id="__span-9-43"><a id="__codelineno-9-43" name="__codelineno-9-43"></a><span class="s2">        Modellname VARCHAR(255),</span>
+</span><span id="__span-9-44"><a id="__codelineno-9-44" name="__codelineno-9-44"></a><span class="s2">        Markteinführung DATE,</span>
+</span><span id="__span-9-45"><a id="__codelineno-9-45" name="__codelineno-9-45"></a><span class="s2">        FOREIGN KEY (HerstellerID) REFERENCES Hersteller(HerstellerID)</span>
+</span><span id="__span-9-46"><a id="__codelineno-9-46" name="__codelineno-9-46"></a><span class="s2">    )</span>
+</span><span id="__span-9-47"><a id="__codelineno-9-47" name="__codelineno-9-47"></a><span class="s2">    """</span>
+</span><span id="__span-9-48"><a id="__codelineno-9-48" name="__codelineno-9-48"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">create_table_produkt_query</span><span class="p">)</span>
+</span><span id="__span-9-49"><a id="__codelineno-9-49" name="__codelineno-9-49"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Tabelle 'Produkt' erfolgreich erstellt."</span><span class="p">)</span>
+</span><span id="__span-9-50"><a id="__codelineno-9-50" name="__codelineno-9-50"></a>
+</span><span id="__span-9-51"><a id="__codelineno-9-51" name="__codelineno-9-51"></a>    <span class="c1"># Tabelle Feature erstellen</span>
+</span><span id="__span-9-52"><a id="__codelineno-9-52" name="__codelineno-9-52"></a>    <span class="n">create_table_feature_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-9-53"><a id="__codelineno-9-53" name="__codelineno-9-53"></a><span class="s2">    CREATE TABLE Feature (</span>
+</span><span id="__span-9-54"><a id="__codelineno-9-54" name="__codelineno-9-54"></a><span class="s2">        FeatureID INT AUTO_INCREMENT PRIMARY KEY,</span>
+</span><span id="__span-9-55"><a id="__codelineno-9-55" name="__codelineno-9-55"></a><span class="s2">        Name VARCHAR(255)</span>
+</span><span id="__span-9-56"><a id="__codelineno-9-56" name="__codelineno-9-56"></a><span class="s2">    )</span>
+</span><span id="__span-9-57"><a id="__codelineno-9-57" name="__codelineno-9-57"></a><span class="s2">    """</span>
+</span><span id="__span-9-58"><a id="__codelineno-9-58" name="__codelineno-9-58"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">create_table_feature_query</span><span class="p">)</span>
+</span><span id="__span-9-59"><a id="__codelineno-9-59" name="__codelineno-9-59"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Tabelle 'Feature' erfolgreich erstellt."</span><span class="p">)</span>
+</span><span id="__span-9-60"><a id="__codelineno-9-60" name="__codelineno-9-60"></a>
+</span><span id="__span-9-61"><a id="__codelineno-9-61" name="__codelineno-9-61"></a>    <span class="c1"># Zwischentabelle Produkt_Feature erstellen</span>
+</span><span id="__span-9-62"><a id="__codelineno-9-62" name="__codelineno-9-62"></a>    <span class="n">create_table_produkt_feature_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-9-63"><a id="__codelineno-9-63" name="__codelineno-9-63"></a><span class="s2">    CREATE TABLE Produkt_Feature (</span>
+</span><span id="__span-9-64"><a id="__codelineno-9-64" name="__codelineno-9-64"></a><span class="s2">        id INT AUTO_INCREMENT PRIMARY KEY,</span>
+</span><span id="__span-9-65"><a id="__codelineno-9-65" name="__codelineno-9-65"></a><span class="s2">        ProduktID INT,</span>
+</span><span id="__span-9-66"><a id="__codelineno-9-66" name="__codelineno-9-66"></a><span class="s2">        FeatureID INT,</span>
+</span><span id="__span-9-67"><a id="__codelineno-9-67" name="__codelineno-9-67"></a><span class="s2">        Pulssensor BOOLEAN NULL,</span>
+</span><span id="__span-9-68"><a id="__codelineno-9-68" name="__codelineno-9-68"></a><span class="s2">        Wasserdichtheit INT NULL,</span>
+</span><span id="__span-9-69"><a id="__codelineno-9-69" name="__codelineno-9-69"></a><span class="s2">        Durchmesser_Lunette INT NULL,</span>
+</span><span id="__span-9-70"><a id="__codelineno-9-70" name="__codelineno-9-70"></a><span class="s2">        Gewicht_g INT NULL,</span>
+</span><span id="__span-9-71"><a id="__codelineno-9-71" name="__codelineno-9-71"></a><span class="s2">        Uhrwerktyp TEXT NULL,</span>
+</span><span id="__span-9-72"><a id="__codelineno-9-72" name="__codelineno-9-72"></a><span class="s2">        FOREIGN KEY (ProduktID) REFERENCES Produkt(ProduktID),</span>
+</span><span id="__span-9-73"><a id="__codelineno-9-73" name="__codelineno-9-73"></a><span class="s2">        FOREIGN KEY (FeatureID) REFERENCES Feature(FeatureID)</span>
+</span><span id="__span-9-74"><a id="__codelineno-9-74" name="__codelineno-9-74"></a><span class="s2">    )</span>
+</span><span id="__span-9-75"><a id="__codelineno-9-75" name="__codelineno-9-75"></a><span class="s2">    """</span>
+</span><span id="__span-9-76"><a id="__codelineno-9-76" name="__codelineno-9-76"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">create_table_produkt_feature_query</span><span class="p">)</span>
+</span><span id="__span-9-77"><a id="__codelineno-9-77" name="__codelineno-9-77"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Tabelle 'Produkt_Feature' erfolgreich erstellt."</span><span class="p">)</span>
+</span><span id="__span-9-78"><a id="__codelineno-9-78" name="__codelineno-9-78"></a>
+</span><span id="__span-9-79"><a id="__codelineno-9-79" name="__codelineno-9-79"></a><span class="k">except</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+</span><span id="__span-9-80"><a id="__codelineno-9-80" name="__codelineno-9-80"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fehler: </span><span class="si">{</span><span class="n">err</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-9-81"><a id="__codelineno-9-81" name="__codelineno-9-81"></a>    <span class="n">connection</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-9-82"><a id="__codelineno-9-82" name="__codelineno-9-82"></a><span class="k">finally</span><span class="p">:</span>
+</span><span id="__span-9-83"><a id="__codelineno-9-83" name="__codelineno-9-83"></a>    <span class="k">if</span> <span class="n">connection</span> <span class="ow">and</span> <span class="n">connection</span><span class="o">.</span><span class="n">is_connected</span><span class="p">():</span>
+</span><span id="__span-9-84"><a id="__codelineno-9-84" name="__codelineno-9-84"></a>        <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-9-85"><a id="__codelineno-9-85" name="__codelineno-9-85"></a>        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-9-86"><a id="__codelineno-9-86" name="__codelineno-9-86"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"MySQL-Verbindung geschlossen."</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Python-Skript zum Laden von Demodaten in die MySQL-DB</strong></p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Laden von Demodaten</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span>
+<span class="normal"><a href="#__codelineno-10-19">19</a></span>
+<span class="normal"><a href="#__codelineno-10-20">20</a></span>
+<span class="normal"><a href="#__codelineno-10-21">21</a></span>
+<span class="normal"><a href="#__codelineno-10-22">22</a></span>
+<span class="normal"><a href="#__codelineno-10-23">23</a></span>
+<span class="normal"><a href="#__codelineno-10-24">24</a></span>
+<span class="normal"><a href="#__codelineno-10-25">25</a></span>
+<span class="normal"><a href="#__codelineno-10-26">26</a></span>
+<span class="normal"><a href="#__codelineno-10-27">27</a></span>
+<span class="normal"><a href="#__codelineno-10-28">28</a></span>
+<span class="normal"><a href="#__codelineno-10-29">29</a></span>
+<span class="normal"><a href="#__codelineno-10-30">30</a></span>
+<span class="normal"><a href="#__codelineno-10-31">31</a></span>
+<span class="normal"><a href="#__codelineno-10-32">32</a></span>
+<span class="normal"><a href="#__codelineno-10-33">33</a></span>
+<span class="normal"><a href="#__codelineno-10-34">34</a></span>
+<span class="normal"><a href="#__codelineno-10-35">35</a></span>
+<span class="normal"><a href="#__codelineno-10-36">36</a></span>
+<span class="normal"><a href="#__codelineno-10-37">37</a></span>
+<span class="normal"><a href="#__codelineno-10-38">38</a></span>
+<span class="normal"><a href="#__codelineno-10-39">39</a></span>
+<span class="normal"><a href="#__codelineno-10-40">40</a></span>
+<span class="normal"><a href="#__codelineno-10-41">41</a></span>
+<span class="normal"><a href="#__codelineno-10-42">42</a></span>
+<span class="normal"><a href="#__codelineno-10-43">43</a></span>
+<span class="normal"><a href="#__codelineno-10-44">44</a></span>
+<span class="normal"><a href="#__codelineno-10-45">45</a></span>
+<span class="normal"><a href="#__codelineno-10-46">46</a></span>
+<span class="normal"><a href="#__codelineno-10-47">47</a></span>
+<span class="normal"><a href="#__codelineno-10-48">48</a></span>
+<span class="normal"><a href="#__codelineno-10-49">49</a></span>
+<span class="normal"><a href="#__codelineno-10-50">50</a></span>
+<span class="normal"><a href="#__codelineno-10-51">51</a></span>
+<span class="normal"><a href="#__codelineno-10-52">52</a></span>
+<span class="normal"><a href="#__codelineno-10-53">53</a></span>
+<span class="normal"><a href="#__codelineno-10-54">54</a></span>
+<span class="normal"><a href="#__codelineno-10-55">55</a></span>
+<span class="normal"><a href="#__codelineno-10-56">56</a></span>
+<span class="normal"><a href="#__codelineno-10-57">57</a></span>
+<span class="normal"><a href="#__codelineno-10-58">58</a></span>
+<span class="normal"><a href="#__codelineno-10-59">59</a></span>
+<span class="normal"><a href="#__codelineno-10-60">60</a></span>
+<span class="normal"><a href="#__codelineno-10-61">61</a></span>
+<span class="normal"><a href="#__codelineno-10-62">62</a></span>
+<span class="normal"><a href="#__codelineno-10-63">63</a></span>
+<span class="normal"><a href="#__codelineno-10-64">64</a></span>
+<span class="normal"><a href="#__codelineno-10-65">65</a></span>
+<span class="normal"><a href="#__codelineno-10-66">66</a></span>
+<span class="normal"><a href="#__codelineno-10-67">67</a></span>
+<span class="normal"><a href="#__codelineno-10-68">68</a></span>
+<span class="normal"><a href="#__codelineno-10-69">69</a></span>
+<span class="normal"><a href="#__codelineno-10-70">70</a></span>
+<span class="normal"><a href="#__codelineno-10-71">71</a></span>
+<span class="normal"><a href="#__codelineno-10-72">72</a></span>
+<span class="normal"><a href="#__codelineno-10-73">73</a></span>
+<span class="normal"><a href="#__codelineno-10-74">74</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mysql.connector</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mysql.connector</span><span class="w"> </span><span class="kn">import</span> <span class="n">errorcode</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="c1"># Verbindung zur MySQL-Datenbank herstellen</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a>    <span class="n">connection</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a>        <span class="n">host</span><span class="o">=</span><span class="s1">'dbserver.winglabs.ch'</span><span class="p">,</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a>        <span class="n">user</span><span class="o">=</span><span class="s1">'meinuser'</span><span class="p">,</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a>        <span class="n">password</span><span class="o">=</span><span class="s1">'meinpasswort'</span><span class="p">,</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a>        <span class="n">database</span><span class="o">=</span><span class="s1">'SMARTWATCHES_V1'</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a>    <span class="p">)</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a>    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14"></a>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15"></a>    <span class="c1"># Demodaten für die Tabelle Hersteller einfügen</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16"></a>    <span class="n">insert_hersteller_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="s2">    INSERT INTO Hersteller (Name, Land) VALUES</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="s2">    ('Apple', 'USA'),</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="s2">    ('Samsung', 'Südkorea'),</span>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="s2">    ('Garmin', 'Schweiz'),</span>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="s2">    ('Fitbit', 'USA'),</span>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22"></a><span class="s2">    ('Huawei', 'China')</span>
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="s2">    """</span>
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">insert_hersteller_query</span><span class="p">)</span>
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Demodaten in Tabelle 'Hersteller' eingefügt."</span><span class="p">)</span>
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26"></a>
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27"></a>    <span class="c1"># Demodaten für die Tabelle Produkt einfügen</span>
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28"></a>    <span class="n">insert_produkt_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-10-29"><a id="__codelineno-10-29" name="__codelineno-10-29"></a><span class="s2">    INSERT INTO Produkt (HerstellerID, Modellname, Markteinführung) VALUES</span>
+</span><span id="__span-10-30"><a id="__codelineno-10-30" name="__codelineno-10-30"></a><span class="s2">    (1, 'Apple Watch Series 7', '2021-09-14'),</span>
+</span><span id="__span-10-31"><a id="__codelineno-10-31" name="__codelineno-10-31"></a><span class="s2">    (2, 'Samsung Galaxy Watch 4', '2021-08-11'),</span>
+</span><span id="__span-10-32"><a id="__codelineno-10-32" name="__codelineno-10-32"></a><span class="s2">    (3, 'Garmin Fenix 6', '2019-08-29'),</span>
+</span><span id="__span-10-33"><a id="__codelineno-10-33" name="__codelineno-10-33"></a><span class="s2">    (4, 'Fitbit Charge 5', '2021-08-25'),</span>
+</span><span id="__span-10-34"><a id="__codelineno-10-34" name="__codelineno-10-34"></a><span class="s2">    (5, 'Huawei Watch GT 2', '2019-10-23')</span>
+</span><span id="__span-10-35"><a id="__codelineno-10-35" name="__codelineno-10-35"></a><span class="s2">    """</span>
+</span><span id="__span-10-36"><a id="__codelineno-10-36" name="__codelineno-10-36"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">insert_produkt_query</span><span class="p">)</span>
+</span><span id="__span-10-37"><a id="__codelineno-10-37" name="__codelineno-10-37"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Demodaten in Tabelle 'Produkt' eingefügt."</span><span class="p">)</span>
+</span><span id="__span-10-38"><a id="__codelineno-10-38" name="__codelineno-10-38"></a>
+</span><span id="__span-10-39"><a id="__codelineno-10-39" name="__codelineno-10-39"></a>    <span class="c1"># Demodaten für die Tabelle Feature einfügen</span>
+</span><span id="__span-10-40"><a id="__codelineno-10-40" name="__codelineno-10-40"></a>    <span class="n">insert_feature_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-10-41"><a id="__codelineno-10-41" name="__codelineno-10-41"></a><span class="s2">    INSERT INTO Feature (Name) VALUES</span>
+</span><span id="__span-10-42"><a id="__codelineno-10-42" name="__codelineno-10-42"></a><span class="s2">    ('Pulsmessung'),</span>
+</span><span id="__span-10-43"><a id="__codelineno-10-43" name="__codelineno-10-43"></a><span class="s2">    ('Schlaftracking'),</span>
+</span><span id="__span-10-44"><a id="__codelineno-10-44" name="__codelineno-10-44"></a><span class="s2">    ('GPS'),</span>
+</span><span id="__span-10-45"><a id="__codelineno-10-45" name="__codelineno-10-45"></a><span class="s2">    ('Wasserdicht'),</span>
+</span><span id="__span-10-46"><a id="__codelineno-10-46" name="__codelineno-10-46"></a><span class="s2">    ('Bluetooth')</span>
+</span><span id="__span-10-47"><a id="__codelineno-10-47" name="__codelineno-10-47"></a><span class="s2">    """</span>
+</span><span id="__span-10-48"><a id="__codelineno-10-48" name="__codelineno-10-48"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">insert_feature_query</span><span class="p">)</span>
+</span><span id="__span-10-49"><a id="__codelineno-10-49" name="__codelineno-10-49"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Demodaten in Tabelle 'Feature' eingefügt."</span><span class="p">)</span>
+</span><span id="__span-10-50"><a id="__codelineno-10-50" name="__codelineno-10-50"></a>
+</span><span id="__span-10-51"><a id="__codelineno-10-51" name="__codelineno-10-51"></a>    <span class="c1"># Demodaten für die Tabelle Produkt_Feature einfügen</span>
+</span><span id="__span-10-52"><a id="__codelineno-10-52" name="__codelineno-10-52"></a>    <span class="n">insert_produkt_feature_query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-10-53"><a id="__codelineno-10-53" name="__codelineno-10-53"></a><span class="s2">    INSERT INTO Produkt_Feature (ProduktID, FeatureID, Pulssensor, Wasserdichtheit, Durchmesser_Lunette, Gewicht_g,     Uhrwerktyp) VALUES</span>
+</span><span id="__span-10-54"><a id="__codelineno-10-54" name="__codelineno-10-54"></a><span class="s2">    (1, 1, TRUE, 50, 44, 38, 'Elektronisch'),</span>
+</span><span id="__span-10-55"><a id="__codelineno-10-55" name="__codelineno-10-55"></a><span class="s2">    (1, 4, NULL, 50, NULL, NULL, NULL),</span>
+</span><span id="__span-10-56"><a id="__codelineno-10-56" name="__codelineno-10-56"></a><span class="s2">    (2, 1, TRUE, 50, 44, 30, 'Elektronisch'),</span>
+</span><span id="__span-10-57"><a id="__codelineno-10-57" name="__codelineno-10-57"></a><span class="s2">    (2, 3, NULL, NULL, NULL, NULL, 'Elektronisch'),</span>
+</span><span id="__span-10-58"><a id="__codelineno-10-58" name="__codelineno-10-58"></a><span class="s2">    (3, 3, NULL, 100, 47, 83, 'Elektronisch'),</span>
+</span><span id="__span-10-59"><a id="__codelineno-10-59" name="__codelineno-10-59"></a><span class="s2">    (4, 1, TRUE, 50, 35, 24, 'Elektronisch'),</span>
+</span><span id="__span-10-60"><a id="__codelineno-10-60" name="__codelineno-10-60"></a><span class="s2">    (5, 2, NULL, 50, 46, 41, 'Elektronisch'),</span>
+</span><span id="__span-10-61"><a id="__codelineno-10-61" name="__codelineno-10-61"></a><span class="s2">    (5, 4, NULL, 50, NULL, NULL, NULL)</span>
+</span><span id="__span-10-62"><a id="__codelineno-10-62" name="__codelineno-10-62"></a><span class="s2">    """</span>
+</span><span id="__span-10-63"><a id="__codelineno-10-63" name="__codelineno-10-63"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">insert_produkt_feature_query</span><span class="p">)</span>
+</span><span id="__span-10-64"><a id="__codelineno-10-64" name="__codelineno-10-64"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Demodaten in Tabelle 'Produkt_Feature' eingefügt."</span><span class="p">)</span>
+</span><span id="__span-10-65"><a id="__codelineno-10-65" name="__codelineno-10-65"></a>
+</span><span id="__span-10-66"><a id="__codelineno-10-66" name="__codelineno-10-66"></a>    <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</span><span id="__span-10-67"><a id="__codelineno-10-67" name="__codelineno-10-67"></a>
+</span><span id="__span-10-68"><a id="__codelineno-10-68" name="__codelineno-10-68"></a><span class="k">except</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+</span><span id="__span-10-69"><a id="__codelineno-10-69" name="__codelineno-10-69"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fehler: </span><span class="si">{</span><span class="n">err</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-10-70"><a id="__codelineno-10-70" name="__codelineno-10-70"></a><span class="k">finally</span><span class="p">:</span>
+</span><span id="__span-10-71"><a id="__codelineno-10-71" name="__codelineno-10-71"></a>    <span class="k">if</span> <span class="n">connection</span><span class="o">.</span><span class="n">is_connected</span><span class="p">():</span>
+</span><span id="__span-10-72"><a id="__codelineno-10-72" name="__codelineno-10-72"></a>        <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-10-73"><a id="__codelineno-10-73" name="__codelineno-10-73"></a>        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-10-74"><a id="__codelineno-10-74" name="__codelineno-10-74"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"MySQL-Verbindung geschlossen."</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-py highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">einfache Query: Liste der Modelle mit Feature</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span>
+<span class="normal"><a href="#__codelineno-11-14">14</a></span>
+<span class="normal"><a href="#__codelineno-11-15">15</a></span>
+<span class="normal"><a href="#__codelineno-11-16">16</a></span>
+<span class="normal"><a href="#__codelineno-11-17">17</a></span>
+<span class="normal"><a href="#__codelineno-11-18">18</a></span>
+<span class="normal"><a href="#__codelineno-11-19">19</a></span>
+<span class="normal"><a href="#__codelineno-11-20">20</a></span>
+<span class="normal"><a href="#__codelineno-11-21">21</a></span>
+<span class="normal"><a href="#__codelineno-11-22">22</a></span>
+<span class="normal"><a href="#__codelineno-11-23">23</a></span>
+<span class="normal"><a href="#__codelineno-11-24">24</a></span>
+<span class="normal"><a href="#__codelineno-11-25">25</a></span>
+<span class="normal"><a href="#__codelineno-11-26">26</a></span>
+<span class="normal"><a href="#__codelineno-11-27">27</a></span>
+<span class="normal"><a href="#__codelineno-11-28">28</a></span>
+<span class="normal"><a href="#__codelineno-11-29">29</a></span>
+<span class="normal"><a href="#__codelineno-11-30">30</a></span>
+<span class="normal"><a href="#__codelineno-11-31">31</a></span>
+<span class="normal"><a href="#__codelineno-11-32">32</a></span>
+<span class="normal"><a href="#__codelineno-11-33">33</a></span>
+<span class="normal"><a href="#__codelineno-11-34">34</a></span>
+<span class="normal"><a href="#__codelineno-11-35">35</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mysql.connector</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="c1"># Verbindung zur MySQL-Datenbank herstellen</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a>    <span class="n">connection</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a>        <span class="n">host</span><span class="o">=</span><span class="s1">'localhost'</span><span class="p">,</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a>        <span class="n">user</span><span class="o">=</span><span class="s1">'dein_user'</span><span class="p">,</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a>        <span class="n">password</span><span class="o">=</span><span class="s1">'passwort'</span><span class="p">,</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9"></a>        <span class="n">database</span><span class="o">=</span><span class="s1">'SMARTWATCHES_V1'</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10"></a>    <span class="p">)</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11"></a>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12"></a>    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13"></a>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14"></a>    <span class="c1"># Abfrage erstellen</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15"></a>    <span class="n">query</span> <span class="o">=</span> <span class="s2">"""</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="s2">    SELECT Produkt.Modellname, Feature.Name AS Feature</span>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="s2">    FROM Produkt_Feature</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="s2">    JOIN Produkt ON Produkt_Feature.ProduktID = Produkt.ProduktID</span>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="s2">    JOIN Feature ON Produkt_Feature.FeatureID = Feature.FeatureID</span>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="s2">    """</span>
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21"></a>
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23"></a>    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24"></a>
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25"></a>    <span class="c1"># Ergebnisse anzeigen</span>
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26"></a>    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Modellname: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">, Feature: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28"></a>
+</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29"></a><span class="k">except</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fehler: </span><span class="si">{</span><span class="n">err</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31"></a><span class="k">finally</span><span class="p">:</span>
+</span><span id="__span-11-32"><a id="__codelineno-11-32" name="__codelineno-11-32"></a>    <span class="k">if</span> <span class="n">connection</span><span class="o">.</span><span class="n">is_connected</span><span class="p">():</span>
+</span><span id="__span-11-33"><a id="__codelineno-11-33" name="__codelineno-11-33"></a>        <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-11-34"><a id="__codelineno-11-34" name="__codelineno-11-34"></a>        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"MySQL-Verbindung geschlossen."</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Resultat der Abfrage:</strong></p>
+<p><figure markdown="span">
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../img/15-01-2025_00-53-27.png"><img alt="Image title" src="../../img/15-01-2025_00-53-27.png" width="1000"/></a>
+<figcaption>einfache Abfrage der Smartwatch-DB</figcaption>
+</figure></p>
+</details>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: LE13 - Repetitionslektion" class="md-footer__link md-footer__link--prev" href="../">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                LE13 - Repetitionslektion
+              </div>
+</div>
+</a>
+<a aria-label="Next: THEORETISCHE AUFGABEN" class="md-footer__link md-footer__link--next" href="../ue13-theorie/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                THEORETISCHE AUFGABEN
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      2024 © Thomas Jäggi, Berne University of Applied Sciences - Berner Fachhochschule - BFH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://www.linkedin.com/in/thomas-j%C3%A4ggi-026350141/" rel="noopener" target="_blank" title="www.linkedin.com">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.indexes", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+<script src="../../javascripts/katex.js"></script>
+<script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+<script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
