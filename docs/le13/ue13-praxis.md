@@ -508,6 +508,9 @@ Die Aufgaben unterliegen dem Modell des Datenbankentwurfs. Hier nochmals in eine
         * Erstelle die physische Umsetzung der DB mit SQL-Befehlen in MySQL oder SQLite. Füge auch Beispieldatensätze hinzu. Als Grundlage und Hilfestellung, greifst Du auf das vorher erstellte konzeptionelle und logische ERM zurück.
         * Erstelle ein Python Skript, welches Abfragen auf die erstellte DB ausführt und textlich darstellt.
 
+??? success "Lösungsvorschlag - Chat-Applikation"
+
+    Dieser Lösungsvorschlag fehlt noch. Wird nachgereicht.
 
 ## Aufgabe 4: FORMULA 1
 
